@@ -1,0 +1,149 @@
+name: e5-routed
+
+services:
+  ips:
+    build:
+      context: ../..
+      dockerfile: tools/routed_lab/ips/Dockerfile
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      PYTHONUNBUFFERED: "1"
+      RUN_ID: ${RUN_ID:-unregistered}
+      REP: ${REP:-0}
+      POLICY_MODE: ${POLICY_MODE:-B0_OFF}
+      WORKLOAD: ${WORKLOAD:-unregistered}
+      AUTH_IP: 10.82.0.100
+      RESOLVER_IP: 10.81.0.53
+      IPS_INSIDE_IP: 10.81.0.1
+      IPS_OUTSIDE_IP: 10.82.0.1
+      NFQUEUE_NUM: "5"
+      LOG_DIR: /app/log
+    networks:
+      frontnet:
+        ipv4_address: 10.81.0.1
+      upnet:
+        ipv4_address: 10.82.0.1
+
+  resolver:
+    build:
+      context: ../..
+      dockerfile: tools/routed_lab/resolver/Dockerfile
+      additional_contexts:
+        unbound_src: ../unbound
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      PYTHONUNBUFFERED: "1"
+      RUN_ID: ${RUN_ID:-unregistered}
+      REP: ${REP:-0}
+      POLICY_MODE: ${POLICY_MODE:-B0_OFF}
+      WORKLOAD: ${WORKLOAD:-unregistered}
+      RESOLVER_IP: 10.81.0.53
+      INSIDE_GATEWAY: 10.81.0.1
+      UPSTREAM_NET: 10.82.0.0/24
+      LOG_DIR: /app/log
+      CACHE_PROBE_PORT: "10053"
+    networks:
+      frontnet:
+        ipv4_address: 10.81.0.53
+
+  auth:
+    build:
+      context: ../..
+      dockerfile: tools/routed_lab/auth/Dockerfile
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      PYTHONUNBUFFERED: "1"
+      RUN_ID: ${RUN_ID:-unregistered}
+      REP: ${REP:-0}
+      POLICY_MODE: ${POLICY_MODE:-B0_OFF}
+      WORKLOAD: ${WORKLOAD:-unregistered}
+      AUTH_IP: 10.82.0.100
+      RESOLVER_IP: 10.81.0.53
+      ATTACKER_IP: 10.82.0.200
+      UPSTREAM_GATEWAY: 10.82.0.1
+      RESOLVER_NET: 10.81.0.0/24
+      SCHEDULE_FILE: /app/schedule.json
+      LOG_DIR: /app/log
+      FRAGSIZE: "40"
+      AUTH_TAIL_DELAY_SECONDS: "0.25"
+      AUTH_FRAGMENT_MODE: ${AUTH_FRAGMENT_MODE:-crafted}
+      AUTH_PMTUD_MIN_UDP: ${AUTH_PMTUD_MIN_UDP:-1200}
+      AUTH_PMTUD_ICMP_WAIT_S: ${AUTH_PMTUD_ICMP_WAIT_S:-0.15}
+    networks:
+      upnet:
+        ipv4_address: 10.82.0.100
+
+  attacker:
+    build:
+      context: ../..
+      dockerfile: tools/routed_lab/attacker/Dockerfile
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      PYTHONUNBUFFERED: "1"
+      RUN_ID: ${RUN_ID:-unregistered}
+      REP: ${REP:-0}
+      POLICY_MODE: ${POLICY_MODE:-B0_OFF}
+      WORKLOAD: ${WORKLOAD:-unregistered}
+      ATTACKER_IP: 10.82.0.200
+      AUTH_IP: 10.82.0.100
+      RESOLVER_IP: 10.81.0.53
+      UPSTREAM_GATEWAY: 10.82.0.1
+      RESOLVER_NET: 10.81.0.0/24
+      SCHEDULE_FILE: /app/schedule.json
+      LOG_DIR: /app/log
+      FRAGSIZE: "40"
+      NOTIFY_PORT: "9999"
+      POISON_IP: 6.6.6.6
+      AUTH_FRAGMENT_MODE: ${AUTH_FRAGMENT_MODE:-crafted}
+      ICMP_PTB_MTU: ${ICMP_PTB_MTU:-576}
+      ICMP_PTB_SRC: ${ICMP_PTB_SRC:-10.82.0.1}
+    networks:
+      upnet:
+        ipv4_address: 10.82.0.200
+
+  client:
+    build:
+      context: ../..
+      dockerfile: tools/routed_lab/client/Dockerfile
+    environment:
+      PYTHONUNBUFFERED: "1"
+      RUN_ID: ${RUN_ID:-unregistered}
+      REP: ${REP:-0}
+      POLICY_MODE: ${POLICY_MODE:-B0_OFF}
+      WORKLOAD: ${WORKLOAD:-unregistered}
+      RESOLVER_IP: 10.81.0.53
+      SCHEDULE_FILE: /app/schedule.json
+      LOG_DIR: /app/log
+      CACHE_PROBE_PORT: "10053"
+      CLIENT_QUERY_DEADLINE_S: "2.0"
+      POISON_IP: 6.6.6.6
+      LEGITIMATE_IP: 203.0.113.80
+    networks:
+      frontnet:
+        ipv4_address: 10.81.0.10
+
+networks:
+  frontnet:
+    driver: bridge
+    driver_opts:
+      com.docker.network.driver.mtu: "1500"
+    ipam:
+      config:
+        - subnet: 10.81.0.0/24
+          gateway: 10.81.0.254
+  upnet:
+    driver: bridge
+    driver_opts:
+      com.docker.network.driver.mtu: "1500"
+    ipam:
+      config:
+        - subnet: 10.82.0.0/24
+          gateway: 10.82.0.254
