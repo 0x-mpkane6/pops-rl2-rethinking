@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "source_hashes_verified": 811,
+  "pdf_fonts_and_width": [
+    {
+      "file": "RQ1_benign_boundary.pdf",
+      "min_font_pt": 8.5,
+      "width_mm": 122
+    },
+    {
+      "file": "RQ1_volume_matched_discrimination.pdf",
+      "min_font_pt": 8.5,
+      "width_mm": 122
+    },
+    {
+      "file": "RQ2_threshold_calibration.pdf",
+      "min_font_pt": 8.5,
+      "width_mm": 122
+    },
+    {
+      "file": "RQ3_failure_modes.pdf",
+      "min_font_pt": 8.5,
+      "width_mm": 122
+    },
+    {
+      "file": "RQ4_runtime_mechanism.pdf",
+      "min_font_pt": 8.5,
+      "width_mm": 122
+    },
+    {
+      "file": "RQ4_runtime_outcomes.pdf",
+      "min_font_pt": 8.5,
+      "width_mm": 122
+    },
+    {
+      "file": "runtime_benign_cost_factorial.pdf",
+      "min_font_pt": 8.5,
+      "width_mm": 122
+    },
+    {
+      "file": "runtime_benign_cost_original.pdf",
+      "min_font_pt": 8.5,
+      "width_mm": 122
+    },
+    {
+      "file": "runtime_factorial_results.pdf",
+      "min_font_pt": 8.5,
+      "width_mm": 122
+    },
+    {
+      "file": "validation_sensitivity_posthoc.pdf",
+      "min_font_pt": 8.5,
+      "width_mm": 122
+    },
+    {
+      "file": "controlled_ipid_sensitivity\\controlled_ipid_space_boundary.pdf",
+      "min_font_pt": 8.5,
+      "width_mm": 122
+    }
+  ],
+  "latex_tables_compiled": 5,
+  "latex_overfull_boxes": 0,
+  "latex_font_substitutions": 0,
+  "benign_noanswer_numerators_recomputed": true,
+  "benign_trial_count_checked": 16000
+}

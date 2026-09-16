@@ -1,0 +1,9 @@
+metric,E1_status,E2_status,E3_status,scope_note
+benign_trigger_rate / synthetic_FPR,measured,measured,measured,Detector behavior only.
+synthetic_attack_alert / TPR and FNR,not_primary_metric,measured,measured,"Synthetic detector alert, not attack success."
+entropy and unique_ratio,measured,measured,not_primary_reported_metric,E3 reuses features only to evaluate the locked binary rule.
+J and paired Delta_J,not_measured,measured,measured,E2 and E3 must not be pooled.
+balanced precision (50:50),not_measured,measured,measured,"Synthetic balanced class mix, not production prevalence."
+feature-level PR-AUC,not_measured,measured,not_applicable_to_locked_binary_combined_rule,Do not transfer E2 feature PR-AUC to E3 B5.
+ASR / poisoning success,not_measured,not_supported,not_supported,No end-to-end poisoning outcome exists.
+latency / throughput / CPU / memory,not_supported_for_virtual_time,not_measured,not_measured,Requires runtime/E5 evidence.

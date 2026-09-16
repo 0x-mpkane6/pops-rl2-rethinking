@@ -1,0 +1,220 @@
+{
+  "checks": [
+    {
+      "critical": true,
+      "details": {
+        "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/splits_60_20_20/train_exploration.csv.gz"
+      },
+      "name": "train_path_is_the_only_permitted_decision_dataset",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "check_count": 18,
+        "status": "PASS"
+      },
+      "name": "e2_canonical_validation_passes",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "levels": [
+          24,
+          60,
+          120,
+          200
+        ],
+        "queries_per_run": 150,
+        "raw_schema_version": 2,
+        "window_seconds": 2.0
+      },
+      "name": "e2_protocol_semantics",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "expected": "b37b723cf3f12413d4c098e6769a6d13d639c481d419b92c90b90181d75f6550",
+        "observed": "b37b723cf3f12413d4c098e6769a6d13d639c481d419b92c90b90181d75f6550"
+      },
+      "name": "split_manifest_hash_matches_protocol",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "manifest_input_sha256": "c98c4a8a745751ba5390aae39eaec5165a25c4bf3130a4ee57a5222c47687cea",
+        "protocol_input_sha256": "c98c4a8a745751ba5390aae39eaec5165a25c4bf3130a4ee57a5222c47687cea"
+      },
+      "name": "manifest_input_hash_matches_protocol_input_hash",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "expected": "864f10fb238a28240ee5f708122d7ee96f73fb3ec2d5f3009494147d38225ee7",
+        "observed": "864f10fb238a28240ee5f708122d7ee96f73fb3ec2d5f3009494147d38225ee7"
+      },
+      "name": "train_hash_matches_protocol",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "header": [
+          "source_e2_split",
+          "e3_split",
+          "profile",
+          "condition",
+          "role",
+          "level",
+          "pair_id",
+          "schedule_seed",
+          "query_seed",
+          "payload_seed",
+          "arrival_schedule_sha256",
+          "query_schedule_sha256",
+          "query_idx",
+          "query_timestamp_seconds",
+          "window_start_seconds",
+          "frag1_ipid",
+          "samples",
+          "unique_ipids",
+          "entropy",
+          "unique_ratio",
+          "benign_events_in_window",
+          "attack_events_in_window",
+          "block_no_defense",
+          "block_legacy",
+          "block_combined",
+          "block_volume",
+          "block_entropy",
+          "block_unique"
+        ],
+        "missing": []
+      },
+      "name": "train_schema_contains_required_columns",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "expected": 82800,
+        "observed": 82800
+      },
+      "name": "train_decision_count_matches_protocol",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "condition_runs": 552,
+        "invalid_count_runs": 0,
+        "invalid_query_index_runs": 0
+      },
+      "name": "each_condition_run_has_exactly_150_decisions",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "expected": 192,
+        "observed": 192
+      },
+      "name": "paired_trace_count_matches_protocol",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "identities": 192,
+        "violations": 0
+      },
+      "name": "one_schedule_identity_per_source_split_profile_level_pair",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "violation_count": 0,
+        "violations": []
+      },
+      "name": "primary_attack_traces_have_matching_benign_trace",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "examples": [],
+        "mismatch_count": 0
+      },
+      "name": "recomputed_B2_matches_block_volume",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "examples": [],
+        "mismatch_count": 0
+      },
+      "name": "recomputed_old_B5_matches_block_combined",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "candidate_count": 60,
+        "old_B5": [
+          24,
+          4.0,
+          0.7
+        ],
+        "old_B5_in_grid": true,
+        "unique_candidate_count": 60
+      },
+      "name": "registered_grid_has_60_unique_candidates_and_contains_old_B5",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "all_equal_thresholds_blocks": true,
+        "entropy_below_threshold_allows": true,
+        "samples_below_threshold_allows": true,
+        "unique_ratio_below_threshold_allows": true
+      },
+      "name": "new_B5_boundary_semantics_are_inclusive_greater_than_or_equal",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "B2_J": 0.25,
+        "delta_J_new_vs_B2": 0.25,
+        "new_B5_J": 0.5
+      },
+      "name": "paired_trace_J_and_delta_J_unit_test",
+      "status": "PASS"
+    }
+  ],
+  "critical_failures": [],
+  "data_access_policy": {
+    "held_out_test_csv_opened": false,
+    "note": "Only train_exploration.csv.gz is opened. E2 protocol/validation JSON are provenance metadata.",
+    "opened_decision_dataset": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/splits_60_20_20/train_exploration.csv.gz",
+    "validation_csv_opened": false
+  },
+  "experiment": "E3 preflight",
+  "schema_version": 1,
+  "status": "PASS",
+  "summary": {
+    "bootstrap_run": false,
+    "candidate_ranking_run": false,
+    "candidate_selected": false,
+    "train_condition_runs": 552,
+    "train_decisions_read": 82800,
+    "train_paired_traces": 192
+  }
+}

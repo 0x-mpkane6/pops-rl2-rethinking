@@ -1,0 +1,4303 @@
+{
+  "meta": {
+    "experiment": "E1 -- FPR vs benign fragment rate (operating boundary)",
+    "run_id": "E1-confirmatory-20260810-s20260810-raw-v2",
+    "started_utc": "2026-08-10T10:43:11Z",
+    "code_git_commit": "fbb26e8",
+    "git": {
+      "commit_full": "fbb26e8b1300a6537adc4cf80f13facbae66b890",
+      "commit_short": "fbb26e8",
+      "branch": "main",
+      "dirty": true
+    },
+    "source_manifest": {
+      "e1_experiment.py": {
+        "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\e1_experiment.py",
+        "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\e1_experiment.py",
+        "sha256": "5103d7ef9f8c795ef44d473bf035d978f5217d7d090a380782c5d492fa8eae09"
+      },
+      "e1_plot.py": {
+        "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\e1_plot.py",
+        "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\e1_plot.py",
+        "sha256": "1268c09476bab18b894338bdc1142589fb69682efc7bb460de3e7449ee853267"
+      },
+      "e1_validate.py": {
+        "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\e1_validate.py",
+        "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\e1_validate.py",
+        "sha256": "828614468f4e825ca403558a52c7cb5f1471faae4a23fd761e0530f3b9bc34dc"
+      },
+      "e1_report.py": {
+        "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\e1_report.py",
+        "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\e1_report.py",
+        "sha256": "8ca715a27f3d56d9906c650ae2ee0549de158821274dcde5cf2411134401e027"
+      },
+      "resolver.py": {
+        "source": "D:\\ATM\\Project\\Code\\labs\\r2entropy\\resolver\\resolver.py",
+        "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\resolver.py",
+        "sha256": "2501bc33e1eaccdfa12dc88f379187f393626326bd52097ba12a3ffee196c931"
+      },
+      "auth_server.py": {
+        "source": "D:\\ATM\\Project\\Code\\labs\\r2entropy\\auth\\auth_server.py",
+        "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\auth_server.py",
+        "sha256": "f884f51c2478b12a0d418d48b7cf5a8bb09083877bb80fe10607b2cedacb086f"
+      }
+    },
+    "command": [
+      "C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+      "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\e1_experiment.py",
+      "--runs",
+      "20",
+      "--decisions",
+      "300",
+      "--experiment-seed",
+      "20260810",
+      "--run-id",
+      "E1-confirmatory-20260810-s20260810-raw-v2",
+      "--out",
+      "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2"
+    ],
+    "dependencies": {
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "matplotlib": "3.10.9"
+    },
+    "hardware": {
+      "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+      "logical_cpus": 12,
+      "memory_bytes": 16991338496
+    },
+    "python": "3.10.11",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "detector_source": "D:/ATM/Project/Code/labs/r2entropy/resolver/resolver.py",
+    "fidelity_note": "Imports the real shannon_entropy + r2_should_block from resolver.py; sliding window mirrors R2EntropyTable._prune; IPID model from auth_server.py. Controlled-emulation testbed (no Docker / real IP fragmentation).",
+    "operating_point": {
+      "min_samples": 24,
+      "entropy_threshold": 4.0,
+      "unique_ratio_threshold": 0.7,
+      "window_seconds": 2.0
+    },
+    "detectors": {
+      "legacy": "R\u21132 g\u1ed1c (paper POPS, Algorithm 3): ch\u1eb7n m\u1ecdi fragment",
+      "combined": "R\u21132 c\u1ea3i ti\u1ebfn c\u1ee7a nh\u00f3m: samples>=24 AND entropy>=4.0 AND unique_ratio>=0.70"
+    },
+    "levels_samples_per_window": [
+      5,
+      12,
+      18,
+      24,
+      36,
+      60,
+      120,
+      300
+    ],
+    "behaviors": {
+      "random2048": "Random IPID (uniform 0..2047) -- auth_server model",
+      "sequential": "Sequential IPID (global +1 counter)",
+      "smallpool16": "Small IPID pool (uniform 0..15) -- NAT / constrained host"
+    },
+    "variants": [
+      "legacy",
+      "combined",
+      "volume",
+      "entropy",
+      "unique"
+    ],
+    "primary_variant": "combined",
+    "runs_per_cell": 20,
+    "decisions_per_run": 300,
+    "experiment_seed": 20260810,
+    "fpr_definition": "false positives = benign tc_block; FPR = blocks / decisions",
+    "independent_unit": "run",
+    "primary_ci": "cluster bootstrap over runs",
+    "system_metrics_scope": "Detector latency/throughput/CPU/memory are not estimable from this virtual-time simulation; Docker low-load fidelity is reported separately.",
+    "event_level_raw": {
+      "retained": true,
+      "layout": "one JSONL file per independent run under raw_decisions/{phase}/{behavior}/level_{level}/",
+      "schema_version": 1,
+      "unit": "one scored post-warmup decision",
+      "fields": [
+        "phase",
+        "level_samples_per_window",
+        "behavior",
+        "run_idx",
+        "seed",
+        "decision_idx",
+        "virtual_timestamp_seconds",
+        "measurement_elapsed_seconds",
+        "current_ipid",
+        "samples",
+        "unique_ipids",
+        "entropy",
+        "unique_ratio",
+        "block_legacy",
+        "block_combined",
+        "block_volume",
+        "block_entropy",
+        "block_unique"
+      ],
+      "raw_scope": "one record for every scored decision after warmup; overlapping window contents are represented by samples/unique/entropy, not duplicated IPID arrays",
+      "full_window_ipids_retained": false,
+      "warmup_arrival_trace_retained": false,
+      "expected_main_records": 144000,
+      "expected_high_load_records": 48000
+    },
+    "completed_utc": "2026-08-10T10:43:55Z",
+    "elapsed_seconds": 42.962461948394775
+  },
+  "levels": [
+    {
+      "behavior": "random2048",
+      "level": 5,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 4.967999999999999,
+      "offered_fragments_per_second": 2.0,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "volume": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "entropy": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "unique": {
+          "blocks_total": 5997,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.9995,
+          "fpr_run_mean": 0.9994999999999999,
+          "fpr_run_ci95_t": [
+            0.9987365741437343,
+            1.0002634258562655
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.9986666666666667,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9985394899418338,
+            0.9998968761078472
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        4.837568907222661,
+        5.0984310927773375
+      ],
+      "actual_queries_per_second_mean": 2.0076208522880807,
+      "actual_queries_per_second_ci95": [
+        1.9547541823390593,
+        2.060487522237102
+      ],
+      "actual_fragments_per_second_mean": 2.0076208522880807,
+      "actual_fragments_per_second_ci95": [
+        1.9547541823390593,
+        2.060487522237102
+      ],
+      "entropy_mean": 2.1825719279643705,
+      "entropy_ci95": [
+        2.145253486458876,
+        2.219890369469865
+      ],
+      "unique_ratio_mean": 0.9988917267917268,
+      "unique_ratio_ci95": [
+        0.9977936483823313,
+        0.9999898052011222
+      ]
+    },
+    {
+      "behavior": "random2048",
+      "level": 12,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 11.708833333333335,
+      "offered_fragments_per_second": 5.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 4,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0006666666666666666,
+          "fpr_run_mean": 0.0006666666666666668,
+          "fpr_run_ci95_t": [
+            -0.00041889645248230985,
+            0.0017522297858156434
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0018333333333333333
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0001816731506285568,
+            0.0017060437912235558
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 2,
+          "run_any_fp_probability": 0.1,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.012348527170294808,
+            0.31698271401908235
+          ]
+        },
+        "volume": {
+          "blocks_total": 4,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0006666666666666666,
+          "fpr_run_mean": 0.0006666666666666668,
+          "fpr_run_ci95_t": [
+            -0.00041889645248230985,
+            0.0017522297858156434
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0018333333333333333
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0001816731506285568,
+            0.0017060437912235558
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 2,
+          "run_any_fp_probability": 0.1,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.012348527170294808,
+            0.31698271401908235
+          ]
+        },
+        "entropy": {
+          "blocks_total": 762,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.127,
+          "fpr_run_mean": 0.12699999999999997,
+          "fpr_run_ci95_t": [
+            0.10678643602249974,
+            0.1472135639775002
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.10966666666666666,
+            0.146
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.1186742738706671,
+            0.13569019526236897
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        11.43547102806927,
+        11.9821956385974
+      ],
+      "actual_queries_per_second_mean": 5.375976143532226,
+      "actual_queries_per_second_ci95": [
+        5.229670932950327,
+        5.522281354114124
+      ],
+      "actual_fragments_per_second_mean": 5.375976143532226,
+      "actual_fragments_per_second_ci95": [
+        5.229670932950327,
+        5.522281354114124
+      ],
+      "entropy_mean": 3.4837789333581575,
+      "entropy_ci95": [
+        3.44782410041313,
+        3.519733766303185
+      ],
+      "unique_ratio_mean": 0.9980796356020427,
+      "unique_ratio_ci95": [
+        0.9969358892207544,
+        0.999223381983331
+      ]
+    },
+    {
+      "behavior": "random2048",
+      "level": 18,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 18.151333333333334,
+      "offered_fragments_per_second": 8.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 600,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.1,
+          "fpr_run_mean": 0.1,
+          "fpr_run_ci95_t": [
+            0.07067406720432105,
+            0.12932593279567894
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.07383333333333333,
+            0.128
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.09252157184088182,
+            0.107869829635526
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 600,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.1,
+          "fpr_run_mean": 0.1,
+          "fpr_run_ci95_t": [
+            0.07067406720432105,
+            0.12932593279567894
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.07383333333333333,
+            0.128
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.09252157184088182,
+            0.107869829635526
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 4361,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.7268333333333333,
+          "fpr_run_mean": 0.7268333333333334,
+          "fpr_run_ci95_t": [
+            0.68476079747312,
+            0.7689058691935469
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.6888291666666666,
+            0.7660041666666666
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.71536686764619,
+            0.738078872180898
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        17.678030573849107,
+        18.62463609281756
+      ],
+      "actual_queries_per_second_mean": 8.592480628785015,
+      "actual_queries_per_second_ci95": [
+        8.34345177896137,
+        8.84150947860866
+      ],
+      "actual_fragments_per_second_mean": 8.592480628785015,
+      "actual_fragments_per_second_ci95": [
+        8.34345177896137,
+        8.84150947860866
+      ],
+      "entropy_mean": 4.136143651488367,
+      "entropy_ci95": [
+        4.096346876000915,
+        4.175940426975819
+      ],
+      "unique_ratio_mean": 0.9961755775711856,
+      "unique_ratio_ci95": [
+        0.9946521275958004,
+        0.9976990275465708
+      ]
+    },
+    {
+      "behavior": "random2048",
+      "level": 24,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 23.837666666666667,
+      "offered_fragments_per_second": 11.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 3189,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.5315,
+          "fpr_run_mean": 0.5315000000000001,
+          "fpr_run_ci95_t": [
+            0.4794395134453321,
+            0.5835604865546681
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.4876666666666667,
+            0.5805041666666666
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.5187775428813945,
+            0.5441918089954736
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 3189,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.5315,
+          "fpr_run_mean": 0.5315000000000001,
+          "fpr_run_ci95_t": [
+            0.4794395134453321,
+            0.5835604865546681
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.4876666666666667,
+            0.5805041666666666
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.5187775428813945,
+            0.5441918089954736
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 5745,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.9575,
+          "fpr_run_mean": 0.9575000000000001,
+          "fpr_run_ci95_t": [
+            0.9414632638520154,
+            0.9735367361479849
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.9425,
+            0.9716666666666667
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9520852240974945,
+            0.9624640294081607
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        23.194260977882173,
+        24.48107235545116
+      ],
+      "actual_queries_per_second_mean": 11.519493283323776,
+      "actual_queries_per_second_ci95": [
+        11.205431330627503,
+        11.833555236020048
+      ],
+      "actual_fragments_per_second_mean": 11.519493283323776,
+      "actual_fragments_per_second_ci95": [
+        11.205431330627503,
+        11.833555236020048
+      ],
+      "entropy_mean": 4.532878403077456,
+      "entropy_ci95": [
+        4.4923074676663255,
+        4.573449338488587
+      ],
+      "unique_ratio_mean": 0.9936529088227882,
+      "unique_ratio_ci95": [
+        0.991944461298332,
+        0.9953613563472444
+      ]
+    },
+    {
+      "behavior": "random2048",
+      "level": 36,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 36.08683333333333,
+      "offered_fragments_per_second": 17.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 5864,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.9773333333333334,
+          "fpr_run_mean": 0.9773333333333332,
+          "fpr_run_ci95_t": [
+            0.9607258680938056,
+            0.9939407985728608
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.9604958333333333,
+            0.991
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9732436776657416,
+            0.9809492411913344
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 5864,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.9773333333333334,
+          "fpr_run_mean": 0.9773333333333332,
+          "fpr_run_ci95_t": [
+            0.9607258680938056,
+            0.9939407985728608
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.9604958333333333,
+            0.991
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9732436776657416,
+            0.9809492411913344
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        35.050021285132246,
+        37.123645381534416
+      ],
+      "actual_queries_per_second_mean": 17.667581659158653,
+      "actual_queries_per_second_ci95": [
+        17.10438507452662,
+        18.230778243790688
+      ],
+      "actual_fragments_per_second_mean": 17.667581659158653,
+      "actual_fragments_per_second_ci95": [
+        17.10438507452662,
+        18.230778243790688
+      ],
+      "entropy_mean": 5.133893412605522,
+      "entropy_ci95": [
+        5.092754765809812,
+        5.175032059401231
+      ],
+      "unique_ratio_mean": 0.991348249775057,
+      "unique_ratio_ci95": [
+        0.9894787274853419,
+        0.993217772064772
+      ]
+    },
+    {
+      "behavior": "random2048",
+      "level": 60,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 58.61083333333333,
+      "offered_fragments_per_second": 29.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        56.76768903042046,
+        60.4539776362462
+      ],
+      "actual_queries_per_second_mean": 28.89151442889534,
+      "actual_queries_per_second_ci95": [
+        27.853488442707373,
+        29.92954041508331
+      ],
+      "actual_fragments_per_second_mean": 28.89151442889534,
+      "actual_fragments_per_second_ci95": [
+        27.853488442707373,
+        29.92954041508331
+      ],
+      "entropy_mean": 5.834139669914203,
+      "entropy_ci95": [
+        5.786545668172699,
+        5.881733671655707
+      ],
+      "unique_ratio_mean": 0.9866149094297174,
+      "unique_ratio_ci95": [
+        0.9847698558760398,
+        0.988459962983395
+      ]
+    },
+    {
+      "behavior": "random2048",
+      "level": 120,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 117.75283333333334,
+      "offered_fragments_per_second": 59.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        114.18865596947606,
+        121.31701069719063
+      ],
+      "actual_queries_per_second_mean": 58.88983381168477,
+      "actual_queries_per_second_ci95": [
+        56.87759385834109,
+        60.90207376502844
+      ],
+      "actual_fragments_per_second_mean": 58.88983381168477,
+      "actual_fragments_per_second_ci95": [
+        56.87759385834109,
+        60.90207376502844
+      ],
+      "entropy_mean": 6.825391450697905,
+      "entropy_ci95": [
+        6.782873117498683,
+        6.867909783897128
+      ],
+      "unique_ratio_mean": 0.9761914770327673,
+      "unique_ratio_ci95": [
+        0.9734851435041321,
+        0.9788978105614026
+      ]
+    },
+    {
+      "behavior": "random2048",
+      "level": 300,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 297.28100000000006,
+      "offered_fragments_per_second": 149.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        290.18505561931715,
+        304.37694438068297
+      ],
+      "actual_queries_per_second_mean": 147.05988507018225,
+      "actual_queries_per_second_ci95": [
+        143.65805070285575,
+        150.46171943750875
+      ],
+      "actual_fragments_per_second_mean": 147.05988507018225,
+      "actual_fragments_per_second_ci95": [
+        143.65805070285575,
+        150.46171943750875
+      ],
+      "entropy_mean": 8.068453203951966,
+      "entropy_ci95": [
+        8.034985857954934,
+        8.101920549948998
+      ],
+      "unique_ratio_mean": 0.9290702267250088,
+      "unique_ratio_ci95": [
+        0.9252115724045682,
+        0.9329288810454495
+      ]
+    },
+    {
+      "behavior": "sequential",
+      "level": 5,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 4.934666666666667,
+      "offered_fragments_per_second": 2.0,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "volume": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "entropy": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        4.839276663919523,
+        5.030056669413811
+      ],
+      "actual_queries_per_second_mean": 1.989913165673099,
+      "actual_queries_per_second_ci95": [
+        1.9406402326969479,
+        2.0391860986492505
+      ],
+      "actual_fragments_per_second_mean": 1.989913165673099,
+      "actual_fragments_per_second_ci95": [
+        1.9406402326969479,
+        2.0391860986492505
+      ],
+      "entropy_mean": 2.175320629271973,
+      "entropy_ci95": [
+        2.1471677900414408,
+        2.203473468502505
+      ],
+      "unique_ratio_mean": 1.0,
+      "unique_ratio_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "behavior": "sequential",
+      "level": 12,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 11.954166666666667,
+      "offered_fragments_per_second": 5.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 7,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0011666666666666668,
+          "fpr_run_mean": 0.0011666666666666668,
+          "fpr_run_ci95_t": [
+            -0.0006774713856192805,
+            0.003010804718952614
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0031666666666666666
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0004691850896796749,
+            0.0024022925725249128
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 2,
+          "run_any_fp_probability": 0.1,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.012348527170294808,
+            0.31698271401908235
+          ]
+        },
+        "volume": {
+          "blocks_total": 7,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0011666666666666668,
+          "fpr_run_mean": 0.0011666666666666668,
+          "fpr_run_ci95_t": [
+            -0.0006774713856192805,
+            0.003010804718952614
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0031666666666666666
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0004691850896796749,
+            0.0024022925725249128
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 2,
+          "run_any_fp_probability": 0.1,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.012348527170294808,
+            0.31698271401908235
+          ]
+        },
+        "entropy": {
+          "blocks_total": 862,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.14366666666666666,
+          "fpr_run_mean": 0.14366666666666664,
+          "fpr_run_ci95_t": [
+            0.11626034560581519,
+            0.17107298772751808
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.1201625,
+            0.1715
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.1348830797697345,
+            0.15279821109311814
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        11.674333664345847,
+        12.233999668987488
+      ],
+      "actual_queries_per_second_mean": 5.51176769798874,
+      "actual_queries_per_second_ci95": [
+        5.385329893241933,
+        5.638205502735546
+      ],
+      "actual_fragments_per_second_mean": 5.51176769798874,
+      "actual_fragments_per_second_ci95": [
+        5.385329893241933,
+        5.638205502735546
+      ],
+      "entropy_mean": 3.5196440898466563,
+      "entropy_ci95": [
+        3.485394088933171,
+        3.5538940907601417
+      ],
+      "unique_ratio_mean": 1.0,
+      "unique_ratio_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "behavior": "sequential",
+      "level": 18,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 18.052666666666667,
+      "offered_fragments_per_second": 8.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 647,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.10783333333333334,
+          "fpr_run_mean": 0.10783333333333331,
+          "fpr_run_ci95_t": [
+            0.07251071355091082,
+            0.1431559531157558
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.07633333333333334,
+            0.14033749999999995
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.1000938111956716,
+            0.11595641358864607
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 647,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.10783333333333334,
+          "fpr_run_mean": 0.10783333333333331,
+          "fpr_run_ci95_t": [
+            0.07251071355091082,
+            0.1431559531157558
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.07633333333333334,
+            0.14033749999999995
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.1000938111956716,
+            0.11595641358864607
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 4233,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.7055,
+          "fpr_run_mean": 0.7055,
+          "fpr_run_ci95_t": [
+            0.6711443450701761,
+            0.739855654929824
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.6746666666666666,
+            0.7370041666666666
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.6937851603375027,
+            0.717014733939404
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        17.579462103596597,
+        18.525871229736737
+      ],
+      "actual_queries_per_second_mean": 8.546150003895939,
+      "actual_queries_per_second_ci95": [
+        8.319392909452915,
+        8.772907098338962
+      ],
+      "actual_fragments_per_second_mean": 8.546150003895939,
+      "actual_fragments_per_second_ci95": [
+        8.319392909452915,
+        8.772907098338962
+      ],
+      "entropy_mean": 4.133294087573189,
+      "entropy_ci95": [
+        4.097029977083257,
+        4.169558198063121
+      ],
+      "unique_ratio_mean": 1.0,
+      "unique_ratio_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "behavior": "sequential",
+      "level": 24,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 23.706166666666668,
+      "offered_fragments_per_second": 11.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 3004,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.5006666666666667,
+          "fpr_run_mean": 0.5006666666666667,
+          "fpr_run_ci95_t": [
+            0.4548091311590242,
+            0.5465242021743092
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.457325,
+            0.5408333333333334
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.48793409915738595,
+            0.5133985855495197
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 3004,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.5006666666666667,
+          "fpr_run_mean": 0.5006666666666667,
+          "fpr_run_ci95_t": [
+            0.4548091311590242,
+            0.5465242021743092
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.457325,
+            0.5408333333333334
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.48793409915738595,
+            0.5133985855495197
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 5771,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.9618333333333333,
+          "fpr_run_mean": 0.9618333333333334,
+          "fpr_run_ci95_t": [
+            0.9479675541669121,
+            0.9756991124997547
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.9491666666666667,
+            0.9735
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9566721949672218,
+            0.9665389559962225
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        23.128304983595633,
+        24.284028349737703
+      ],
+      "actual_queries_per_second_mean": 11.324369409698507,
+      "actual_queries_per_second_ci95": [
+        11.038043150509282,
+        11.610695668887733
+      ],
+      "actual_fragments_per_second_mean": 11.324369409698507,
+      "actual_fragments_per_second_ci95": [
+        11.038043150509282,
+        11.610695668887733
+      ],
+      "entropy_mean": 4.535138550392483,
+      "entropy_ci95": [
+        4.500156552624356,
+        4.5701205481606095
+      ],
+      "unique_ratio_mean": 1.0,
+      "unique_ratio_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "behavior": "sequential",
+      "level": 36,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 35.47716666666667,
+      "offered_fragments_per_second": 17.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 5854,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.9756666666666667,
+          "fpr_run_mean": 0.9756666666666668,
+          "fpr_run_ci95_t": [
+            0.9629514063898099,
+            0.9883819269435237
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.9638333333333333,
+            0.987
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9714455842128249,
+            0.979416101485871
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 5854,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.9756666666666667,
+          "fpr_run_mean": 0.9756666666666668,
+          "fpr_run_ci95_t": [
+            0.9629514063898099,
+            0.9883819269435237
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.9638333333333333,
+            0.987
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9714455842128249,
+            0.979416101485871
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        34.6706439510418,
+        36.28368938229154
+      ],
+      "actual_queries_per_second_mean": 17.304950641709713,
+      "actual_queries_per_second_ci95": [
+        16.88032852271161,
+        17.729572760707814
+      ],
+      "actual_fragments_per_second_mean": 17.304950641709713,
+      "actual_fragments_per_second_ci95": [
+        16.88032852271161,
+        17.729572760707814
+      ],
+      "entropy_mean": 5.126463746022972,
+      "entropy_ci95": [
+        5.092316334887673,
+        5.16061115715827
+      ],
+      "unique_ratio_mean": 1.0,
+      "unique_ratio_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "behavior": "sequential",
+      "level": 60,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 60.233999999999995,
+      "offered_fragments_per_second": 29.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        58.920312061306355,
+        61.547687938693635
+      ],
+      "actual_queries_per_second_mean": 29.925723093237416,
+      "actual_queries_per_second_ci95": [
+        29.262809961649825,
+        30.588636224825006
+      ],
+      "actual_fragments_per_second_mean": 29.925723093237416,
+      "actual_fragments_per_second_ci95": [
+        29.262809961649825,
+        30.588636224825006
+      ],
+      "entropy_mean": 5.901369938885383,
+      "entropy_ci95": [
+        5.868828686712373,
+        5.933911191058392
+      ],
+      "unique_ratio_mean": 1.0,
+      "unique_ratio_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "behavior": "sequential",
+      "level": 120,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 122.14366666666668,
+      "offered_fragments_per_second": 59.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        118.51382948312444,
+        125.77350385020891
+      ],
+      "actual_queries_per_second_mean": 60.70343180357312,
+      "actual_queries_per_second_ci95": [
+        58.80902338121423,
+        62.597840225932
+      ],
+      "actual_fragments_per_second_mean": 60.70343180357312,
+      "actual_fragments_per_second_ci95": [
+        58.80902338121423,
+        62.597840225932
+      ],
+      "entropy_mean": 6.9258280364676725,
+      "entropy_ci95": [
+        6.883014491439603,
+        6.968641581495742
+      ],
+      "unique_ratio_mean": 1.0,
+      "unique_ratio_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "behavior": "sequential",
+      "level": 300,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 294.97866666666664,
+      "offered_fragments_per_second": 149.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "volume": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "unique": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        288.154740899138,
+        301.8025924341953
+      ],
+      "actual_queries_per_second_mean": 147.56153776866145,
+      "actual_queries_per_second_ci95": [
+        142.6555414748545,
+        152.46753406246842
+      ],
+      "actual_fragments_per_second_mean": 147.56153776866145,
+      "actual_fragments_per_second_ci95": [
+        142.6555414748545,
+        152.46753406246842
+      ],
+      "entropy_mean": 8.201927665905444,
+      "entropy_ci95": [
+        8.168089256277563,
+        8.235766075533325
+      ],
+      "unique_ratio_mean": 1.0,
+      "unique_ratio_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "behavior": "smallpool16",
+      "level": 5,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 4.982666666666667,
+      "offered_fragments_per_second": 2.0,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "volume": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "entropy": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "unique": {
+          "blocks_total": 5385,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.8975,
+          "fpr_run_mean": 0.8975000000000002,
+          "fpr_run_ci95_t": [
+            0.8850620247119367,
+            0.9099379752880636
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.8858333333333334,
+            0.909
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.8895478549894812,
+            0.9050632498787694
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        4.8594601909004425,
+        5.105873142432891
+      ],
+      "actual_queries_per_second_mean": 1.9986073461125664,
+      "actual_queries_per_second_ci95": [
+        1.942219862052007,
+        2.0549948301731256
+      ],
+      "actual_fragments_per_second_mean": 1.9986073461125664,
+      "actual_fragments_per_second_ci95": [
+        1.942219862052007,
+        2.0549948301731256
+      ],
+      "entropy_mean": 1.9534254716735344,
+      "entropy_ci95": [
+        1.9242508367530504,
+        1.9826001065940184
+      ],
+      "unique_ratio_mean": 0.8867824037074037,
+      "unique_ratio_ci95": [
+        0.8803544688428574,
+        0.89321033857195
+      ]
+    },
+    {
+      "behavior": "smallpool16",
+      "level": 12,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 11.800333333333334,
+      "offered_fragments_per_second": 5.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "volume": {
+          "blocks_total": 3,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0005,
+          "fpr_run_mean": 0.0005,
+          "fpr_run_ci95_t": [
+            -0.0002634258562656082,
+            0.0012634258562656082
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0013333333333333333
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.00010312389215285483,
+            0.0014605100581662194
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 2,
+          "run_any_fp_probability": 0.1,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.012348527170294808,
+            0.31698271401908235
+          ]
+        },
+        "entropy": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "unique": {
+          "blocks_total": 3471,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.5785,
+          "fpr_run_mean": 0.5784999999999999,
+          "fpr_run_ci95_t": [
+            0.5407132802100592,
+            0.6162867197899407
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.5446624999999999,
+            0.6136666666666667
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.5658863842092214,
+            0.5910372317808873
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        11.501688548140374,
+        12.098978118526295
+      ],
+      "actual_queries_per_second_mean": 5.439192608794443,
+      "actual_queries_per_second_ci95": [
+        5.29369770158235,
+        5.584687516006535
+      ],
+      "actual_fragments_per_second_mean": 5.439192608794443,
+      "actual_fragments_per_second_ci95": [
+        5.29369770158235,
+        5.584687516006535
+      ],
+      "entropy_mean": 2.9071304490356376,
+      "entropy_ci95": [
+        2.8753645426814107,
+        2.9388963553898644
+      ],
+      "unique_ratio_mean": 0.7249703464229381,
+      "unique_ratio_ci95": [
+        0.7153652795242064,
+        0.7345754133216699
+      ]
+    },
+    {
+      "behavior": "smallpool16",
+      "level": 18,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 18.05983333333333,
+      "offered_fragments_per_second": 8.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "volume": {
+          "blocks_total": 614,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.10233333333333333,
+          "fpr_run_mean": 0.10233333333333335,
+          "fpr_run_ci95_t": [
+            0.07612540631491124,
+            0.12854126035175545
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0791625,
+            0.12633333333333333
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.09477569363304916,
+            0.11028003515923725
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 19,
+          "run_any_fp_probability": 0.95,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.7512672372279723,
+            0.9987349105020502
+          ]
+        },
+        "entropy": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "unique": {
+          "blocks_total": 1109,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.18483333333333332,
+          "fpr_run_mean": 0.18483333333333335,
+          "fpr_run_ci95_t": [
+            0.16465417652666775,
+            0.20501249013999895
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.1671625,
+            0.2035
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.17508333882673183,
+            0.19489072502006688
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        17.58463314888287,
+        18.53503351778379
+      ],
+      "actual_queries_per_second_mean": 8.590719471100853,
+      "actual_queries_per_second_ci95": [
+        8.359180349649673,
+        8.822258592552032
+      ],
+      "actual_fragments_per_second_mean": 8.590719471100853,
+      "actual_fragments_per_second_ci95": [
+        8.359180349649673,
+        8.822258592552032
+      ],
+      "entropy_mean": 3.254823002355841,
+      "entropy_ci95": [
+        3.2309472572117643,
+        3.2786987474999174
+      ],
+      "unique_ratio_mean": 0.6133786851652647,
+      "unique_ratio_ci95": [
+        0.6051974701028972,
+        0.6215599002276323
+      ]
+    },
+    {
+      "behavior": "smallpool16",
+      "level": 24,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 23.71516666666667,
+      "offered_fragments_per_second": 11.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "volume": {
+          "blocks_total": 3002,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.5003333333333333,
+          "fpr_run_mean": 0.5003333333333334,
+          "fpr_run_ci95_t": [
+            0.4492855127330696,
+            0.5513811539335972
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.4564958333333334,
+            0.5501708333333333
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.48760091954984003,
+            0.5130654228036157
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "unique": {
+          "blocks_total": 278,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.04633333333333333,
+          "fpr_run_mean": 0.04633333333333333,
+          "fpr_run_ci95_t": [
+            0.0323075056769393,
+            0.060359160989727365
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.033666666666666664,
+            0.059166666666666666
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.04115288510163297,
+            0.051960376265652884
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        }
+      },
+      "samples_ci95": [
+        23.13054904924067,
+        24.299784284092667
+      ],
+      "actual_queries_per_second_mean": 11.444060889348643,
+      "actual_queries_per_second_ci95": [
+        11.159702420706632,
+        11.728419357990655
+      ],
+      "actual_fragments_per_second_mean": 11.444060889348643,
+      "actual_fragments_per_second_ci95": [
+        11.159702420706632,
+        11.728419357990655
+      ],
+      "entropy_mean": 3.45507665136898,
+      "entropy_ci95": [
+        3.4339602804684,
+        3.4761930222695603
+      ],
+      "unique_ratio_mean": 0.5394070498030803,
+      "unique_ratio_ci95": [
+        0.5297327668240787,
+        0.5490813327820819
+      ]
+    },
+    {
+      "behavior": "smallpool16",
+      "level": 36,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 36.46150000000001,
+      "offered_fragments_per_second": 17.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "volume": {
+          "blocks_total": 5922,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.987,
+          "fpr_run_mean": 0.9869999999999999,
+          "fpr_run_ci95_t": [
+            0.9767901347735588,
+            0.997209865226441
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.977,
+            0.9955
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9838016248230402,
+            0.989710844176584
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "unique": {
+          "blocks_total": 6,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.001,
+          "fpr_run_mean": 0.001,
+          "fpr_run_ci95_t": [
+            -0.0010930240544082632,
+            0.0030930240544082633
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.003
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.00036706798226817446,
+            0.002175298757400592
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 1,
+          "run_any_fp_probability": 0.05,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0012650894979498038,
+            0.24873276277202766
+          ]
+        }
+      },
+      "samples_ci95": [
+        35.62206605635032,
+        37.300933943649696
+      ],
+      "actual_queries_per_second_mean": 17.88573633172953,
+      "actual_queries_per_second_ci95": [
+        17.41803197740628,
+        18.353440686052778
+      ],
+      "actual_fragments_per_second_mean": 17.88573633172953,
+      "actual_fragments_per_second_ci95": [
+        17.41803197740628,
+        18.353440686052778
+      ],
+      "entropy_mean": 3.6508471866737735,
+      "entropy_ci95": [
+        3.631403882046531,
+        3.670290491301016
+      ],
+      "unique_ratio_mean": 0.4016720565232691,
+      "unique_ratio_ci95": [
+        0.3926224373797497,
+        0.41072167566678847
+      ]
+    },
+    {
+      "behavior": "smallpool16",
+      "level": 60,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 59.88283333333334,
+      "offered_fragments_per_second": 29.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "volume": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "unique": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        }
+      },
+      "samples_ci95": [
+        58.490430594333034,
+        61.27523607233364
+      ],
+      "actual_queries_per_second_mean": 29.452873684279005,
+      "actual_queries_per_second_ci95": [
+        28.702495331047686,
+        30.203252037510325
+      ],
+      "actual_fragments_per_second_mean": 29.452873684279005,
+      "actual_fragments_per_second_ci95": [
+        28.702495331047686,
+        30.203252037510325
+      ],
+      "entropy_mean": 3.800431773088394,
+      "entropy_ci95": [
+        3.7863753883347275,
+        3.81448815784206
+      ],
+      "unique_ratio_mean": 0.2644263711131662,
+      "unique_ratio_ci95": [
+        0.2589676623750551,
+        0.2698850798512773
+      ]
+    },
+    {
+      "behavior": "smallpool16",
+      "level": 120,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 119.61216666666667,
+      "offered_fragments_per_second": 59.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "volume": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "unique": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        }
+      },
+      "samples_ci95": [
+        116.58810295464491,
+        122.63623037868842
+      ],
+      "actual_queries_per_second_mean": 59.13961380092026,
+      "actual_queries_per_second_ci95": [
+        57.75495961010402,
+        60.5242679917365
+      ],
+      "actual_fragments_per_second_mean": 59.13961380092026,
+      "actual_fragments_per_second_ci95": [
+        57.75495961010402,
+        60.5242679917365
+      ],
+      "entropy_mean": 3.9005715562638557,
+      "entropy_ci95": [
+        3.890688780751352,
+        3.9104543317763594
+      ],
+      "unique_ratio_mean": 0.13463375834767605,
+      "unique_ratio_ci95": [
+        0.13127446058607378,
+        0.1379930561092783
+      ]
+    },
+    {
+      "behavior": "smallpool16",
+      "level": 300,
+      "n_runs": 20,
+      "total_decisions": 6000,
+      "samples_mean": 299.61516666666665,
+      "offered_fragments_per_second": 149.5,
+      "variants": {
+        "legacy": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "combined": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "volume": {
+          "blocks_total": 6000,
+          "decisions_total": 6000,
+          "fpr_pooled": 1.0,
+          "fpr_run_mean": 1.0,
+          "fpr_run_ci95_t": [
+            1.0,
+            1.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.9993853757165824,
+            1.0
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 20,
+          "run_any_fp_probability": 1.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.8315665290169146,
+            1.0
+          ]
+        },
+        "entropy": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        },
+        "unique": {
+          "blocks_total": 0,
+          "decisions_total": 6000,
+          "fpr_pooled": 0.0,
+          "fpr_run_mean": 0.0,
+          "fpr_run_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "fpr_cluster_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "event_level_clopper_pearson_ci95_descriptive": [
+            0.0,
+            0.000614624283417639
+          ],
+          "event_level_cp_warning": "decision windows overlap; this interval assumes iid events and is not inferential",
+          "runs_with_any_fp": 0,
+          "run_any_fp_probability": 0.0,
+          "run_any_fp_clopper_pearson_ci95": [
+            0.0,
+            0.1684334709830853
+          ]
+        }
+      },
+      "samples_ci95": [
+        293.5631560982601,
+        305.6671772350732
+      ],
+      "actual_queries_per_second_mean": 148.65957252034957,
+      "actual_queries_per_second_ci95": [
+        144.216236682783,
+        153.10290835791614
+      ],
+      "actual_fragments_per_second_mean": 148.65957252034957,
+      "actual_fragments_per_second_ci95": [
+        144.216236682783,
+        153.10290835791614
+      ],
+      "entropy_mean": 3.963263765229393,
+      "entropy_ci95": [
+        3.958645404844883,
+        3.967882125613903
+      ],
+      "unique_ratio_mean": 0.05355221200048823,
+      "unique_ratio_ci95": [
+        0.05239874772532796,
+        0.0547056762756485
+      ]
+    }
+  ],
+  "high_load": [
+    {
+      "level": 600,
+      "samples_mean": 589.9511666666667,
+      "actual_fragments_per_second_mean": 293.00249796387135,
+      "entropy_mean": 8.938441031004455,
+      "unique_ratio_mean": 0.871670390138115,
+      "legacy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "combined": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "volume": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "entropy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "unique": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "level": 1200,
+      "samples_mean": 1179.8664999999999,
+      "actual_fragments_per_second_mean": 589.8578044814603,
+      "entropy_mean": 9.68969654014852,
+      "unique_ratio_mean": 0.7595019774232546,
+      "legacy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "combined": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "volume": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "entropy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "unique": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "level": 1400,
+      "samples_mean": 1391.8425000000002,
+      "actual_fragments_per_second_mean": 711.704474162171,
+      "entropy_mean": 9.84465119853486,
+      "unique_ratio_mean": 0.724330920794447,
+      "legacy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "combined": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "volume": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "entropy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "unique": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "level": 1600,
+      "samples_mean": 1596.8470000000002,
+      "actual_fragments_per_second_mean": 799.5364933471385,
+      "entropy_mean": 9.966403206317775,
+      "unique_ratio_mean": 0.6922659826975702,
+      "legacy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "combined": {
+        "fpr_run_mean": 0.2515,
+        "ci95": [
+          0.06751562181697188,
+          0.4354843781830281
+        ]
+      },
+      "volume": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "entropy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "unique": {
+        "fpr_run_mean": 0.2515,
+        "ci95": [
+          0.06751562181697188,
+          0.4354843781830281
+        ]
+      }
+    },
+    {
+      "level": 1800,
+      "samples_mean": 1796.1956666666665,
+      "actual_fragments_per_second_mean": 897.320884288072,
+      "entropy_mean": 10.066511616778213,
+      "unique_ratio_mean": 0.6651383299766606,
+      "legacy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "combined": {
+        "fpr_run_mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "volume": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "entropy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "unique": {
+        "fpr_run_mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "level": 2000,
+      "samples_mean": 1995.314333333333,
+      "actual_fragments_per_second_mean": 1005.751424319038,
+      "entropy_mean": 10.156658756523498,
+      "unique_ratio_mean": 0.6410706340508654,
+      "legacy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "combined": {
+        "fpr_run_mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "volume": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "entropy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "unique": {
+        "fpr_run_mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "level": 3000,
+      "samples_mean": 3008.8725,
+      "actual_fragments_per_second_mean": 1513.9667042076264,
+      "entropy_mean": 10.432519846695225,
+      "unique_ratio_mean": 0.5248140234507532,
+      "legacy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "combined": {
+        "fpr_run_mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "volume": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "entropy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "unique": {
+        "fpr_run_mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "level": 6000,
+      "samples_mean": 6000.333333333333,
+      "actual_fragments_per_second_mean": 2973.6057508223485,
+      "entropy_mean": 10.730325452797318,
+      "unique_ratio_mean": 0.32359995729297986,
+      "legacy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "combined": {
+        "fpr_run_mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "volume": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "entropy": {
+        "fpr_run_mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "unique": {
+        "fpr_run_mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ]
+}

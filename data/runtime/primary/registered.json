@@ -1,0 +1,73 @@
+{
+  "command": [
+    "research/Report/experiments/E5/run_e5_v2.py",
+    "--stage",
+    "all"
+  ],
+  "docker": {
+    "KernelVersion": "6.18.33.2-microsoft-standard-WSL2",
+    "MemTotal": 8231981056,
+    "NCPU": 12,
+    "OperatingSystem": "Docker Desktop",
+    "ServerVersion": "29.5.3"
+  },
+  "image_ids": {
+    "e5v2-e5-v2-routed-s20260902-r001-06053d2e-attacker": "sha256:274c534e38407b91854827a1b13a26a763c2b8a50a4221846811cc4f7dbf8288",
+    "e5v2-e5-v2-routed-s20260902-r001-06053d2e-auth": "sha256:47dc77f01f47ee1c8a4816534b262a19942b6794ea249c0cacc01f83a0a55e36",
+    "e5v2-e5-v2-routed-s20260902-r001-06053d2e-client": "sha256:c830fddf25ce10e3d8b277b3f809db4889789f0de7087165b6971943fb056e81",
+    "e5v2-e5-v2-routed-s20260902-r001-06053d2e-ips": "sha256:1f0fdd505caffe69ea4bc078fe3156b7bad11c5c092bae324f73dc3716edaa0d",
+    "e5v2-e5-v2-routed-s20260902-r001-06053d2e-resolver": "sha256:c9dfb65e6cf32ca2fd86ba0fa20b772775ce63e9a6c231e57a5a8fae349fe0b8"
+  },
+  "image_names": [
+    "e5v2-e5-v2-routed-s20260902-r001-06053d2e-attacker",
+    "e5v2-e5-v2-routed-s20260902-r001-06053d2e-auth",
+    "e5v2-e5-v2-routed-s20260902-r001-06053d2e-client",
+    "e5v2-e5-v2-routed-s20260902-r001-06053d2e-ips",
+    "e5v2-e5-v2-routed-s20260902-r001-06053d2e-resolver"
+  ],
+  "protocol_sha256": "69e2ab29bebe452545f5dc9440b5e52c399628e0267a8f2f4e32dd335abf142a",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "registered_utc": "2026-09-02T12:38:20Z",
+  "run_id": "E5-routed-s20260902-r001",
+  "schema_version": 1,
+  "source_manifest": {
+    "file_sha256": {
+      "e5_v2_aggregate.py": "ce87e902139ce78fb33390c0e088a6fb58db6b0ed07d9055d30fa3c97feee018",
+      "e5_v2_analysis.py": "dfd54d969a7134e3a665de16b7a582c242defdd43f094f3877e1af6c7522f16e",
+      "e5_v2_lib.py": "e4239f30994189ece160208fb2790cf69d4a2c732e21d9bd550405f5abb67f83",
+      "e5_v2_protocol.json": "f6d5f0dfb2ae37084dcc2437f5a97337da42910121d3db4558752ffbbe77384c",
+      "e5_v2_schedule.py": "bc5a16b2d22bb3b08977e9aad0e8bef9d392b2f094ffeade16e10c0fe6d63b77",
+      "e5_v2_validate.py": "51938c428a5b940be01906579768840414b3ec4889e5180b80067eec3b9f13a0",
+      "run_e5_v2.py": "d42e4f1f347eb64511ce1bbc8bdae4b88b6347e11245540571a503a02bf6fd29",
+      "tools/routed_lab/.dockerignore": "9ca876354df1179bf760a202dfb1aa2363164a675f12c12ca9f9236a236ced8d",
+      "tools/routed_lab/README.md": "8a68803c6152669eb51648456dcf4e81894325fb4188a5f873051995cd65770a",
+      "tools/routed_lab/attacker/Dockerfile": "899375b3b25f8fb520551ef0bd11112b592746553caecfdd139c34d77f05c5b0",
+      "tools/routed_lab/attacker/attacker.py": "c9b6b94eae10c2045e432150f62e11e529dbb4294e14b14318d5d7b128e6c328",
+      "tools/routed_lab/attacker/entrypoint.sh": "46b2e88184f88a8def06841bb57b19bbb011d7e5888b8444e1cb4d4a3b2aa821",
+      "tools/routed_lab/attacker/smoke.py": "c413852282ae713d9bdc7b571e620c86d44a1fc5ec6efe5ff6de07690c647462",
+      "tools/routed_lab/auth/Dockerfile": "356c48589c19412037c4b85bfecf7ccf997a5e49a7a03b93a9fdd3126f98c9ea",
+      "tools/routed_lab/auth/auth_server.py": "9a33fe47d05bf515a118c49bb1f22dcb04e5c72b402faa2ffacf0fb7cbf07757",
+      "tools/routed_lab/auth/entrypoint.sh": "fd700ebacf397ab746e2b08c22216e293e59e6cf896db8e827d4742c4f898af8",
+      "tools/routed_lab/client/Dockerfile": "21d551f0295f9b1d49eef59e62366ca1ae3b5831a9a4d68783055e24c84ad3e7",
+      "tools/routed_lab/client/probe.py": "711b6fead996d36a14f3f5e1d926337b6204ef14dcb6ad20c579ad306b2fb0f8",
+      "tools/routed_lab/compose.yaml": "ef8f7415e64a6c95ce7b59d1e5d4952138853e550db39318f56548bf1fcc54c0",
+      "tools/routed_lab/ips/.dockerignore": "8903458a8e9f31cbbd4f0b3413356478f8e509673d21ad85da1624eb6d757ea0",
+      "tools/routed_lab/ips/Dockerfile": "42669be5ba55b63c2bca8711bb61682eb3672e4f78c3c67676090ab99bcaa5ad",
+      "tools/routed_lab/ips/__init__.py": "53807404ae1be63084c641c674e441d563b8deac5c812089142fa339d39ed3c7",
+      "tools/routed_lab/ips/entrypoint.sh": "310af256e0454648005693d0d71989a2c73997ee59d8e958a82699697c6ca7fd",
+      "tools/routed_lab/ips/nfqueue_probe.py": "8a842b7878757c40228a5b34093639e2bbcc3ea409b93f25d51d013beb73596d",
+      "tools/routed_lab/ips/packet_logic.py": "86162488798d4daa98abd497eaff1a901fa4d5833fe3408ba2e36039ea54a018",
+      "tools/routed_lab/ips/policy.py": "8e1277ab80f02961ba2eb83d4cf20ba0570d9e5f1ee1165fc4af0c56ac07c637",
+      "tools/routed_lab/ips/preflight.sh": "14f35ec471a3c1dbf608bd02372d4fb368530453c3e30cc1a42049d80e81983e",
+      "tools/routed_lab/ips/snapshot.sh": "1e3f362784b4dcc3b6f7eb193b32eae35885137d995853f7f2b859545108fccd",
+      "tools/routed_lab/resolver/.dockerignore": "68027e280c996f4a2f204507b607cf07cdce9e3752496646819046534e56d40a",
+      "tools/routed_lab/resolver/Dockerfile": "70a3a23fdf0464235f6346ca6595fd3dbb9bc43465bb8c2c894f1a0ba8f4db12",
+      "tools/routed_lab/resolver/cache_probe.py": "82ae49689aaaa1fb76ab9a1b465cab1e01ea6775c785f9abfb42d047d13bc4b1",
+      "tools/routed_lab/resolver/e5mod.py": "4d95a85248bd2abf27a1beab7b59a1806b6dc84d9ade32913c5dd0314258326c",
+      "tools/routed_lab/resolver/start.sh": "9160dff3e5fe520c5c687b6a730a74168745d9512f5b3cf5b46102862f88859c",
+      "tools/routed_lab/resolver/unbound.conf": "1a379bc982de4a5c5be505cc3f1cbb264d35792038bf24b01c89b15e502d8298",
+      "tools/routed_lab/wire.py": "7c6ab307379b15a7ee979599541a18433a3c2a3f9dbd11794dbb3b5a035fca42"
+    },
+    "unbound_source_tree_sha256": "920318dfd68cfe9633780ba48ca3bc3bff9c8df88fb18f39ab1f2321e364a96d"
+  }
+}

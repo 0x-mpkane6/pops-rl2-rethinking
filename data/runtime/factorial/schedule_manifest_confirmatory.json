@@ -1,0 +1,2562 @@
+[
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "46036e2c7e1f479b42f16657b4f0c6b37497f995741027439df3ecab59c99739",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "f162c89a20616f0f5309042aae6d6ee193dc29bd2e504bb22eca7ae435c7ae50",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "7a6c2aff50f58290086a2f02320ce7c246e3e48bb72c48f5ca9b49f6be6832e7",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "f162c89a20616f0f5309042aae6d6ee193dc29bd2e504bb22eca7ae435c7ae50",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "f162c89a20616f0f5309042aae6d6ee193dc29bd2e504bb22eca7ae435c7ae50",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "8bfbf220018b686cb676318e617dc703c00defd8d557f5f4be008fcfc0c0fdcc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "46036e2c7e1f479b42f16657b4f0c6b37497f995741027439df3ecab59c99739",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "7a6c2aff50f58290086a2f02320ce7c246e3e48bb72c48f5ca9b49f6be6832e7",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "8bfbf220018b686cb676318e617dc703c00defd8d557f5f4be008fcfc0c0fdcc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "8bfbf220018b686cb676318e617dc703c00defd8d557f5f4be008fcfc0c0fdcc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "7a6c2aff50f58290086a2f02320ce7c246e3e48bb72c48f5ca9b49f6be6832e7",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "46036e2c7e1f479b42f16657b4f0c6b37497f995741027439df3ecab59c99739",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "46036e2c7e1f479b42f16657b4f0c6b37497f995741027439df3ecab59c99739",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "f162c89a20616f0f5309042aae6d6ee193dc29bd2e504bb22eca7ae435c7ae50",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "7a6c2aff50f58290086a2f02320ce7c246e3e48bb72c48f5ca9b49f6be6832e7",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "8bfbf220018b686cb676318e617dc703c00defd8d557f5f4be008fcfc0c0fdcc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "4ec754a4a467134a1789726ba6c9811fddb145fecd617177361aca9f897b1971",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "4ec754a4a467134a1789726ba6c9811fddb145fecd617177361aca9f897b1971",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c4ca164652298d3dcc45b298155bb3c3a8eb55a0a059d4e1ac80ef761f919a0f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "da89a078f1e466824af37e9913a10ecedf124a8bd7f7d2589bccd23e02b5d76f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c4ca164652298d3dcc45b298155bb3c3a8eb55a0a059d4e1ac80ef761f919a0f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "da89a078f1e466824af37e9913a10ecedf124a8bd7f7d2589bccd23e02b5d76f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "c568534c2390431edf30d9f236138bb591a82e31d0d669024ca3a79dbea06032",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "4ec754a4a467134a1789726ba6c9811fddb145fecd617177361aca9f897b1971",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "da89a078f1e466824af37e9913a10ecedf124a8bd7f7d2589bccd23e02b5d76f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "c568534c2390431edf30d9f236138bb591a82e31d0d669024ca3a79dbea06032",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "c568534c2390431edf30d9f236138bb591a82e31d0d669024ca3a79dbea06032",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c4ca164652298d3dcc45b298155bb3c3a8eb55a0a059d4e1ac80ef761f919a0f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "4ec754a4a467134a1789726ba6c9811fddb145fecd617177361aca9f897b1971",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c4ca164652298d3dcc45b298155bb3c3a8eb55a0a059d4e1ac80ef761f919a0f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "da89a078f1e466824af37e9913a10ecedf124a8bd7f7d2589bccd23e02b5d76f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "c568534c2390431edf30d9f236138bb591a82e31d0d669024ca3a79dbea06032",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "0c5f8ec67c891a1cfc5bee6372059683862462c04d9ce2253ce06ff99acaa35f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "8675d47fd459ece40164f03169f1adad8692a30eea9093f4abd35d61576d9172",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "ab188bb000202601a02f9e9bef1a2a73f4199316fb7959de9fbc76819dbbaba8",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "1243209319053e97ab8300d7f704e531d4ff8c027e614c2fe8f727d1892d66da",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "ab188bb000202601a02f9e9bef1a2a73f4199316fb7959de9fbc76819dbbaba8",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "0c5f8ec67c891a1cfc5bee6372059683862462c04d9ce2253ce06ff99acaa35f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "8675d47fd459ece40164f03169f1adad8692a30eea9093f4abd35d61576d9172",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "1243209319053e97ab8300d7f704e531d4ff8c027e614c2fe8f727d1892d66da",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "8675d47fd459ece40164f03169f1adad8692a30eea9093f4abd35d61576d9172",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "ab188bb000202601a02f9e9bef1a2a73f4199316fb7959de9fbc76819dbbaba8",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "0c5f8ec67c891a1cfc5bee6372059683862462c04d9ce2253ce06ff99acaa35f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "ab188bb000202601a02f9e9bef1a2a73f4199316fb7959de9fbc76819dbbaba8",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "0c5f8ec67c891a1cfc5bee6372059683862462c04d9ce2253ce06ff99acaa35f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "1243209319053e97ab8300d7f704e531d4ff8c027e614c2fe8f727d1892d66da",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "8675d47fd459ece40164f03169f1adad8692a30eea9093f4abd35d61576d9172",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "1243209319053e97ab8300d7f704e531d4ff8c027e614c2fe8f727d1892d66da",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "9ba46fd84a3871491d47fa64eb60f3214eb7cffb2fd257293e289780414830e2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "9ba46fd84a3871491d47fa64eb60f3214eb7cffb2fd257293e289780414830e2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b29e6dc71a8ec67cfe4c02653cd55ff46ddf25901c508dd803373d0c8b094525",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b29e6dc71a8ec67cfe4c02653cd55ff46ddf25901c508dd803373d0c8b094525",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "e8516db8c3464f9c872d8b5586e15ad822d11af3ff12accfccd1355380a0aa49",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "e8516db8c3464f9c872d8b5586e15ad822d11af3ff12accfccd1355380a0aa49",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "9ba46fd84a3871491d47fa64eb60f3214eb7cffb2fd257293e289780414830e2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b29e6dc71a8ec67cfe4c02653cd55ff46ddf25901c508dd803373d0c8b094525",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "cfaaa208ad61a2e4d77593f72b5ed215735357e883f406dcacc1b663e5860f20",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "9ba46fd84a3871491d47fa64eb60f3214eb7cffb2fd257293e289780414830e2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "e8516db8c3464f9c872d8b5586e15ad822d11af3ff12accfccd1355380a0aa49",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b29e6dc71a8ec67cfe4c02653cd55ff46ddf25901c508dd803373d0c8b094525",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "cfaaa208ad61a2e4d77593f72b5ed215735357e883f406dcacc1b663e5860f20",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "e8516db8c3464f9c872d8b5586e15ad822d11af3ff12accfccd1355380a0aa49",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "cfaaa208ad61a2e4d77593f72b5ed215735357e883f406dcacc1b663e5860f20",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "cfaaa208ad61a2e4d77593f72b5ed215735357e883f406dcacc1b663e5860f20",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "19ff1d7a3e6a05ad52595bae66cb581e97e5ede37ad8d17c3bea2b5901eb922d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a3b37e8107e857f55e3b217b2220ad70608b9924e05f557d1d342e33d2f84148",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b9a2d4618e0a7fbe2b0ba223a639531a3d0848d1de2716b09245c1cda465e12b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "19ff1d7a3e6a05ad52595bae66cb581e97e5ede37ad8d17c3bea2b5901eb922d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "19ff1d7a3e6a05ad52595bae66cb581e97e5ede37ad8d17c3bea2b5901eb922d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b9a2d4618e0a7fbe2b0ba223a639531a3d0848d1de2716b09245c1cda465e12b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a3b37e8107e857f55e3b217b2220ad70608b9924e05f557d1d342e33d2f84148",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "8e380fbdb7a4cb3c9b4955ceb75b100dd94ccfbed48eb4b190bf9e4c5c9da622",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "8e380fbdb7a4cb3c9b4955ceb75b100dd94ccfbed48eb4b190bf9e4c5c9da622",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "8e380fbdb7a4cb3c9b4955ceb75b100dd94ccfbed48eb4b190bf9e4c5c9da622",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b9a2d4618e0a7fbe2b0ba223a639531a3d0848d1de2716b09245c1cda465e12b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a3b37e8107e857f55e3b217b2220ad70608b9924e05f557d1d342e33d2f84148",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "8e380fbdb7a4cb3c9b4955ceb75b100dd94ccfbed48eb4b190bf9e4c5c9da622",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b9a2d4618e0a7fbe2b0ba223a639531a3d0848d1de2716b09245c1cda465e12b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "19ff1d7a3e6a05ad52595bae66cb581e97e5ede37ad8d17c3bea2b5901eb922d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a3b37e8107e857f55e3b217b2220ad70608b9924e05f557d1d342e33d2f84148",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "ec1b330eb7784cd3e96c9d25a40a00a241b53ed319e975e9b4c5d7924700b4b2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "ec1b330eb7784cd3e96c9d25a40a00a241b53ed319e975e9b4c5d7924700b4b2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "9f87213907efd0afe19f49767487521f295896a9744b9c16a43b71e71c56b225",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "3306982fec01f8e8ac58bac0070a25190133cc0c46c3f79464d3dee61af28289",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b84a4c36943c4848b0779cda01ab855586085f5ced5a0c8dd4ac699ee82d041b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b84a4c36943c4848b0779cda01ab855586085f5ced5a0c8dd4ac699ee82d041b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "ec1b330eb7784cd3e96c9d25a40a00a241b53ed319e975e9b4c5d7924700b4b2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "9f87213907efd0afe19f49767487521f295896a9744b9c16a43b71e71c56b225",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "9f87213907efd0afe19f49767487521f295896a9744b9c16a43b71e71c56b225",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "3306982fec01f8e8ac58bac0070a25190133cc0c46c3f79464d3dee61af28289",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "3306982fec01f8e8ac58bac0070a25190133cc0c46c3f79464d3dee61af28289",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b84a4c36943c4848b0779cda01ab855586085f5ced5a0c8dd4ac699ee82d041b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "3306982fec01f8e8ac58bac0070a25190133cc0c46c3f79464d3dee61af28289",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b84a4c36943c4848b0779cda01ab855586085f5ced5a0c8dd4ac699ee82d041b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "9f87213907efd0afe19f49767487521f295896a9744b9c16a43b71e71c56b225",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "ec1b330eb7784cd3e96c9d25a40a00a241b53ed319e975e9b4c5d7924700b4b2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "2a1de30a32cadcf755fc13bca1556ce57e1ece53e5a28a4d679b5680f1acb3af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "204f126b2a0fcf7726db39a35402531ac3160ae2dd50d46ae9a663f48470f85b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "204f126b2a0fcf7726db39a35402531ac3160ae2dd50d46ae9a663f48470f85b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1a4032821f9ee8b96fffb185aaf928a2585c4a87c210f17d1386da79675647ef",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "204f126b2a0fcf7726db39a35402531ac3160ae2dd50d46ae9a663f48470f85b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "23a8c8d556d223c9b450c31b6e2b224d8b35e3ed4bd9076a6005aa8f25724809",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "23a8c8d556d223c9b450c31b6e2b224d8b35e3ed4bd9076a6005aa8f25724809",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "23a8c8d556d223c9b450c31b6e2b224d8b35e3ed4bd9076a6005aa8f25724809",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "2a1de30a32cadcf755fc13bca1556ce57e1ece53e5a28a4d679b5680f1acb3af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "204f126b2a0fcf7726db39a35402531ac3160ae2dd50d46ae9a663f48470f85b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "23a8c8d556d223c9b450c31b6e2b224d8b35e3ed4bd9076a6005aa8f25724809",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1a4032821f9ee8b96fffb185aaf928a2585c4a87c210f17d1386da79675647ef",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "2a1de30a32cadcf755fc13bca1556ce57e1ece53e5a28a4d679b5680f1acb3af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1a4032821f9ee8b96fffb185aaf928a2585c4a87c210f17d1386da79675647ef",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1a4032821f9ee8b96fffb185aaf928a2585c4a87c210f17d1386da79675647ef",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "2a1de30a32cadcf755fc13bca1556ce57e1ece53e5a28a4d679b5680f1acb3af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "f009641503d044369cbb1e8865e3a65d8442fdb3306e322909578b894d507cee",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b2bf566c882a82d8c4fbd5f1af993776b9ffaec428d5e9749ec17b45bea129a9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a186295de1763a7bc1aa4d78657bfda1a1b2a52a346623dce12550bfcfaa2ba9",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "f009641503d044369cbb1e8865e3a65d8442fdb3306e322909578b894d507cee",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a186295de1763a7bc1aa4d78657bfda1a1b2a52a346623dce12550bfcfaa2ba9",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "9088520a194769f3e7c114f6281d4a8d7b94eb566bd32dab7d5d21931d8bc298",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a186295de1763a7bc1aa4d78657bfda1a1b2a52a346623dce12550bfcfaa2ba9",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "9088520a194769f3e7c114f6281d4a8d7b94eb566bd32dab7d5d21931d8bc298",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a186295de1763a7bc1aa4d78657bfda1a1b2a52a346623dce12550bfcfaa2ba9",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b2bf566c882a82d8c4fbd5f1af993776b9ffaec428d5e9749ec17b45bea129a9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b2bf566c882a82d8c4fbd5f1af993776b9ffaec428d5e9749ec17b45bea129a9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "9088520a194769f3e7c114f6281d4a8d7b94eb566bd32dab7d5d21931d8bc298",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "b2bf566c882a82d8c4fbd5f1af993776b9ffaec428d5e9749ec17b45bea129a9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "9088520a194769f3e7c114f6281d4a8d7b94eb566bd32dab7d5d21931d8bc298",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "f009641503d044369cbb1e8865e3a65d8442fdb3306e322909578b894d507cee",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "f009641503d044369cbb1e8865e3a65d8442fdb3306e322909578b894d507cee",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c73d31e389f67e1515835a837eed13930c4d6b0d466b371f8897c69e8e656237",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1a2658e9556fac0bee09814547918c5a18fef7037b7ecb3b7c9a7efe5525f8a0",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "5066ea93151ea3508775940b3e2cab8d7ed3f22517e7655fbd3e3e3525a32c9e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1a2658e9556fac0bee09814547918c5a18fef7037b7ecb3b7c9a7efe5525f8a0",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "5066ea93151ea3508775940b3e2cab8d7ed3f22517e7655fbd3e3e3525a32c9e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1a2658e9556fac0bee09814547918c5a18fef7037b7ecb3b7c9a7efe5525f8a0",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "5066ea93151ea3508775940b3e2cab8d7ed3f22517e7655fbd3e3e3525a32c9e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c73d31e389f67e1515835a837eed13930c4d6b0d466b371f8897c69e8e656237",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "5066ea93151ea3508775940b3e2cab8d7ed3f22517e7655fbd3e3e3525a32c9e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c73d31e389f67e1515835a837eed13930c4d6b0d466b371f8897c69e8e656237",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "5e24141206c563dcf4a1f43cf5dcfc72a1c10a77f85806c310bbbeb0ba8a7619",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "5e24141206c563dcf4a1f43cf5dcfc72a1c10a77f85806c310bbbeb0ba8a7619",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c73d31e389f67e1515835a837eed13930c4d6b0d466b371f8897c69e8e656237",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1a2658e9556fac0bee09814547918c5a18fef7037b7ecb3b7c9a7efe5525f8a0",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "5e24141206c563dcf4a1f43cf5dcfc72a1c10a77f85806c310bbbeb0ba8a7619",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "5e24141206c563dcf4a1f43cf5dcfc72a1c10a77f85806c310bbbeb0ba8a7619",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "7476e134e2f12ed4718d8fa5a03a2a9405f1681b0fe4dc9eb821c1545ff9ddd8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "7476e134e2f12ed4718d8fa5a03a2a9405f1681b0fe4dc9eb821c1545ff9ddd8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "406ea6eb80318fee4ee988ea5fc03f0e283aeb41684c8f2c2c0480cc1f6922a8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "406ea6eb80318fee4ee988ea5fc03f0e283aeb41684c8f2c2c0480cc1f6922a8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "7476e134e2f12ed4718d8fa5a03a2a9405f1681b0fe4dc9eb821c1545ff9ddd8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d3fac1f32f10866420daf0aded44dd52e127b7654de59630d0b02226e5037e6b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a4b89ebcc41483f4c85daa65feb25fa04559edc76a9a2104072b1506dd846097",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a4b89ebcc41483f4c85daa65feb25fa04559edc76a9a2104072b1506dd846097",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a4b89ebcc41483f4c85daa65feb25fa04559edc76a9a2104072b1506dd846097",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a4b89ebcc41483f4c85daa65feb25fa04559edc76a9a2104072b1506dd846097",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d3fac1f32f10866420daf0aded44dd52e127b7654de59630d0b02226e5037e6b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d3fac1f32f10866420daf0aded44dd52e127b7654de59630d0b02226e5037e6b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "406ea6eb80318fee4ee988ea5fc03f0e283aeb41684c8f2c2c0480cc1f6922a8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "7476e134e2f12ed4718d8fa5a03a2a9405f1681b0fe4dc9eb821c1545ff9ddd8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "406ea6eb80318fee4ee988ea5fc03f0e283aeb41684c8f2c2c0480cc1f6922a8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d3fac1f32f10866420daf0aded44dd52e127b7654de59630d0b02226e5037e6b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "b57eb89a1e2dd88959cdf56e271de76647965574bc7ef0525ecf56a89def9660",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "b57eb89a1e2dd88959cdf56e271de76647965574bc7ef0525ecf56a89def9660",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "b57eb89a1e2dd88959cdf56e271de76647965574bc7ef0525ecf56a89def9660",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "458544b85a18930d55d7b4a46e36f3b1fb20784535616f775c400155f335c15d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "563890129c1edc5ac70df315c50356403ac090a24901d88a06069220e9f64c94",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e3771e8ec1219ab09174da8d36cbd4943f9e6b60411a1fe7417b4392f976d15d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "458544b85a18930d55d7b4a46e36f3b1fb20784535616f775c400155f335c15d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "563890129c1edc5ac70df315c50356403ac090a24901d88a06069220e9f64c94",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "458544b85a18930d55d7b4a46e36f3b1fb20784535616f775c400155f335c15d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "563890129c1edc5ac70df315c50356403ac090a24901d88a06069220e9f64c94",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "458544b85a18930d55d7b4a46e36f3b1fb20784535616f775c400155f335c15d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e3771e8ec1219ab09174da8d36cbd4943f9e6b60411a1fe7417b4392f976d15d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "563890129c1edc5ac70df315c50356403ac090a24901d88a06069220e9f64c94",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "b57eb89a1e2dd88959cdf56e271de76647965574bc7ef0525ecf56a89def9660",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e3771e8ec1219ab09174da8d36cbd4943f9e6b60411a1fe7417b4392f976d15d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e3771e8ec1219ab09174da8d36cbd4943f9e6b60411a1fe7417b4392f976d15d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "8d941609b8929e138ab217d1a5e52fbd3952fd07e3815ca9c47de1bae26afa4b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a6f061c3324114933fd4ffabf8153257bcaf283677bb1de72685a711b9f7d434",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "8d941609b8929e138ab217d1a5e52fbd3952fd07e3815ca9c47de1bae26afa4b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a6f061c3324114933fd4ffabf8153257bcaf283677bb1de72685a711b9f7d434",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "8a6e7ae8a0bad5a36cfa54c4e6b47042f50e949dca00c671cc72710ba6b28b26",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "8d941609b8929e138ab217d1a5e52fbd3952fd07e3815ca9c47de1bae26afa4b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "8a6e7ae8a0bad5a36cfa54c4e6b47042f50e949dca00c671cc72710ba6b28b26",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "8a6e7ae8a0bad5a36cfa54c4e6b47042f50e949dca00c671cc72710ba6b28b26",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "8d941609b8929e138ab217d1a5e52fbd3952fd07e3815ca9c47de1bae26afa4b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "73d5a083fef0a491efa22179b468f07f8948122f4df9a8b417eae4be895de5f5",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "73d5a083fef0a491efa22179b468f07f8948122f4df9a8b417eae4be895de5f5",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "8a6e7ae8a0bad5a36cfa54c4e6b47042f50e949dca00c671cc72710ba6b28b26",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a6f061c3324114933fd4ffabf8153257bcaf283677bb1de72685a711b9f7d434",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "73d5a083fef0a491efa22179b468f07f8948122f4df9a8b417eae4be895de5f5",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a6f061c3324114933fd4ffabf8153257bcaf283677bb1de72685a711b9f7d434",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "73d5a083fef0a491efa22179b468f07f8948122f4df9a8b417eae4be895de5f5",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "7266de086619bc93ce70da58189d14f43db5437b0c8570d97bf5823fbdd56632",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "bae937e6669796eb17c16b5ed4ea766863c5c407c3758f3178fe771a18f5aa81",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "7266de086619bc93ce70da58189d14f43db5437b0c8570d97bf5823fbdd56632",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a9f14a2494eaf700f025e48dd1b3fb36e47f53f6828759d9b85d39397df45179",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "7266de086619bc93ce70da58189d14f43db5437b0c8570d97bf5823fbdd56632",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a9f14a2494eaf700f025e48dd1b3fb36e47f53f6828759d9b85d39397df45179",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d9f1f38d19f28394bcb3bf565bc76e61966d5bc8c6dd107ca4db8dd08374e0ba",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "bae937e6669796eb17c16b5ed4ea766863c5c407c3758f3178fe771a18f5aa81",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a9f14a2494eaf700f025e48dd1b3fb36e47f53f6828759d9b85d39397df45179",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d9f1f38d19f28394bcb3bf565bc76e61966d5bc8c6dd107ca4db8dd08374e0ba",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d9f1f38d19f28394bcb3bf565bc76e61966d5bc8c6dd107ca4db8dd08374e0ba",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d9f1f38d19f28394bcb3bf565bc76e61966d5bc8c6dd107ca4db8dd08374e0ba",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a9f14a2494eaf700f025e48dd1b3fb36e47f53f6828759d9b85d39397df45179",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "bae937e6669796eb17c16b5ed4ea766863c5c407c3758f3178fe771a18f5aa81",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "bae937e6669796eb17c16b5ed4ea766863c5c407c3758f3178fe771a18f5aa81",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "7266de086619bc93ce70da58189d14f43db5437b0c8570d97bf5823fbdd56632",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "245cc5c4900d3e5477328082a4825bac0fca8b696bf00d6d06070c11e3457c90",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "245cc5c4900d3e5477328082a4825bac0fca8b696bf00d6d06070c11e3457c90",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "47caa769a7bb1f893d876ac64ac101bf2ff71db48ef3d8275dfa4c073d2b0c02",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "b7c4049417d1fac7b1b3a0b65c5b7f1698d6ee43e0c81df74ca19716ec9ca387",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "245cc5c4900d3e5477328082a4825bac0fca8b696bf00d6d06070c11e3457c90",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "b7c4049417d1fac7b1b3a0b65c5b7f1698d6ee43e0c81df74ca19716ec9ca387",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "c39cb4c5082f474fb327f835e6a3c4897e62125a09bbf6fb3a59ddd252f467c8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "47caa769a7bb1f893d876ac64ac101bf2ff71db48ef3d8275dfa4c073d2b0c02",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "47caa769a7bb1f893d876ac64ac101bf2ff71db48ef3d8275dfa4c073d2b0c02",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "47caa769a7bb1f893d876ac64ac101bf2ff71db48ef3d8275dfa4c073d2b0c02",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "b7c4049417d1fac7b1b3a0b65c5b7f1698d6ee43e0c81df74ca19716ec9ca387",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "c39cb4c5082f474fb327f835e6a3c4897e62125a09bbf6fb3a59ddd252f467c8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "245cc5c4900d3e5477328082a4825bac0fca8b696bf00d6d06070c11e3457c90",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "c39cb4c5082f474fb327f835e6a3c4897e62125a09bbf6fb3a59ddd252f467c8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "c39cb4c5082f474fb327f835e6a3c4897e62125a09bbf6fb3a59ddd252f467c8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "b7c4049417d1fac7b1b3a0b65c5b7f1698d6ee43e0c81df74ca19716ec9ca387",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "55d2278bd68d0bf3b4cfa2bf88392d38fd32685114751efde2a2e32d812cb799",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "55d2278bd68d0bf3b4cfa2bf88392d38fd32685114751efde2a2e32d812cb799",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a4c8bb14cead7584b9230398ed4d8573be2df467f678cca9ca748084b668ebb7",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e915f006e917e323d7ab8fb659cd48eec2099f3ee915cdd17b11f00d41f1f78a",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "55d2278bd68d0bf3b4cfa2bf88392d38fd32685114751efde2a2e32d812cb799",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "55d2278bd68d0bf3b4cfa2bf88392d38fd32685114751efde2a2e32d812cb799",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a3b76b26186acbd07f3da7ce41c8006b72ea481d990d460d69ab7c287703072b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a4c8bb14cead7584b9230398ed4d8573be2df467f678cca9ca748084b668ebb7",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a4c8bb14cead7584b9230398ed4d8573be2df467f678cca9ca748084b668ebb7",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a3b76b26186acbd07f3da7ce41c8006b72ea481d990d460d69ab7c287703072b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a3b76b26186acbd07f3da7ce41c8006b72ea481d990d460d69ab7c287703072b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "a3b76b26186acbd07f3da7ce41c8006b72ea481d990d460d69ab7c287703072b",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "a4c8bb14cead7584b9230398ed4d8573be2df467f678cca9ca748084b668ebb7",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e915f006e917e323d7ab8fb659cd48eec2099f3ee915cdd17b11f00d41f1f78a",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e915f006e917e323d7ab8fb659cd48eec2099f3ee915cdd17b11f00d41f1f78a",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e915f006e917e323d7ab8fb659cd48eec2099f3ee915cdd17b11f00d41f1f78a",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c0961251fd040504ae1a22be7d4b84e05ee247e132bc7d1db4b4f1c387622036",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d726c84d4e54fd745cf77de2c84a99b300a2457a492d2bd73230851caa58ca3c",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "9ea478d4265f765c855c067bf283619b22c22ba19e86ff14df651d7273e1644d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c0961251fd040504ae1a22be7d4b84e05ee247e132bc7d1db4b4f1c387622036",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "9ea478d4265f765c855c067bf283619b22c22ba19e86ff14df651d7273e1644d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d726c84d4e54fd745cf77de2c84a99b300a2457a492d2bd73230851caa58ca3c",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "4e83418dbe0f81599caaaf9ca3c13b55c137989dc8d820a9ef8d8a6861dc908e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d726c84d4e54fd745cf77de2c84a99b300a2457a492d2bd73230851caa58ca3c",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d726c84d4e54fd745cf77de2c84a99b300a2457a492d2bd73230851caa58ca3c",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "4e83418dbe0f81599caaaf9ca3c13b55c137989dc8d820a9ef8d8a6861dc908e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "9ea478d4265f765c855c067bf283619b22c22ba19e86ff14df651d7273e1644d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c0961251fd040504ae1a22be7d4b84e05ee247e132bc7d1db4b4f1c387622036",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "9ea478d4265f765c855c067bf283619b22c22ba19e86ff14df651d7273e1644d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "4e83418dbe0f81599caaaf9ca3c13b55c137989dc8d820a9ef8d8a6861dc908e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "4e83418dbe0f81599caaaf9ca3c13b55c137989dc8d820a9ef8d8a6861dc908e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c0961251fd040504ae1a22be7d4b84e05ee247e132bc7d1db4b4f1c387622036",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e706a30cfb9aecbd33332c0a7f3dcc7565fb59f89c955e68c41fabbe75567993",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "bca5dcedd6390283f569d2035b1db8fdd49e331b75b3ce9d7f3dfc35051b155e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "bca5dcedd6390283f569d2035b1db8fdd49e331b75b3ce9d7f3dfc35051b155e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e706a30cfb9aecbd33332c0a7f3dcc7565fb59f89c955e68c41fabbe75567993",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "e4e855a34ec5f371f29a48fad6d83ebd36a4c06c716ef236edce48b9231011ca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "e4e855a34ec5f371f29a48fad6d83ebd36a4c06c716ef236edce48b9231011ca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "7fcb1efb0a2b80c34cdbb9ec4dd00b7379188c38319bb95ddc2cd03e44008759",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e706a30cfb9aecbd33332c0a7f3dcc7565fb59f89c955e68c41fabbe75567993",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "e4e855a34ec5f371f29a48fad6d83ebd36a4c06c716ef236edce48b9231011ca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "bca5dcedd6390283f569d2035b1db8fdd49e331b75b3ce9d7f3dfc35051b155e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "e4e855a34ec5f371f29a48fad6d83ebd36a4c06c716ef236edce48b9231011ca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "7fcb1efb0a2b80c34cdbb9ec4dd00b7379188c38319bb95ddc2cd03e44008759",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "7fcb1efb0a2b80c34cdbb9ec4dd00b7379188c38319bb95ddc2cd03e44008759",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "bca5dcedd6390283f569d2035b1db8fdd49e331b75b3ce9d7f3dfc35051b155e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "7fcb1efb0a2b80c34cdbb9ec4dd00b7379188c38319bb95ddc2cd03e44008759",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "e706a30cfb9aecbd33332c0a7f3dcc7565fb59f89c955e68c41fabbe75567993",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "aacc5af2c452c17eafc6d0faa7e4931315e703218479fee04246c5ff8795f348",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "aacc5af2c452c17eafc6d0faa7e4931315e703218479fee04246c5ff8795f348",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c0ee006c13f4953153c4f2155b9afa406badb67ce3e8778d18bd10aece02553f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c0ee006c13f4953153c4f2155b9afa406badb67ce3e8778d18bd10aece02553f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "8a8f73252ec60dfded669017a8b38a14e0aa16655acb4853f33bc44e38c67bd4",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c0ee006c13f4953153c4f2155b9afa406badb67ce3e8778d18bd10aece02553f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "012dd063c3302fab89d15e516fa8570d30b8bcffbb8578bdc3af708d393f3051",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "8a8f73252ec60dfded669017a8b38a14e0aa16655acb4853f33bc44e38c67bd4",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "c0ee006c13f4953153c4f2155b9afa406badb67ce3e8778d18bd10aece02553f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "8a8f73252ec60dfded669017a8b38a14e0aa16655acb4853f33bc44e38c67bd4",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "012dd063c3302fab89d15e516fa8570d30b8bcffbb8578bdc3af708d393f3051",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "012dd063c3302fab89d15e516fa8570d30b8bcffbb8578bdc3af708d393f3051",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "aacc5af2c452c17eafc6d0faa7e4931315e703218479fee04246c5ff8795f348",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "012dd063c3302fab89d15e516fa8570d30b8bcffbb8578bdc3af708d393f3051",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "8a8f73252ec60dfded669017a8b38a14e0aa16655acb4853f33bc44e38c67bd4",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "aacc5af2c452c17eafc6d0faa7e4931315e703218479fee04246c5ff8795f348",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d5d20ab2fa0b1689c303a63c487afebb4b1c4a72513db7c2163b91d2e4a69c06",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "2e11cd5885db5f5dc0cc71dce5399b77b43a80ce1290968b5dd06570ea27f6af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1462f53caef41b9bd223772b3cbe355023bebf55a4088a19f1afee90239a92ff",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d5d20ab2fa0b1689c303a63c487afebb4b1c4a72513db7c2163b91d2e4a69c06",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1462f53caef41b9bd223772b3cbe355023bebf55a4088a19f1afee90239a92ff",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "04035c49dcd9ecb56d79434f4d954d10e6187c8a56d625eb98a834112ff1afca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d5d20ab2fa0b1689c303a63c487afebb4b1c4a72513db7c2163b91d2e4a69c06",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "04035c49dcd9ecb56d79434f4d954d10e6187c8a56d625eb98a834112ff1afca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "d5d20ab2fa0b1689c303a63c487afebb4b1c4a72513db7c2163b91d2e4a69c06",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "2e11cd5885db5f5dc0cc71dce5399b77b43a80ce1290968b5dd06570ea27f6af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1462f53caef41b9bd223772b3cbe355023bebf55a4088a19f1afee90239a92ff",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "1462f53caef41b9bd223772b3cbe355023bebf55a4088a19f1afee90239a92ff",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "04035c49dcd9ecb56d79434f4d954d10e6187c8a56d625eb98a834112ff1afca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "04035c49dcd9ecb56d79434f4d954d10e6187c8a56d625eb98a834112ff1afca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "2e11cd5885db5f5dc0cc71dce5399b77b43a80ce1290968b5dd06570ea27f6af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "2e11cd5885db5f5dc0cc71dce5399b77b43a80ce1290968b5dd06570ea27f6af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "09f65d8b9e251f4cbca1aba849656d6b91a0962474bc5ef9228dba14ad1926aa",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "47e78ade77c19704ecc75e9ddb4ea28a0c6713a7c2b14da6f512786ebb40a4af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "09f65d8b9e251f4cbca1aba849656d6b91a0962474bc5ef9228dba14ad1926aa",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "47e78ade77c19704ecc75e9ddb4ea28a0c6713a7c2b14da6f512786ebb40a4af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "2a4829bef4ae8789add73ef27cc9609a65068970bc0b159c2475648eac21c454",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "459de29f8cec5b365d5d1d3f59eb7c80e40d01792353940710f96efba1ac39c2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "2a4829bef4ae8789add73ef27cc9609a65068970bc0b159c2475648eac21c454",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "09f65d8b9e251f4cbca1aba849656d6b91a0962474bc5ef9228dba14ad1926aa",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "459de29f8cec5b365d5d1d3f59eb7c80e40d01792353940710f96efba1ac39c2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "459de29f8cec5b365d5d1d3f59eb7c80e40d01792353940710f96efba1ac39c2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "47e78ade77c19704ecc75e9ddb4ea28a0c6713a7c2b14da6f512786ebb40a4af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "2a4829bef4ae8789add73ef27cc9609a65068970bc0b159c2475648eac21c454",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_DIVERSE_MODERATE.json",
+    "schedule_sha256": "09f65d8b9e251f4cbca1aba849656d6b91a0962474bc5ef9228dba14ad1926aa",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_MODERATE"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_DIVERSE_HIGH.json",
+    "schedule_sha256": "459de29f8cec5b365d5d1d3f59eb7c80e40d01792353940710f96efba1ac39c2",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_DIVERSE_HIGH.json",
+    "schedule_sha256": "47e78ade77c19704ecc75e9ddb4ea28a0c6713a7c2b14da6f512786ebb40a4af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_DIVERSE_HIGH"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_DIVERSE_MODERATE.json",
+    "schedule_sha256": "2a4829bef4ae8789add73ef27cc9609a65068970bc0b159c2475648eac21c454",
+    "stage": "confirmatory",
+    "workload": "BENIGN_DIVERSE_MODERATE"
+  }
+]

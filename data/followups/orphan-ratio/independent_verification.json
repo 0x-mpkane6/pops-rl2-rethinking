@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "controlled_decisions": 55200,
+  "paired_metric_rows_independently_recomputed": 3360,
+  "primary_macro_rows_checked": 42,
+  "orphan_trial_rows": 16000,
+  "runtime_runs": 320,
+  "all_sources_hash_verified": true,
+  "orphan_ratio_zero_in_timestamp_and_record_orders": true,
+  "forged_unique_signatures": 7996,
+  "forged_capture_records": 8865,
+  "query_ratio_invariant_to_clock_alignment": true,
+  "held_out_accessed": false
+}

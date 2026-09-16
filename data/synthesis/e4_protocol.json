@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "experiment": "E4 — statistical stability and confidence-interval synthesis",
+  "run_id": "E4-R001",
+  "status": "registered-before-aggregation",
+  "registered_utc": "2026-08-29T07:47:00Z",
+  "amended_before_aggregation_utc": "2026-08-29T07:56:38Z",
+  "amendment_reason": "Add a narrowly scoped Git LF-checkout compatibility rule after preflight established that E3 final-validator CSV hashes were recorded as CRLF bytes while .gitattributes enforces LF checkout; no metric, threshold, result, or upstream artifact is changed.",
+  "aggregation_execution_status": "not_started",
+
+  "objective": "Audit and synthesize uncertainty, paired effects, metric coverage, and reporting scope from frozen canonical E1–E3 artifacts. No experiment rerun, threshold selection, or modification of upstream results is permitted.",
+
+  "scope": "Offline statistical synthesis of controlled-emulation artifacts. E4 does not measure DNS cache-poisoning success, ASR, real IP fragmentation, resolver end-to-end behavior, latency, throughput, CPU, memory, or deployment performance.",
+
+  "allowed_inputs": {
+    "E1": {
+      "root": "../E1/runs/E1_confirmatory_20260810_seed20260810_raw_v2",
+      "required_artifacts": [
+        "e1_protocol.json",
+        "e1_results.json",
+        "e1_runs.csv",
+        "validation.json"
+      ],
+      "validator_requirement": "PASS"
+    },
+    "E2": {
+      "root": "../E2/runs/E2_confirmatory_20260814_complete_b0_ablation",
+      "required_artifacts": [
+        "e2_protocol.json",
+        "e2_results.json",
+        "e2_summary.csv",
+        "validation.json"
+      ],
+      "validator_requirement": "PASS"
+    },
+    "E3": {
+      "root": "../E3",
+      "required_artifacts": [
+        "e3_protocol.json",
+        "datasets/splits_60_20_20/split_manifest.json",
+        "e3_validation_grid.json",
+        "e3_locked_threshold.json",
+        "e3_lock_validation.json",
+        "e3_test_results.json",
+        "e3_test_results.csv",
+        "e3_summary.csv",
+        "e3_validation.json"
+      ],
+      "validator_requirement": "e3_validation=PASS and e3_lock_validation=PASS"
+    }
+  },
+
+  "forbidden_actions": [
+    "rerun E1, E2, or E3 experiments",
+    "read E3 held-out decision data for aggregation, threshold selection, or retuning",
+    "modify E3 protocol, validation grid, locked threshold, test results, or upstream artifacts",
+    "pool E2 and E3 as statistically independent studies",
+    "infer ASR, poisoning prevention, latency, throughput, CPU, or memory from detector-alert metrics",
+    "omit unfavorable failure-probe or boundary results"
+  ],
+
+  "independent_units": {
+    "E1": "independent run",
+    "E2": "paired trace",
+    "E3": "paired trace"
+  },
+
+  "raw_input_access": {
+    "default": "Read frozen result, summary, protocol, manifest, and validator artifacts only.",
+    "upstream_raw_data": "Forbidden unless a separately registered, read-only CI audit is required.",
+    "E3_held_out_decisions": "Forbidden for aggregation, selection, retuning, or any new result generation."
+  },
+
+  "input_hash_policy": {
+    "default": "Every registered artifact must match the frozen SHA-256 byte-for-byte.",
+    "git_lf_checkout_compatibility": {
+      "enabled": true,
+      "applies_only_to_E3_validator_artifacts": ["test_csv", "summary_csv"],
+      "required_checkout_state": "The current CSV must contain LF line endings only, consistent with repository .gitattributes '*.csv text eol=lf'.",
+      "pass_condition": "Only if converting every current LF byte to CRLF reproduces the exact frozen SHA-256 recorded in e3_validation.json. All other E3 validator artifacts remain byte-exact.",
+      "reporting": "Record both filesystem SHA-256 and frozen expected SHA-256 with verification_status=pass_git_lf_checkout_equivalent."
+    }
+  },
+
+  "run_count_audit": {
+    "E1": {
+      "expected_independent_runs_per_primary_condition": 20,
+      "unit": "run"
+    },
+    "E2": {
+      "expected_held_out_pairs_per_cell": 20,
+      "unit": "paired_trace"
+    },
+    "E3": {
+      "expected_held_out_pairs_per_primary_cell": 6,
+      "unit": "paired_trace",
+      "note": "E3 is a new 60/20/20 repartition of canonical E2; it must not be described as K=20."
+    }
+  },
+
+  "inference": {
+    "confidence_interval": "95%",
+    "effect_size_priority": "Report estimates and confidence intervals; p-values are optional and never replace effect sizes.",
+    "E1_method": "Use the frozen run-level/cluster-bootstrap method for each condition; decision windows within a run are not IID.",
+    "E2_method": "Use the frozen paired-trace bootstrap method with 5000 resamples.",
+    "E3_method": "Use the frozen stratified paired-trace bootstrap method with 5000 resamples across the eight primary cells.",
+    "tail_latency_method": "Only if real per-run latency measurements exist; use run-level or hierarchical bootstrap. Otherwise report not measured."
+  },
+
+  "cross_experiment_rules": {
+    "E2_E3_dependence": "E3 is a 60/20/20 repartition of the canonical E2 decision dataset. E2 and E3 may be compared descriptively but must not be pooled or treated as independent replications.",
+    "metric_semantics": "E2/E3 attack-alert and benign-trigger are controlled synthetic detector rates. They are not ASR or end-to-end poisoning outcomes.",
+    "missing_metrics_policy": "Report not_measured or not_supported; never impute."
+  },
+
+  "metric_reporting_rules": {
+    "required_fields_per_estimate": [
+      "estimate",
+      "ci95",
+      "n_independent_units",
+      "independent_unit",
+      "source_artifact",
+      "source_hash",
+      "scope",
+      "measurement_status"
+    ],
+    "mean_median": "Report mean and median only when the corresponding run- or pair-level distribution exists; never reconstruct a median from an aggregate mean or CI.",
+    "zero_rate": "When reporting an observed zero rate, include numerator, denominator, CI method, and independent-unit caveat; never interpret observed zero as the true rate.",
+    "unfavorable_results": "Failure probes, operating boundaries, and heterogeneous cells must be retained alongside macro summaries."
+  },
+
+  "provenance": {
+    "git_commit": "1d0da71b6c503b93dc016d481773b728a9948679",
+    "git_dirty": true,
+    "git_status_porcelain_v1": "?? research/Report/experiments/E4/",
+    "input_manifest_required_before_aggregation": true
+  },
+
+  "required_outputs": [
+    "e4_input_manifest.json",
+    "e4_preflight.json",
+    "e4_summary.csv",
+    "e4_paired_effects.csv",
+    "e4_metric_coverage.csv",
+    "e4_summary.json",
+    "e4_validation.json",
+    "E4_report.md",
+    "figures/e4_effect_sizes.png",
+    "figures/e4_failure_boundaries.png",
+    "figures/e4_metric_coverage.png"
+  ],
+
+  "validation_requirements": [
+    "verify hashes and upstream validator PASS status",
+    "verify every reported metric has source artifact, source hash, scope, independent unit, and CI method",
+    "verify observed independent-unit counts against the registered run_count_audit",
+    "verify E2 and E3 are not statistically pooled",
+    "verify ASR and runtime metrics are explicitly not measured where unsupported",
+    "verify default aggregation did not read raw upstream decision data",
+    "verify no upstream protocol, threshold, or result was modified"
+  ]
+}

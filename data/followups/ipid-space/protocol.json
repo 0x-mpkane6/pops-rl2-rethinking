@@ -1,0 +1,30 @@
+{
+  "classification": "post-hoc descriptive benign sensitivity",
+  "created_utc": "2026-09-12T05:31:00.817641+00:00",
+  "source": "research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2",
+  "source_code_sha256": "5103d7ef9f8c795ef44d473bf035d978f5217d7d090a380782c5d492fa8eae09",
+  "script_sha256": "6413fe8675b0779047322c34b21b8189b5eec06fdc61b85a8efecc4135975f53",
+  "spaces": [
+    2048,
+    65536
+  ],
+  "runs_per_space": 480,
+  "decisions_per_run": 300,
+  "window_seconds": 2,
+  "warmup_seconds": 6,
+  "matching": "Exact decision times and occupancy checked in every old/new pair; archived generator and seed reused.",
+  "scoring": {
+    "initial": [
+      24,
+      4,
+      0.7
+    ],
+    "locked": [
+      8,
+      6,
+      0.9
+    ]
+  },
+  "analysis": "Run-level bootstrap 5,000 samples, seed 20260912; report all cells. No threshold selection or held-out access.",
+  "scope": "Random and sequential benign main-grid traces, and registered high-load random benign traces only. No synthetic attack discrimination or runtime replay."
+}

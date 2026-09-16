@@ -1,0 +1,708 @@
+{
+  "aggregation": "equal-weight macro-average over the 2 primary attack conditions x 4 levels; pair-level values are the independent observations",
+  "criterion": "maximize macro delta_J_new_vs_B2",
+  "hard_constraints": "none",
+  "held_out_test_read_status": "not_read",
+  "locked_utc": "2026-08-21T06:21:59.430085Z",
+  "next_permitted_step": "Run a lock validator, then evaluate this unchanged candidate on held_out_test exactly once.",
+  "partition_manifest": {
+    "path": "datasets/splits_60_20_20/split_manifest.json",
+    "sha256": "b37b723cf3f12413d4c098e6769a6d13d639c481d419b92c90b90181d75f6550"
+  },
+  "protocol": {
+    "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_protocol.json",
+    "sha256": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12"
+  },
+  "ranking": [
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5813888888888888,
+      "macro_delta_J_new_vs_B2": 0.00972222222222222,
+      "rank": 1
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5813888888888888,
+      "macro_delta_J_new_vs_B2": 0.00972222222222222,
+      "rank": 2
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5813888888888888,
+      "macro_delta_J_new_vs_B2": 0.00972222222222222,
+      "rank": 3
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5813888888888888,
+      "macro_delta_J_new_vs_B2": 0.00972222222222222,
+      "rank": 4
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5815277777777778,
+      "macro_delta_J_new_vs_B2": 0.00958333333333333,
+      "rank": 5
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5815277777777778,
+      "macro_delta_J_new_vs_B2": 0.00958333333333333,
+      "rank": 6
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5815277777777778,
+      "macro_delta_J_new_vs_B2": 0.00958333333333333,
+      "rank": 7
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5815277777777778,
+      "macro_delta_J_new_vs_B2": 0.00958333333333333,
+      "rank": 8
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5815277777777778,
+      "macro_delta_J_new_vs_B2": 0.00958333333333333,
+      "rank": 9
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5815277777777778,
+      "macro_delta_J_new_vs_B2": 0.00958333333333333,
+      "rank": 10
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5815277777777778,
+      "macro_delta_J_new_vs_B2": 0.00958333333333333,
+      "rank": 11
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 6,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.5911111111111111,
+      "macro_benign_trigger_rate": 0.5815277777777778,
+      "macro_delta_J_new_vs_B2": 0.00958333333333333,
+      "rank": 12
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.7794444444444445,
+      "macro_benign_trigger_rate": 0.7761111111111111,
+      "macro_delta_J_new_vs_B2": 0.003333333333333332,
+      "rank": 13
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.7794444444444445,
+      "macro_benign_trigger_rate": 0.7761111111111111,
+      "macro_delta_J_new_vs_B2": 0.003333333333333332,
+      "rank": 14
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.7794444444444445,
+      "macro_benign_trigger_rate": 0.7761111111111111,
+      "macro_delta_J_new_vs_B2": 0.003333333333333332,
+      "rank": 15
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.7794444444444445,
+      "macro_benign_trigger_rate": 0.77625,
+      "macro_delta_J_new_vs_B2": 0.003194444444444442,
+      "rank": 16
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.7794444444444445,
+      "macro_benign_trigger_rate": 0.77625,
+      "macro_delta_J_new_vs_B2": 0.003194444444444442,
+      "rank": 17
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.7794444444444445,
+      "macro_benign_trigger_rate": 0.77625,
+      "macro_delta_J_new_vs_B2": 0.003194444444444442,
+      "rank": 18
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.7794444444444445,
+      "macro_benign_trigger_rate": 0.77625,
+      "macro_delta_J_new_vs_B2": 0.003194444444444442,
+      "rank": 19
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.7794444444444445,
+      "macro_benign_trigger_rate": 0.77625,
+      "macro_delta_J_new_vs_B2": 0.003194444444444442,
+      "rank": 20
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.7794444444444445,
+      "macro_benign_trigger_rate": 0.77625,
+      "macro_delta_J_new_vs_B2": 0.003194444444444442,
+      "rank": 21
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.97,
+      "macro_benign_trigger_rate": 0.9690277777777778,
+      "macro_delta_J_new_vs_B2": 0.0009722222222222285,
+      "rank": 22
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.97,
+      "macro_benign_trigger_rate": 0.9690277777777778,
+      "macro_delta_J_new_vs_B2": 0.0009722222222222285,
+      "rank": 23
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.97,
+      "macro_benign_trigger_rate": 0.9691666666666667,
+      "macro_delta_J_new_vs_B2": 0.0008333333333333387,
+      "rank": 24
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.97,
+      "macro_benign_trigger_rate": 0.9691666666666667,
+      "macro_delta_J_new_vs_B2": 0.0008333333333333387,
+      "rank": 25
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.97,
+      "macro_benign_trigger_rate": 0.9691666666666667,
+      "macro_delta_J_new_vs_B2": 0.0008333333333333387,
+      "rank": 26
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.97,
+      "macro_benign_trigger_rate": 0.9691666666666667,
+      "macro_delta_J_new_vs_B2": 0.0008333333333333387,
+      "rank": 27
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7066666666666667,
+      "macro_delta_J_new_vs_B2": 0.00013888888888888978,
+      "rank": 28
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7066666666666667,
+      "macro_delta_J_new_vs_B2": 0.00013888888888888978,
+      "rank": 29
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7066666666666667,
+      "macro_delta_J_new_vs_B2": 0.00013888888888888978,
+      "rank": 30
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7066666666666667,
+      "macro_delta_J_new_vs_B2": 0.00013888888888888978,
+      "rank": 31
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.8770833333333333,
+      "macro_benign_trigger_rate": 0.8769444444444444,
+      "macro_delta_J_new_vs_B2": 0.00013888888888888978,
+      "rank": 32
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.8770833333333333,
+      "macro_benign_trigger_rate": 0.8769444444444444,
+      "macro_delta_J_new_vs_B2": 0.00013888888888888978,
+      "rank": 33
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.8770833333333333,
+      "macro_benign_trigger_rate": 0.8769444444444444,
+      "macro_delta_J_new_vs_B2": 0.00013888888888888978,
+      "rank": 34
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.9704166666666667,
+      "macro_benign_trigger_rate": 0.9702777777777778,
+      "macro_delta_J_new_vs_B2": 0.00013888888888888978,
+      "rank": 35
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.9704166666666667,
+      "macro_benign_trigger_rate": 0.9702777777777778,
+      "macro_delta_J_new_vs_B2": 0.00013888888888888978,
+      "rank": 36
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.9990277777777777,
+      "macro_benign_trigger_rate": 0.9988888888888889,
+      "macro_delta_J_new_vs_B2": 0.00013888888888888978,
+      "rank": 37
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.9
+      },
+      "macro_attack_alert_rate": 0.9990277777777777,
+      "macro_benign_trigger_rate": 0.9988888888888889,
+      "macro_delta_J_new_vs_B2": 0.00013888888888888978,
+      "rank": 38
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7068055555555556,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 39
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7068055555555556,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 40
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7068055555555556,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 41
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7068055555555556,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 42
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7068055555555556,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 43
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7068055555555556,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 44
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7068055555555556,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 45
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 5,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.7068055555555556,
+      "macro_benign_trigger_rate": 0.7068055555555556,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 46
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.8770833333333333,
+      "macro_benign_trigger_rate": 0.8770833333333333,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 47
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.8770833333333333,
+      "macro_benign_trigger_rate": 0.8770833333333333,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 48
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.8770833333333333,
+      "macro_benign_trigger_rate": 0.8770833333333333,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 49
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.8770833333333333,
+      "macro_benign_trigger_rate": 0.8770833333333333,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 50
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.8770833333333333,
+      "macro_benign_trigger_rate": 0.8770833333333333,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 51
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 4,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.8770833333333333,
+      "macro_benign_trigger_rate": 0.8770833333333333,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 52
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.9704166666666667,
+      "macro_benign_trigger_rate": 0.9704166666666667,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 53
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.9704166666666667,
+      "macro_benign_trigger_rate": 0.9704166666666667,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 54
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.9704166666666667,
+      "macro_benign_trigger_rate": 0.9704166666666667,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 55
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.9704166666666667,
+      "macro_benign_trigger_rate": 0.9704166666666667,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 56
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.9990277777777777,
+      "macro_benign_trigger_rate": 0.9990277777777777,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 57
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 2,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.9990277777777777,
+      "macro_benign_trigger_rate": 0.9990277777777777,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 58
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.5
+      },
+      "macro_attack_alert_rate": 0.9990277777777777,
+      "macro_benign_trigger_rate": 0.9990277777777777,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 59
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 3,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.7
+      },
+      "macro_attack_alert_rate": 0.9990277777777777,
+      "macro_benign_trigger_rate": 0.9990277777777777,
+      "macro_delta_J_new_vs_B2": 0.0,
+      "rank": 60
+    }
+  ],
+  "schema_version": 1,
+  "selected_candidate": {
+    "entropy_threshold": 6,
+    "min_samples": 8,
+    "unique_ratio_threshold": 0.9
+  },
+  "selected_candidate_primary_macro": {
+    "B2_J": 0.0,
+    "J": 0.00972222222222222,
+    "attack_alert_rate": 0.5911111111111111,
+    "benign_trigger_rate": 0.5813888888888888,
+    "delta_J_new_vs_B2": 0.00972222222222222
+  },
+  "selection_data": "validation-grid artifact only; no held-out decision data opened",
+  "status": "locked-before-test",
+  "tie_breaking_in_order": [
+    "higher macro delta_J_new_vs_B2",
+    "lower macro benign_trigger_rate on primary cells",
+    "higher macro attack_alert_rate on primary cells",
+    "ascending tuple (min_samples, entropy_threshold, unique_ratio_threshold)"
+  ],
+  "validation_grid": {
+    "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_validation_grid.json",
+    "sha256": "856a0e18236d4d3352b5072699f33e5b013a5fd36f673a095514c84653c15310",
+    "validation_input": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/splits_60_20_20/validation.csv.gz",
+      "rows_read": 27600,
+      "sha256": "ea59a0424a6c2cadd17f8ce30eca7ae11e9f104f74cbee5ca1ab0b7607ffe1f8"
+    }
+  }
+}

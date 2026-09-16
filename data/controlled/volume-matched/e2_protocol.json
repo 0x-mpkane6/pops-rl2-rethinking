@@ -1,0 +1,228 @@
+{
+  "arrival_schedule": {
+    "bursty": "exact thinned square-wave NHPP: 1.75lambda/0.25lambda, half period 1.5s",
+    "continuous": "Poisson lambda=level/window"
+  },
+  "benign_fraction_in_attack_conditions": 0.1,
+  "claim_gate": {
+    "meaningful_added_discrimination": "95% CI lower bound > +0.05",
+    "meaningful_degradation": "95% CI upper bound < -0.05",
+    "practical_equivalence": "90% CI wholly within [-0.05,+0.05]"
+  },
+  "command": [
+    "C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E2\\e2_confirmatory.py",
+    "--out",
+    "research/Report/experiments/E2/runs/E2_confirmatory_20260814_complete_b0_ablation",
+    "--run-id",
+    "E2_confirmatory_20260814_complete_b0_ablation"
+  ],
+  "conditions": {
+    "attack_dup_sweep_continuous": {
+      "ipid_model": "dup_sweep",
+      "label": "Synthetic duplicate-sweep failure probe, continuous background",
+      "profile": "continuous",
+      "role": "attack"
+    },
+    "attack_fixed_continuous": {
+      "ipid_model": "fixed",
+      "label": "Synthetic fixed-IPID failure probe, continuous background",
+      "profile": "continuous",
+      "role": "attack"
+    },
+    "attack_random_continuous": {
+      "ipid_model": "random",
+      "label": "Synthetic random-IPID negative control, continuous background",
+      "profile": "continuous",
+      "role": "attack"
+    },
+    "attack_sweep_bursty": {
+      "ipid_model": "sweep",
+      "label": "Synthetic sweep-IPID stress regime, bursty background",
+      "profile": "bursty",
+      "role": "attack"
+    },
+    "attack_sweep_continuous": {
+      "ipid_model": "sweep",
+      "label": "Synthetic sweep-IPID stress regime, continuous background",
+      "profile": "continuous",
+      "role": "attack"
+    },
+    "benign_bursty": {
+      "ipid_model": "random",
+      "label": "Benign synthetic control, bursty background",
+      "profile": "bursty",
+      "role": "benign"
+    },
+    "benign_continuous": {
+      "ipid_model": "random",
+      "label": "Benign synthetic control, continuous background",
+      "profile": "continuous",
+      "role": "benign"
+    }
+  },
+  "dependencies": {
+    "matplotlib": "3.10.9",
+    "numpy": "1.26.4",
+    "psutil": "7.2.2",
+    "python": "3.10.11",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3"
+  },
+  "experiment": "E2 confirmatory \u2014 query-timed paired controlled emulation",
+  "experiment_seed": 20260813,
+  "git_provenance": {
+    "branch": "main",
+    "commit_full": "bf0100061a16be244e856b66be2d8e06bf2ed160",
+    "commit_short": "bf01000",
+    "dirty": true,
+    "status_porcelain_v1": "M research/Report/experiments/E2/ARTIFACT_STATUS.md\n M research/Report/experiments/E2/E2_report.md\n M research/Report/experiments/E2/e2_confirmatory.py\n M research/Report/experiments/E2/e2_plot_confirmatory.py\n M research/Report/experiments/E2/e2_report.py\n M research/Report/experiments/E2/e2_validate.py\n M research/Report/experiments/E2/runs/E2_confirmatory_20260813_165220_seed20260813/E2_report.md\n M research/Report/experiments/E2/runs/README.md\n?? research/Report/experiments/E2/runs/E2_confirmatory_20260814_ablation_metrics/\n?? research/Report/experiments/E2/runs/E2_confirmatory_20260814_complete_b0_ablation/"
+  },
+  "hardware": {
+    "logical_cpus": 12,
+    "memory_bytes": 16991338496,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel"
+  },
+  "independent_unit": "pair_id (shared timestamp trace across matched conditions)",
+  "levels_samples_per_window": [
+    24,
+    60,
+    120,
+    200
+  ],
+  "operating_point": {
+    "entropy_threshold": 4.0,
+    "min_samples": 24,
+    "unique_ratio_threshold": 0.7,
+    "window_seconds": 2.0
+  },
+  "primary_inference": "5000 whole-pair bootstrap resamples; test split only",
+  "primary_metric": "delta J = (attack-alert - benign-trigger)_B5 - (attack-alert - benign-trigger)_B2",
+  "profiles": {
+    "bursty": {
+      "arrival_model": "thinned_square_wave_nhpp",
+      "description": "Exact thinned square-wave NHPP FRAG2 background."
+    },
+    "continuous": {
+      "arrival_model": "poisson",
+      "description": "Homogeneous Poisson FRAG2 background."
+    }
+  },
+  "queries_per_run": 150,
+  "query_hz": 4.0,
+  "query_schedule": "fixed 4 Hz after seeded phase; query/FRAG1 timestamps shared within pair",
+  "raw_fields": {
+    "decision": [
+      "timestamp_seconds",
+      "window_start_seconds",
+      "frag1_ipid",
+      "samples",
+      "unique_ipids",
+      "entropy",
+      "unique_ratio",
+      "benign_events_in_window",
+      "attack_events_in_window",
+      "block_no_defense",
+      "block_legacy",
+      "block_combined",
+      "block_volume",
+      "block_entropy",
+      "block_unique"
+    ],
+    "frag2": [
+      "timestamp_seconds",
+      "origin",
+      "ipid"
+    ]
+  },
+  "raw_layout": "one gzip JSONL per condition-run under raw_runs/{split}/{condition}/level_{level}/",
+  "raw_schema_version": 2,
+  "registered_utc": "2026-08-14T16:25:11.198Z",
+  "run_id": "E2_confirmatory_20260814_complete_b0_ablation",
+  "schema_version": 3,
+  "scope": "controlled synthetic emulation of detector decisions; no real IP fragmentation, poisoning/ASR, latency, CPU, or deployment claim",
+  "seed_derivation": "SHA-256(experiment_seed | split | profile | level | pair_id | stream-name)",
+  "source_manifest": {
+    "auth_server.py": {
+      "sha256": "f884f51c2478b12a0d418d48b7cf5a8bb09083877bb80fe10607b2cedacb086f",
+      "snapshot": "source_snapshot/auth_server.py",
+      "source": "D:\\ATM\\Project\\Code\\labs\\r2entropy\\auth\\auth_server.py"
+    },
+    "dnslib.py": {
+      "sha256": "2357832da1994bdcf47d1f6699e5b3ac401619079f53e04f49a0ea84d816e837",
+      "snapshot": "source_snapshot/dnslib.py",
+      "source": "D:\\ATM\\Project\\Code\\labs\\r2entropy\\localtest\\shim\\dnslib.py"
+    },
+    "e2_confirmatory.py": {
+      "sha256": "bc2f024983c52d19fb1abf6442d0530fa708d4f9c6f4dbebc25a1be73c4797ae",
+      "snapshot": "source_snapshot/e2_confirmatory.py",
+      "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E2\\e2_confirmatory.py"
+    },
+    "e2_plot_confirmatory.py": {
+      "sha256": "88c0bfd6000c8cef6534cad00e1981a388f957cbb376553d14c28b88d378aa22",
+      "snapshot": "source_snapshot/e2_plot_confirmatory.py",
+      "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E2\\e2_plot_confirmatory.py"
+    },
+    "e2_report.py": {
+      "sha256": "55570f6acc8d050895a26aadbc5231f17bcda10867d7101cdd9fa734322707b8",
+      "snapshot": "source_snapshot/e2_report.py",
+      "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E2\\e2_report.py"
+    },
+    "e2_validate.py": {
+      "sha256": "a098e076f4f23cdbcc4fbf73f078192e4ac8661bdc24bd46db59e1378ce768bf",
+      "snapshot": "source_snapshot/e2_validate.py",
+      "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E2\\e2_validate.py"
+    },
+    "resolver.py": {
+      "sha256": "2501bc33e1eaccdfa12dc88f379187f393626326bd52097ba12a3ffee196c931",
+      "snapshot": "source_snapshot/resolver.py",
+      "source": "D:\\ATM\\Project\\Code\\labs\\r2entropy\\resolver\\resolver.py"
+    },
+    "spoof_r2entropy.py": {
+      "sha256": "54a630e8abb9b5336c43025f7c943eccd328efefd3bd6c9286be3973ec51e949",
+      "snapshot": "source_snapshot/spoof_r2entropy.py",
+      "source": "D:\\ATM\\Project\\Code\\labs\\r2entropy\\attacker\\scripts\\spoof_r2entropy.py"
+    }
+  },
+  "splits": {
+    "calibration": {
+      "conditions": [
+        "benign_continuous",
+        "benign_bursty"
+      ],
+      "purpose": "generator/preflight QA only; does not fit rate or detector threshold",
+      "runs_per_cell": 10
+    },
+    "test": {
+      "conditions": [
+        "benign_continuous",
+        "attack_sweep_continuous",
+        "attack_random_continuous",
+        "attack_fixed_continuous",
+        "attack_dup_sweep_continuous",
+        "benign_bursty",
+        "attack_sweep_bursty"
+      ],
+      "purpose": "sole confirmatory evidence",
+      "runs_per_cell": 20
+    },
+    "validation": {
+      "conditions": [
+        "benign_continuous",
+        "attack_sweep_continuous",
+        "attack_random_continuous",
+        "attack_fixed_continuous",
+        "attack_dup_sweep_continuous",
+        "benign_bursty",
+        "attack_sweep_bursty"
+      ],
+      "purpose": "lock optional scalar diagnostic thresholds before test",
+      "runs_per_cell": 10
+    }
+  },
+  "status": "registered-before-data-collection",
+  "volume_matching": "identical FRAG2 and query timestamps per profile/level/pair; assert sample difference 0 per query",
+  "warmup_seconds": 6.0,
+  "working_directory": "D:\\ATM\\Project\\Code"
+}

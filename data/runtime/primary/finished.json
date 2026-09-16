@@ -1,0 +1,9 @@
+{
+  "finished_utc": "2026-09-02T15:30:16Z",
+  "run_id": "E5-routed-s20260902-r001",
+  "stages": [
+    "pilot",
+    "sanity",
+    "confirmatory"
+  ]
+}

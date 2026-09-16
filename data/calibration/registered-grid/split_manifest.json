@@ -1,0 +1,165 @@
+{
+  "group_key": [
+    "source_e2_split",
+    "profile",
+    "level",
+    "pair_id",
+    "arrival_schedule_sha256",
+    "query_schedule_sha256"
+  ],
+  "input": {
+    "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/e2_decisions.csv.gz",
+    "sha256": "c98c4a8a745751ba5390aae39eaec5165a25c4bf3130a4ee57a5222c47687cea"
+  },
+  "paired_traces_by_source_stratum": {
+    "calibration/bursty/120": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "calibration/bursty/200": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "calibration/bursty/24": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "calibration/bursty/60": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "calibration/continuous/120": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "calibration/continuous/200": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "calibration/continuous/24": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "calibration/continuous/60": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "test/bursty/120": {
+      "held_out_test": 4,
+      "train_exploration": 12,
+      "validation": 4
+    },
+    "test/bursty/200": {
+      "held_out_test": 4,
+      "train_exploration": 12,
+      "validation": 4
+    },
+    "test/bursty/24": {
+      "held_out_test": 4,
+      "train_exploration": 12,
+      "validation": 4
+    },
+    "test/bursty/60": {
+      "held_out_test": 4,
+      "train_exploration": 12,
+      "validation": 4
+    },
+    "test/continuous/120": {
+      "held_out_test": 4,
+      "train_exploration": 12,
+      "validation": 4
+    },
+    "test/continuous/200": {
+      "held_out_test": 4,
+      "train_exploration": 12,
+      "validation": 4
+    },
+    "test/continuous/24": {
+      "held_out_test": 4,
+      "train_exploration": 12,
+      "validation": 4
+    },
+    "test/continuous/60": {
+      "held_out_test": 4,
+      "train_exploration": 12,
+      "validation": 4
+    },
+    "validation/bursty/120": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "validation/bursty/200": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "validation/bursty/24": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "validation/bursty/60": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "validation/continuous/120": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "validation/continuous/200": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "validation/continuous/24": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    },
+    "validation/continuous/60": {
+      "held_out_test": 2,
+      "train_exploration": 6,
+      "validation": 2
+    }
+  },
+  "partitions": {
+    "held_out_test": {
+      "decisions": 27600,
+      "file": "held_out_test.csv.gz",
+      "paired_traces": 64,
+      "sha256": "3b4d54efe6e6dab447b26a9ebf7f4659f52a438cb700fec989c982dd5b063307"
+    },
+    "train_exploration": {
+      "decisions": 82800,
+      "file": "train_exploration.csv.gz",
+      "paired_traces": 192,
+      "sha256": "864f10fb238a28240ee5f708122d7ee96f73fb3ec2d5f3009494147d38225ee7"
+    },
+    "validation": {
+      "decisions": 27600,
+      "file": "validation.csv.gz",
+      "paired_traces": 64,
+      "sha256": "ea59a0424a6c2cadd17f8ce30eca7ae11e9f104f74cbee5ca1ab0b7607ffe1f8"
+    }
+  },
+  "purpose": "E3 60/20/20 split by paired trace; never split decision windows within a trace.",
+  "schema_version": 1,
+  "seed": 20260820,
+  "stratification": [
+    "source_e2_split",
+    "profile",
+    "level"
+  ],
+  "warning": "source_e2_split is preserved for provenance. Because this re-partitions E2 records, it is not E2's canonical held-out-test split."
+}

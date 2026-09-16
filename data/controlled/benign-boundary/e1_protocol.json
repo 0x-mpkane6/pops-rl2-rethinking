@@ -1,0 +1,153 @@
+{
+  "schema_version": 3,
+  "status": "registered-before-data-collection",
+  "experiment": "E1 -- FPR vs benign fragment rate",
+  "run_id": "E1-confirmatory-20260810-s20260810-raw-v2",
+  "registered_utc": "2026-08-10T10:43:11Z",
+  "scope": "controlled-emulation / synthetic benign proxy",
+  "runs_per_cell": 20,
+  "decisions_per_run": 300,
+  "experiment_seed": 20260810,
+  "main_levels_samples_per_window": [
+    5,
+    12,
+    18,
+    24,
+    36,
+    60,
+    120,
+    300
+  ],
+  "high_load_levels_exploratory": [
+    600,
+    1200,
+    1400,
+    1600,
+    1800,
+    2000,
+    3000,
+    6000
+  ],
+  "behaviors": {
+    "random2048": {
+      "kind": "uniform",
+      "space": 2048,
+      "label": "Random IPID (uniform 0..2047) -- auth_server model"
+    },
+    "sequential": {
+      "kind": "sequential",
+      "space": 2048,
+      "label": "Sequential IPID (global +1 counter)"
+    },
+    "smallpool16": {
+      "kind": "uniform",
+      "space": 16,
+      "label": "Small IPID pool (uniform 0..15) -- NAT / constrained host"
+    }
+  },
+  "operating_point": {
+    "min_samples": 24,
+    "entropy_threshold": 4.0,
+    "unique_ratio_threshold": 0.7,
+    "window_seconds": 2.0
+  },
+  "randomization": "seeded shuffle of all main cells and separate seeded shuffle of exploratory high-load cells",
+  "independent_unit": "run",
+  "primary_ci": "cluster bootstrap over runs; run-level t interval shown as sensitivity",
+  "zero_event_rule": "report 0 observed; exact binomial interval applies to independent run-any-FP probability, not dependent decision windows",
+  "load_definition": "lambda=(target_samples_per_window-1)/window because scoring includes the current FRAG2",
+  "event_level_raw": {
+    "retained": true,
+    "layout": "one JSONL file per independent run under raw_decisions/{phase}/{behavior}/level_{level}/",
+    "schema_version": 1,
+    "unit": "one scored post-warmup decision",
+    "fields": [
+      "phase",
+      "level_samples_per_window",
+      "behavior",
+      "run_idx",
+      "seed",
+      "decision_idx",
+      "virtual_timestamp_seconds",
+      "measurement_elapsed_seconds",
+      "current_ipid",
+      "samples",
+      "unique_ipids",
+      "entropy",
+      "unique_ratio",
+      "block_legacy",
+      "block_combined",
+      "block_volume",
+      "block_entropy",
+      "block_unique"
+    ],
+    "raw_scope": "one record for every scored decision after warmup; overlapping window contents are represented by samples/unique/entropy, not duplicated IPID arrays",
+    "full_window_ipids_retained": false,
+    "warmup_arrival_trace_retained": false,
+    "expected_main_records": 144000,
+    "expected_high_load_records": 48000
+  },
+  "command": [
+    "C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\e1_experiment.py",
+    "--runs",
+    "20",
+    "--decisions",
+    "300",
+    "--experiment-seed",
+    "20260810",
+    "--run-id",
+    "E1-confirmatory-20260810-s20260810-raw-v2",
+    "--out",
+    "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2"
+  ],
+  "working_directory": "D:\\ATM\\Project\\Code",
+  "git": {
+    "commit_full": "fbb26e8b1300a6537adc4cf80f13facbae66b890",
+    "commit_short": "fbb26e8",
+    "branch": "main",
+    "dirty": true
+  },
+  "source_manifest": {
+    "e1_experiment.py": {
+      "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\e1_experiment.py",
+      "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\e1_experiment.py",
+      "sha256": "5103d7ef9f8c795ef44d473bf035d978f5217d7d090a380782c5d492fa8eae09"
+    },
+    "e1_plot.py": {
+      "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\e1_plot.py",
+      "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\e1_plot.py",
+      "sha256": "1268c09476bab18b894338bdc1142589fb69682efc7bb460de3e7449ee853267"
+    },
+    "e1_validate.py": {
+      "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\e1_validate.py",
+      "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\e1_validate.py",
+      "sha256": "828614468f4e825ca403558a52c7cb5f1471faae4a23fd761e0530f3b9bc34dc"
+    },
+    "e1_report.py": {
+      "source": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\e1_report.py",
+      "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\e1_report.py",
+      "sha256": "8ca715a27f3d56d9906c650ae2ee0549de158821274dcde5cf2411134401e027"
+    },
+    "resolver.py": {
+      "source": "D:\\ATM\\Project\\Code\\labs\\r2entropy\\resolver\\resolver.py",
+      "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\resolver.py",
+      "sha256": "2501bc33e1eaccdfa12dc88f379187f393626326bd52097ba12a3ffee196c931"
+    },
+    "auth_server.py": {
+      "source": "D:\\ATM\\Project\\Code\\labs\\r2entropy\\auth\\auth_server.py",
+      "snapshot": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2\\source_snapshot\\auth_server.py",
+      "sha256": "f884f51c2478b12a0d418d48b7cf5a8bb09083877bb80fe10607b2cedacb086f"
+    }
+  },
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.9"
+  },
+  "hardware": {
+    "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "logical_cpus": 12,
+    "memory_bytes": 16991338496
+  }
+}

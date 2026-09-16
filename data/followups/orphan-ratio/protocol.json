@@ -1,0 +1,67 @@
+{
+  "classification": "post-hoc descriptive analysis; specified after original study outcomes",
+  "registered_utc": "2026-09-12T06:25:10.062364+00:00",
+  "analysis_source_sha256": "492b6725b1ae4492685dc545f525c244feac2b97955aa3c81dbfff4b09ad8e74",
+  "controlled": {
+    "source_validation_sha256": "ea59a0424a6c2cadd17f8ce30eca7ae11e9f104f74cbee5ca1ab0b7607ffe1f8",
+    "spaces": [
+      2048,
+      65536
+    ],
+    "permitted_data": "validation.csv.gz and only the original condition traces it names",
+    "forbidden_data": "train_exploration.csv.gz and held_out_test.csv.gz; no new threshold selection",
+    "matching": "arrival and query timestamps, occupancy, event origin mask; IPID space alone changes",
+    "qname_equivalent": "FRAG1 schedule IPIDs also expand; equal query timestamps remain matched",
+    "rules": {
+      "B2": [
+        24
+      ],
+      "B5_initial": [
+        24,
+        4,
+        0.7
+      ],
+      "B5_locked": [
+        8,
+        6,
+        0.9
+      ]
+    },
+    "primary": "continuous and bursty sweep vs matched benign, 4 target volumes; AP for entropy and uniqueness, attack alert, benign trigger, FNR, J, delta J vs B2",
+    "secondary": "fixed, duplicate sweep, random negative control; report separately",
+    "benign_only_traces": "score and retain them; omit from paired effects because they have no attack mate in validation",
+    "inference": "5000 paired-trace bootstrap samples within each cell; equal cell weights for macro; descriptive intervals only"
+  },
+  "orphan": {
+    "data": "all 320 completed factorial confirmatory runs, ips_outside.pcapng only, before enforcement",
+    "capture_order": "Stable chronological sort by kernel capture timestamp; retain every scoped frame and audit file-order timestamp inversions. Original record-order assumption failed in r001; no outcome-based run exclusions.",
+    "order_sensitivity": "Also replay file record order, clamping backward timestamps only for that diagnostic. Report its maximum orphan ratio; do not silently rely on timestamp sorting.",
+    "packet_identity": "Report unique forged packet signatures and their repeated capture observations separately; a repeated hash is not automatically a duplicate physical send.",
+    "key": [
+      "IPv4 source",
+      "IPv4 destination",
+      "IP protocol",
+      "IPID"
+    ],
+    "scope": "sources 10.82.0.100 and 10.82.0.200 to resolver 10.81.0.53; all protocols including non-DNS occupancy",
+    "window_seconds": 2,
+    "head_match_horizon_seconds": 2,
+    "definition": "fraction of non-initial fragment observations in the trailing window lacking a first fragment observed within 2 s before that tail or after that tail by the current evaluation time; matching is causal and remembered for the tail's residence in the window",
+    "denominator": "all observed non-initial fragments in window; empty window -> ratio 0, active false",
+    "head": "offset zero with MF set; do not use unfragmented datagrams as first-fragment evidence",
+    "rules": {
+      "orphan_majority": "n >= 8 AND orphan ratio >= 0.50",
+      "orphan_any": "n >= 8 AND orphan ratio > 0"
+    },
+    "thresholds": "fixed here, not selected from runtime outcomes",
+    "timing": "ratio at query start and peak ratio/any activation during query interval; update matching when heads arrive, score tail enforcement at ingress",
+    "query_clock": "wall clock from per-trial wall_ns-mono_ns offset plus query_start/end_mono_ns; report offset spread and check coverage",
+    "clock_guard": "When offset spread exceeds 1 ms, accept interval ratios only if orphan ratio is identically zero over the entire capture in both timestamp and record order. Otherwise stop: exact query alignment is unresolved.",
+    "primary_comparison": "B0_OFF attack vs benign at each rate, paired by recreated-run replicate; AP and fixed-rule alert rates",
+    "other_policies": "descriptive separate policy strata; their feedback and query schedules change observed traffic",
+    "claim_scope": "offline baseline replay only; no enforced orphan policy or counterfactual malicious-answer/cache-insertion rates"
+  },
+  "bootstrap_seed": 20260912,
+  "bootstrap_samples": 5000,
+  "no_commit_push": true
+}

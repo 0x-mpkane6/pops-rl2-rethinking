@@ -1,0 +1,528 @@
+{
+  "groups": {
+    "B0_OFF__ATTACK_FIXED_MATCHED": {
+      "any_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "any_poison_rate": 1.0,
+      "any_poison_runs": 20,
+      "first_trial_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "first_trial_poison_runs": 20,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.016,
+      "mean_noanswer_rate": 0.009,
+      "mean_run_asr": 0.975,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B0_OFF",
+      "runs": 20,
+      "workload": "ATTACK_FIXED_MATCHED"
+    },
+    "B0_OFF__ATTACK_SWEEP_FLOOD": {
+      "any_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "any_poison_rate": 1.0,
+      "any_poison_runs": 20,
+      "first_trial_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "first_trial_poison_runs": 20,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.0,
+      "mean_noanswer_rate": 0.005,
+      "mean_run_asr": 0.9949999999999999,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "B0_OFF",
+      "runs": 20,
+      "workload": "ATTACK_SWEEP_FLOOD"
+    },
+    "B0_OFF__BENIGN_BOUNDARY": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.9960000000000001,
+      "mean_noanswer_rate": 0.004,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B0_OFF",
+      "runs": 20,
+      "workload": "BENIGN_BOUNDARY"
+    },
+    "B0_OFF__BENIGN_LOW": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.992,
+      "mean_noanswer_rate": 0.008,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B0_OFF",
+      "runs": 20,
+      "workload": "BENIGN_LOW"
+    },
+    "B1_RL2_TC__ATTACK_FIXED_MATCHED": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 0.983,
+      "mean_legitimate_answer_rate": 0.998,
+      "mean_noanswer_rate": 0.002,
+      "mean_run_asr": 0.0,
+      "mean_tc_injection_rate": 1.0,
+      "mean_tcp_retry_rate": 1.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B1_RL2_TC",
+      "runs": 20,
+      "workload": "ATTACK_FIXED_MATCHED"
+    },
+    "B1_RL2_TC__ATTACK_SWEEP_FLOOD": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 1.0,
+      "mean_legitimate_answer_rate": 0.992,
+      "mean_noanswer_rate": 0.008,
+      "mean_run_asr": 0.0,
+      "mean_tc_injection_rate": 1.0,
+      "mean_tcp_retry_rate": 1.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "B1_RL2_TC",
+      "runs": 20,
+      "workload": "ATTACK_SWEEP_FLOOD"
+    },
+    "B1_RL2_TC__BENIGN_BOUNDARY": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.9869999999999999,
+      "mean_noanswer_rate": 0.013000000000000001,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 1.0,
+      "mean_tcp_retry_rate": 1.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B1_RL2_TC",
+      "runs": 20,
+      "workload": "BENIGN_BOUNDARY"
+    },
+    "B1_RL2_TC__BENIGN_LOW": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.993,
+      "mean_noanswer_rate": 0.007000000000000001,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 1.0,
+      "mean_tcp_retry_rate": 1.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B1_RL2_TC",
+      "runs": 20,
+      "workload": "BENIGN_LOW"
+    },
+    "B5_LOCKED_TC__ATTACK_FIXED_MATCHED": {
+      "any_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "any_poison_rate": 1.0,
+      "any_poison_runs": 20,
+      "first_trial_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "first_trial_poison_runs": 20,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.016,
+      "mean_noanswer_rate": 0.004,
+      "mean_run_asr": 0.9800000000000001,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B5_LOCKED_TC",
+      "runs": 20,
+      "workload": "ATTACK_FIXED_MATCHED"
+    },
+    "B5_LOCKED_TC__ATTACK_SWEEP_FLOOD": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 1.0,
+      "mean_legitimate_answer_rate": 0.994,
+      "mean_noanswer_rate": 0.006,
+      "mean_run_asr": 0.0,
+      "mean_tc_injection_rate": 1.0,
+      "mean_tcp_retry_rate": 1.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "B5_LOCKED_TC",
+      "runs": 20,
+      "workload": "ATTACK_SWEEP_FLOOD"
+    },
+    "B5_LOCKED_TC__BENIGN_BOUNDARY": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.9970000000000001,
+      "mean_noanswer_rate": 0.003,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B5_LOCKED_TC",
+      "runs": 20,
+      "workload": "BENIGN_BOUNDARY"
+    },
+    "B5_LOCKED_TC__BENIGN_LOW": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.993,
+      "mean_noanswer_rate": 0.007000000000000001,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B5_LOCKED_TC",
+      "runs": 20,
+      "workload": "BENIGN_LOW"
+    },
+    "PREARM_TAIL_DROP__ATTACK_FIXED_MATCHED": {
+      "any_poison_ci95": null,
+      "any_poison_rate": null,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": null,
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": null,
+      "mean_legitimate_answer_rate": null,
+      "mean_noanswer_rate": null,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": null,
+      "mean_tcp_retry_rate": null,
+      "mean_trigger_rate": null,
+      "policy": "PREARM_TAIL_DROP",
+      "runs": 0,
+      "workload": "ATTACK_FIXED_MATCHED"
+    },
+    "PREARM_TAIL_DROP__ATTACK_SWEEP_FLOOD": {
+      "any_poison_ci95": null,
+      "any_poison_rate": null,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": null,
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": null,
+      "mean_legitimate_answer_rate": null,
+      "mean_noanswer_rate": null,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": null,
+      "mean_tcp_retry_rate": null,
+      "mean_trigger_rate": null,
+      "policy": "PREARM_TAIL_DROP",
+      "runs": 0,
+      "workload": "ATTACK_SWEEP_FLOOD"
+    },
+    "PREARM_TAIL_DROP__BENIGN_BOUNDARY": {
+      "any_poison_ci95": null,
+      "any_poison_rate": null,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": null,
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": null,
+      "mean_legitimate_answer_rate": null,
+      "mean_noanswer_rate": null,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": null,
+      "mean_tcp_retry_rate": null,
+      "mean_trigger_rate": null,
+      "policy": "PREARM_TAIL_DROP",
+      "runs": 0,
+      "workload": "BENIGN_BOUNDARY"
+    },
+    "PREARM_TAIL_DROP__BENIGN_LOW": {
+      "any_poison_ci95": null,
+      "any_poison_rate": null,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": null,
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": null,
+      "mean_legitimate_answer_rate": null,
+      "mean_noanswer_rate": null,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": null,
+      "mean_tcp_retry_rate": null,
+      "mean_trigger_rate": null,
+      "policy": "PREARM_TAIL_DROP",
+      "runs": 0,
+      "workload": "BENIGN_LOW"
+    },
+    "RFC_DROP_NATIVE__ATTACK_FIXED_MATCHED": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 1.0,
+      "mean_legitimate_answer_rate": 0.0,
+      "mean_noanswer_rate": 1.0,
+      "mean_run_asr": 0.0,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "RFC_DROP_NATIVE",
+      "runs": 20,
+      "workload": "ATTACK_FIXED_MATCHED"
+    },
+    "RFC_DROP_NATIVE__ATTACK_SWEEP_FLOOD": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 1.0,
+      "mean_legitimate_answer_rate": 0.0,
+      "mean_noanswer_rate": 1.0,
+      "mean_run_asr": 0.0,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "RFC_DROP_NATIVE",
+      "runs": 20,
+      "workload": "ATTACK_SWEEP_FLOOD"
+    },
+    "RFC_DROP_NATIVE__BENIGN_BOUNDARY": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.0,
+      "mean_noanswer_rate": 1.0,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "RFC_DROP_NATIVE",
+      "runs": 20,
+      "workload": "BENIGN_BOUNDARY"
+    },
+    "RFC_DROP_NATIVE__BENIGN_LOW": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.0,
+      "mean_noanswer_rate": 1.0,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "RFC_DROP_NATIVE",
+      "runs": 20,
+      "workload": "BENIGN_LOW"
+    }
+  },
+  "n_runs": 320,
+  "paired": {
+    "B1_RL2_TC_vs_B0_OFF__ATTACK_FIXED_MATCHED__run_asr": {
+      "blocks": 20,
+      "ci_high": -0.969,
+      "ci_low": -0.9810000000000001,
+      "estimate": -0.975,
+      "replicates": 5000
+    },
+    "B1_RL2_TC_vs_B0_OFF__ATTACK_SWEEP_FLOOD__run_asr": {
+      "blocks": 20,
+      "ci_high": -0.991,
+      "ci_low": -0.998,
+      "estimate": -0.9949999999999999,
+      "replicates": 5000
+    },
+    "B1_RL2_TC_vs_B0_OFF__BENIGN_BOUNDARY__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": -0.0050000000000000044,
+      "ci_low": -0.013000000000000012,
+      "estimate": -0.009000000000000008,
+      "replicates": 5000
+    },
+    "B1_RL2_TC_vs_B0_OFF__BENIGN_LOW__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": 0.006000000000000005,
+      "ci_low": -0.0040000000000000036,
+      "estimate": 0.0010000000000000009,
+      "replicates": 5000
+    },
+    "B5_LOCKED_TC_vs_B0_OFF__ATTACK_FIXED_MATCHED__run_asr": {
+      "blocks": 20,
+      "ci_high": 0.01200000000000001,
+      "ci_low": -0.0020000000000000018,
+      "estimate": 0.0050000000000000044,
+      "replicates": 5000
+    },
+    "B5_LOCKED_TC_vs_B0_OFF__ATTACK_SWEEP_FLOOD__run_asr": {
+      "blocks": 20,
+      "ci_high": -0.991,
+      "ci_low": -0.999,
+      "estimate": -0.9949999999999999,
+      "replicates": 5000
+    },
+    "B5_LOCKED_TC_vs_B0_OFF__BENIGN_BOUNDARY__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": 0.0050000000000000044,
+      "ci_low": -0.0030000000000000027,
+      "estimate": 0.0010000000000000009,
+      "replicates": 5000
+    },
+    "B5_LOCKED_TC_vs_B0_OFF__BENIGN_LOW__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": 0.006000000000000005,
+      "ci_low": -0.0040000000000000036,
+      "estimate": 0.0010000000000000009,
+      "replicates": 5000
+    },
+    "RFC_DROP_NATIVE_vs_B0_OFF__ATTACK_FIXED_MATCHED__run_asr": {
+      "blocks": 20,
+      "ci_high": -0.969,
+      "ci_low": -0.9810000000000001,
+      "estimate": -0.975,
+      "replicates": 5000
+    },
+    "RFC_DROP_NATIVE_vs_B0_OFF__ATTACK_SWEEP_FLOOD__run_asr": {
+      "blocks": 20,
+      "ci_high": -0.991,
+      "ci_low": -0.998,
+      "estimate": -0.9949999999999999,
+      "replicates": 5000
+    },
+    "RFC_DROP_NATIVE_vs_B0_OFF__BENIGN_BOUNDARY__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": -0.992,
+      "ci_low": -0.999,
+      "estimate": -0.9960000000000001,
+      "replicates": 5000
+    },
+    "RFC_DROP_NATIVE_vs_B0_OFF__BENIGN_LOW__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": -0.9879999999999999,
+      "ci_low": -0.9960000000000001,
+      "estimate": -0.992,
+      "replicates": 5000
+    }
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "artifact_dir": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E1\\runs\\E1_confirmatory_20260810_seed20260810_raw_v2",
+  "generated_utc": "2026-08-10T10:44:07Z",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "required_files",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "name": "registered_before_collection",
+      "status": "PASS",
+      "detail": "registered-before-data-collection"
+    },
+    {
+      "name": "run_id_match",
+      "status": "PASS",
+      "detail": "protocol=E1-confirmatory-20260810-s20260810-raw-v2 results=E1-confirmatory-20260810-s20260810-raw-v2"
+    },
+    {
+      "name": "independent_unit",
+      "status": "PASS",
+      "detail": "run"
+    },
+    {
+      "name": "main_row_count",
+      "status": "PASS",
+      "detail": "observed=480 expected=480"
+    },
+    {
+      "name": "unique_main_seeds",
+      "status": "PASS",
+      "detail": "unique=480 rows=480"
+    },
+    {
+      "name": "complete_runs",
+      "status": "PASS",
+      "detail": "decisions/run=300"
+    },
+    {
+      "name": "main_event_level_raw",
+      "status": "PASS",
+      "detail": "records=144000 expected=144000"
+    },
+    {
+      "name": "finite_metrics",
+      "status": "PASS",
+      "detail": "samples/rate/entropy/unique are finite"
+    },
+    {
+      "name": "positive_actual_rates",
+      "status": "PASS",
+      "detail": "all measured rates > 0"
+    },
+    {
+      "name": "balanced_cells",
+      "status": "PASS",
+      "detail": "cell_sizes=[20]"
+    },
+    {
+      "name": "target_occupancy",
+      "status": "PASS",
+      "detail": "all cell means within max(0.75, 5%) of target"
+    },
+    {
+      "name": "raw_to_json_aggregation",
+      "status": "PASS",
+      "detail": "all aggregates match raw"
+    },
+    {
+      "name": "high_load_raw",
+      "status": "PASS",
+      "detail": "observed=160 expected=160"
+    },
+    {
+      "name": "unique_high_load_seeds",
+      "status": "PASS",
+      "detail": "unique=160 rows=160"
+    },
+    {
+      "name": "high_load_event_level_raw",
+      "status": "PASS",
+      "detail": "records=48000 expected=48000"
+    },
+    {
+      "name": "event_raw_inventory",
+      "status": "PASS",
+      "detail": "referenced=640 on_disk=640"
+    },
+    {
+      "name": "source_snapshot_hashes",
+      "status": "PASS",
+      "detail": "all exact source snapshots match"
+    }
+  ],
+  "warnings": [
+    "This campaign is controlled emulation, not real IP fragmentation.",
+    "Simulation scores after inserting the current FRAG2; Docker emits paired FRAG2 asynchronously after FRAG1.",
+    "Event-level Clopper-Pearson intervals are descriptive only because windows overlap.",
+    "Detector latency/throughput/CPU/memory are not measured by virtual-time simulation."
+  ]
+}

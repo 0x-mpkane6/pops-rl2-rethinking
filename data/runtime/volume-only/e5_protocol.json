@@ -1,0 +1,116 @@
+{
+  "addon": "B2_VOLUME_TC",
+  "analysis": {
+    "bootstrap_replicates": 5000,
+    "include_old_campaign": false,
+    "independent_unit": "recreated_stack_run",
+    "pairing_key": [
+      "workload",
+      "rep"
+    ]
+  },
+  "e3_operating_point": {
+    "b2_uses_n_only": true,
+    "entropy_threshold_bits": 6.0,
+    "locked_before_e5": true,
+    "min_samples": 8,
+    "unique_ipid_ratio_threshold": 0.9,
+    "window_seconds": 2.0
+  },
+  "experiment_seed": 20260902,
+  "k_runs_per_cell": 20,
+  "pairing_campaign": "E5-routed-s20260902-r001",
+  "policies": [
+    {
+      "confirmatory": true,
+      "id": "B2_VOLUME_TC",
+      "semantics": "active_when_n_ge_8_then_same_tc_drop_as_b1_b5; passive_b5_state_still_logged"
+    }
+  ],
+  "protocol_id": "E5-b2-s20260915-r002",
+  "protocol_path": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E5\\e5_b2_protocol.json",
+  "purpose": "Volume-only B2 runtime addon paired with the original E5 occupancy/qname schedules",
+  "run_id": "E5-b2-s20260915-r002",
+  "schedule": {
+    "block_unit": "rep",
+    "experiment_seed": 20260902,
+    "policy_workload_cells_per_block": 4,
+    "qname_template": "r<rep>-t<trial>-<nonce>.bank.com.",
+    "query_launch": {
+      "mode": "sequential_tc_rounds",
+      "same_qname_schedule_across_policies": true,
+      "spacing_seconds": 0.01
+    },
+    "randomized_complete_blocks": true,
+    "same_schedule_across_policies": true,
+    "schedule_duration_seconds": 120.0,
+    "trials_per_run": 50
+  },
+  "scope": "diagnostic_addon_not_pooled",
+  "stages": {
+    "confirmatory": {
+      "execution": "sequential_no_parallelism",
+      "included_in_inference": true,
+      "runs_per_cell": 20,
+      "total_stack_runs": 80,
+      "total_trials": 4000
+    },
+    "pilot": {
+      "cells": [
+        [
+          "B2_VOLUME_TC",
+          "ATTACK_FIXED_MATCHED"
+        ],
+        [
+          "B2_VOLUME_TC",
+          "BENIGN_BOUNDARY"
+        ],
+        [
+          "B2_VOLUME_TC",
+          "ATTACK_SWEEP_FLOOD"
+        ],
+        [
+          "B2_VOLUME_TC",
+          "BENIGN_LOW"
+        ]
+      ],
+      "included_in_inference": false,
+      "trials_per_run": 5
+    },
+    "sanity": {
+      "cells": "all_4_policies_x_all_4_workloads",
+      "gate": "all_integrity_pass",
+      "included_in_inference": false,
+      "runs_per_cell": 1
+    }
+  },
+  "status": "registered_protocol_no_results",
+  "trials_per_run": 50,
+  "workloads": [
+    {
+      "id": "BENIGN_LOW",
+      "ipid_mode": "random",
+      "kind": "benign",
+      "occupancy_fragments_per_second": 2.5
+    },
+    {
+      "id": "BENIGN_BOUNDARY",
+      "ipid_mode": "random",
+      "kind": "benign",
+      "occupancy_fragments_per_second": 12.0
+    },
+    {
+      "fixed_ipid": 777,
+      "id": "ATTACK_FIXED_MATCHED",
+      "ipid_mode": "fixed",
+      "kind": "attack",
+      "occupancy_fragments_per_second": 12.0
+    },
+    {
+      "id": "ATTACK_SWEEP_FLOOD",
+      "ipid_mode": "deterministic_sweep",
+      "kind": "attack",
+      "occupancy_fragments_per_second": 200.0
+    }
+  ]
+}

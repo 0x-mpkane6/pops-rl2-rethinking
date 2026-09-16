@@ -1,0 +1,90 @@
+{
+  "print_width_mm": 122.0,
+  "minimum_font_pt": 8.5,
+  "figures": {
+    "RQ1_benign_boundary": {
+      "width_mm": 122.0,
+      "height_mm": 72.39,
+      "min_font_pt": 8.5,
+      "clipped_text": []
+    },
+    "RQ1_volume_matched_discrimination": {
+      "width_mm": 122.0,
+      "height_mm": 60.959999999999994,
+      "min_font_pt": 8.5,
+      "clipped_text": []
+    },
+    "RQ2_threshold_calibration": {
+      "width_mm": 122.0,
+      "height_mm": 85.09,
+      "min_font_pt": 8.5,
+      "clipped_text": []
+    },
+    "RQ3_failure_modes": {
+      "width_mm": 122.0,
+      "height_mm": 72.39,
+      "min_font_pt": 8.5,
+      "clipped_text": []
+    },
+    "runtime_benign_cost_original": {
+      "width_mm": 122.0,
+      "height_mm": 57.912000000000006,
+      "min_font_pt": 8.5,
+      "clipped_text": []
+    },
+    "runtime_benign_cost_factorial": {
+      "width_mm": 122.0,
+      "height_mm": 57.912000000000006,
+      "min_font_pt": 8.5,
+      "clipped_text": []
+    },
+    "RQ4_runtime_outcomes": {
+      "width_mm": 122.0,
+      "height_mm": 57.912000000000006,
+      "min_font_pt": 8.5,
+      "clipped_text": []
+    },
+    "RQ4_runtime_mechanism": {
+      "width_mm": 122.0,
+      "height_mm": 21.336,
+      "min_font_pt": 8.5,
+      "clipped_text": []
+    },
+    "runtime_factorial_results": {
+      "width_mm": 122.0,
+      "height_mm": 106.67999999999999,
+      "min_font_pt": 8.5,
+      "clipped_text": []
+    },
+    "validation_sensitivity_posthoc": {
+      "width_mm": 122.0,
+      "height_mm": 33.52799999999999,
+      "min_font_pt": 8.5,
+      "clipped_text": []
+    }
+  },
+  "boundary": {
+    "raw_runs": 480,
+    "decisions": 144000,
+    "initial_predictions_match_raw": true,
+    "locked_analysis": "post-hoc rescoring of existing benign traces; no new traffic; no retuning",
+    "bootstrap": "5,000 run resamples per cell"
+  },
+  "removed_figure_3A": {
+    "cells": 8,
+    "delta_J_and_both_CI_limits_all_zero": true
+  },
+  "runtime": {
+    "campaigns": {
+      "original": "E5-routed-s20260902-r001",
+      "factorial": "E5-factorial-s20260911-r003"
+    },
+    "runs_per_campaign": 320,
+    "trials_per_campaign": 16000,
+    "benign_raw_trials_checked": 16000,
+    "latency_field": "latency_ms, cross-checked against monotonic query end minus start within 0.05 ms (two adjacent logger clock reads)",
+    "latency_aggregation": "pooled descriptive quantiles of all attempts, including timeouts; no trial-independent inference",
+    "campaigns_not_pooled": true
+  },
+  "status": "PASS"
+}

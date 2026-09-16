@@ -1,0 +1,132 @@
+{
+  "artifact_hashes": {
+    "lock": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_locked_threshold.json",
+      "sha256": "eb267e38d219a13b0d77d8465cfae58edb3f71c6f618951e43673690e519871e"
+    },
+    "protocol": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_protocol.json",
+      "sha256": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12"
+    },
+    "validation_grid": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_validation_grid.json",
+      "sha256": "856a0e18236d4d3352b5072699f33e5b013a5fd36f673a095514c84653c15310"
+    }
+  },
+  "checks": [
+    {
+      "critical": true,
+      "details": {
+        "criterion": "maximize macro delta_J_new_vs_B2",
+        "hard_constraints": "none",
+        "tie_break": [
+          "higher macro delta_J_new_vs_B2",
+          "lower macro benign_trigger_rate on primary cells",
+          "higher macro attack_alert_rate on primary cells",
+          "ascending tuple (min_samples, entropy_threshold, unique_ratio_threshold)"
+        ]
+      },
+      "name": "registered_selection_criterion_and_tie_break_are_supported",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "actual_protocol_hash": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12",
+        "grid_protocol_hash": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12"
+      },
+      "name": "validation_grid_provenance_matches_protocol",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "actual_grid_hash": "856a0e18236d4d3352b5072699f33e5b013a5fd36f673a095514c84653c15310",
+        "actual_protocol_hash": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12",
+        "lock_grid_hash": "856a0e18236d4d3352b5072699f33e5b013a5fd36f673a095514c84653c15310",
+        "lock_protocol_hash": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12"
+      },
+      "name": "lock_provenance_matches_protocol_and_validation_grid",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "grid_held_out_opened": false,
+        "lock_held_out_status": "not_read",
+        "lock_status": "locked-before-test"
+      },
+      "name": "lock_status_and_held_out_guard",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "candidate_count": 60,
+        "unique_count": 60
+      },
+      "name": "validation_grid_has_60_unique_complete_primary_candidates",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "locked_candidate": {
+          "entropy_threshold": 6,
+          "min_samples": 8,
+          "unique_ratio_threshold": 0.9
+        },
+        "recomputed_rank_1": {
+          "entropy_threshold": 6,
+          "min_samples": 8,
+          "unique_ratio_threshold": 0.9
+        }
+      },
+      "name": "locked_candidate_is_recomputed_rank_1",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "expected_ranking_count": 60,
+        "lock_ranking_count": 60
+      },
+      "name": "lock_ranking_matches_recomputed_criterion_and_tie_break",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "locked_candidate": {
+          "entropy_threshold": 6,
+          "min_samples": 8,
+          "unique_ratio_threshold": 0.9
+        }
+      },
+      "name": "locked_candidate_appears_unchanged_in_registered_grid",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "selection_data": "validation-grid artifact only; no held-out decision data opened"
+      },
+      "name": "lock_records_no_test_data_use",
+      "status": "PASS"
+    }
+  ],
+  "critical_failures": [],
+  "data_access_policy": {
+    "decision_csv_opened": false,
+    "held_out_test_csv_opened": false,
+    "opened_artifacts": [
+      "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_protocol.json",
+      "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_validation_grid.json",
+      "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_locked_threshold.json"
+    ]
+  },
+  "experiment": "E3 lock validation",
+  "generated_utc": "2026-08-21T06:28:30.761510Z",
+  "schema_version": 1,
+  "status": "PASS"
+}

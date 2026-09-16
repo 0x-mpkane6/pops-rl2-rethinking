@@ -1,0 +1,208 @@
+{
+  "E3_final_validator_artifact_integrity": {
+    "held_out_test": {
+      "filesystem_sha256": "3b4d54efe6e6dab447b26a9ebf7f4659f52a438cb700fec989c982dd5b063307",
+      "frozen_expected_sha256": "3b4d54efe6e6dab447b26a9ebf7f4659f52a438cb700fec989c982dd5b063307",
+      "verification_status": "pass_byte_exact"
+    },
+    "lock": {
+      "filesystem_sha256": "eb267e38d219a13b0d77d8465cfae58edb3f71c6f618951e43673690e519871e",
+      "frozen_expected_sha256": "eb267e38d219a13b0d77d8465cfae58edb3f71c6f618951e43673690e519871e",
+      "verification_status": "pass_byte_exact"
+    },
+    "lock_validation": {
+      "filesystem_sha256": "ff7f6206be80a2cc7708ed1a41e812330fc5528949eb9f2849cc7163ab2e4420",
+      "frozen_expected_sha256": "ff7f6206be80a2cc7708ed1a41e812330fc5528949eb9f2849cc7163ab2e4420",
+      "verification_status": "pass_byte_exact"
+    },
+    "protocol": {
+      "filesystem_sha256": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12",
+      "frozen_expected_sha256": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12",
+      "verification_status": "pass_byte_exact"
+    },
+    "split_manifest": {
+      "filesystem_sha256": "b37b723cf3f12413d4c098e6769a6d13d639c481d419b92c90b90181d75f6550",
+      "frozen_expected_sha256": "b37b723cf3f12413d4c098e6769a6d13d639c481d419b92c90b90181d75f6550",
+      "verification_status": "pass_byte_exact"
+    },
+    "summary_csv": {
+      "filesystem_sha256": "c8a69abff96840cdf8000b9b9585ee75dbf06a9088f9e49252ae19f7b235537e",
+      "frozen_expected_sha256": "2de210121ede109c3c0a69f752d2d5af9ed8d4ea0db4f56d4adf1d487441b7ed",
+      "normalization": "LF-only checkout bytes converted to CRLF before SHA-256",
+      "verification_status": "pass_git_lf_checkout_equivalent"
+    },
+    "test_csv": {
+      "filesystem_sha256": "e9e3afc42d0155397ff08902f1050cedd6067975c6891ec648e5f12b6573e0dc",
+      "frozen_expected_sha256": "507f6626d5945a7eba30ccbee18811e3847ce59842252c36ef74851f07837161",
+      "normalization": "LF-only checkout bytes converted to CRLF before SHA-256",
+      "verification_status": "pass_git_lf_checkout_equivalent"
+    },
+    "test_results": {
+      "filesystem_sha256": "7bf6071371b849620514db3f0d3ea4ee766c8e17299da04fbdb293c2df48ed64",
+      "frozen_expected_sha256": "7bf6071371b849620514db3f0d3ea4ee766c8e17299da04fbdb293c2df48ed64",
+      "verification_status": "pass_byte_exact"
+    },
+    "validation_grid": {
+      "filesystem_sha256": "856a0e18236d4d3352b5072699f33e5b013a5fd36f673a095514c84653c15310",
+      "frozen_expected_sha256": "856a0e18236d4d3352b5072699f33e5b013a5fd36f673a095514c84653c15310",
+      "verification_status": "pass_byte_exact"
+    }
+  },
+  "cross_experiment_dependency": "E3 is a 60/20/20 repartition of the canonical E2 decision dataset. E2 and E3 may be compared descriptively but must not be pooled or treated as independent replications.",
+  "experiment": "E4 input manifest",
+  "generated_utc": "2026-08-29T07:57:07.998448Z",
+  "generation_scope": "Hash and inventory only; no raw decision data, aggregation, CI recomputation, threshold selection, or experiment execution.",
+  "notes": [
+    "E3 held-out decision data was not opened.",
+    "Hashes are recorded before E4 aggregation and must be verified by e4_preflight.py.",
+    "This manifest does not treat E2 and E3 as independent studies."
+  ],
+  "protocol": {
+    "bytes": 7283,
+    "path": "research/Report/experiments/E4/e4_protocol.json",
+    "sha256": "4f0855a8ca1d76ead2a4b756768eaa07aee5696463e0a6d97d7a6f691f440ede"
+  },
+  "raw_data_access": "none",
+  "schema_version": 1,
+  "selection_or_threshold_modification": false,
+  "status": "frozen_inputs_inventory_complete",
+  "upstream_inputs": {
+    "E1": {
+      "artifacts": {
+        "e1_protocol.json": {
+          "bytes": 5782,
+          "path": "research/Report/experiments/E1/runs/E1_confirmatory_20260810_seed20260810_raw_v2/e1_protocol.json",
+          "sha256": "107376132722a54e7e91bdf06bc6d8f1e89195a99f1ec562661eefd5f95f0902"
+        },
+        "e1_results.json": {
+          "bytes": 126882,
+          "path": "research/Report/experiments/E1/runs/E1_confirmatory_20260810_seed20260810_raw_v2/e1_results.json",
+          "sha256": "d3d5b503a5b059b749c9dec6156a98451a00af838b2d74331d139205b8750dff"
+        },
+        "e1_runs.csv": {
+          "bytes": 139846,
+          "path": "research/Report/experiments/E1/runs/E1_confirmatory_20260810_seed20260810_raw_v2/e1_runs.csv",
+          "sha256": "40619843278be3c36178a61cb6c576539407e58d74c269b09e28e96654d6213d"
+        },
+        "validation.json": {
+          "bytes": 2792,
+          "path": "research/Report/experiments/E1/runs/E1_confirmatory_20260810_seed20260810_raw_v2/validation.json",
+          "sha256": "5e960006376c4d66089c2c52f838d670c0ed3803da550da7fc7ebf4b3331ca71"
+        }
+      },
+      "root": "research/Report/experiments/E1/runs/E1_confirmatory_20260810_seed20260810_raw_v2",
+      "validator_requirement": "PASS",
+      "validators": {
+        "validation.json": {
+          "bytes": 2792,
+          "check_count": 18,
+          "path": "research/Report/experiments/E1/runs/E1_confirmatory_20260810_seed20260810_raw_v2/validation.json",
+          "sha256": "5e960006376c4d66089c2c52f838d670c0ed3803da550da7fc7ebf4b3331ca71",
+          "status": "PASS"
+        }
+      }
+    },
+    "E2": {
+      "artifacts": {
+        "e2_protocol.json": {
+          "bytes": 8701,
+          "path": "research/Report/experiments/E2/runs/E2_confirmatory_20260814_complete_b0_ablation/e2_protocol.json",
+          "sha256": "b454fcbfb82c9ef662c7cd250480c58938164ae7d668f84430f31a6dd74852ec"
+        },
+        "e2_results.json": {
+          "bytes": 696467,
+          "path": "research/Report/experiments/E2/runs/E2_confirmatory_20260814_complete_b0_ablation/e2_results.json",
+          "sha256": "21769dc99dff13d4dffa43962a2e27751395c722a38fe828cfe6a0e44ab45e01"
+        },
+        "e2_summary.csv": {
+          "bytes": 151444,
+          "path": "research/Report/experiments/E2/runs/E2_confirmatory_20260814_complete_b0_ablation/e2_summary.csv",
+          "sha256": "4bf7ef071180a896432e7342b136ecbcd36d66fe3a2ee981a110d5cbc7c48816"
+        },
+        "validation.json": {
+          "bytes": 3058,
+          "path": "research/Report/experiments/E2/runs/E2_confirmatory_20260814_complete_b0_ablation/validation.json",
+          "sha256": "740418f64954f8fd796639aaa166593612bdcecc92c6b77c946ed9eb2b11f3af"
+        }
+      },
+      "root": "research/Report/experiments/E2/runs/E2_confirmatory_20260814_complete_b0_ablation",
+      "validator_requirement": "PASS",
+      "validators": {
+        "validation.json": {
+          "bytes": 3058,
+          "check_count": 18,
+          "path": "research/Report/experiments/E2/runs/E2_confirmatory_20260814_complete_b0_ablation/validation.json",
+          "sha256": "740418f64954f8fd796639aaa166593612bdcecc92c6b77c946ed9eb2b11f3af",
+          "status": "PASS"
+        }
+      }
+    },
+    "E3": {
+      "artifacts": {
+        "datasets/splits_60_20_20/split_manifest.json": {
+          "bytes": 4198,
+          "path": "research/Report/experiments/E3/datasets/splits_60_20_20/split_manifest.json",
+          "sha256": "b37b723cf3f12413d4c098e6769a6d13d639c481d419b92c90b90181d75f6550"
+        },
+        "e3_lock_validation.json": {
+          "bytes": 4434,
+          "path": "research/Report/experiments/E3/e3_lock_validation.json",
+          "sha256": "ff7f6206be80a2cc7708ed1a41e812330fc5528949eb9f2849cc7163ab2e4420"
+        },
+        "e3_locked_threshold.json": {
+          "bytes": 20759,
+          "path": "research/Report/experiments/E3/e3_locked_threshold.json",
+          "sha256": "eb267e38d219a13b0d77d8465cfae58edb3f71c6f618951e43673690e519871e"
+        },
+        "e3_protocol.json": {
+          "bytes": 6857,
+          "path": "research/Report/experiments/E3/e3_protocol.json",
+          "sha256": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12"
+        },
+        "e3_summary.csv": {
+          "bytes": 1872,
+          "path": "research/Report/experiments/E3/e3_summary.csv",
+          "sha256": "c8a69abff96840cdf8000b9b9585ee75dbf06a9088f9e49252ae19f7b235537e"
+        },
+        "e3_test_results.csv": {
+          "bytes": 38354,
+          "path": "research/Report/experiments/E3/e3_test_results.csv",
+          "sha256": "e9e3afc42d0155397ff08902f1050cedd6067975c6891ec648e5f12b6573e0dc"
+        },
+        "e3_test_results.json": {
+          "bytes": 83821,
+          "path": "research/Report/experiments/E3/e3_test_results.json",
+          "sha256": "7bf6071371b849620514db3f0d3ea4ee766c8e17299da04fbdb293c2df48ed64"
+        },
+        "e3_validation.json": {
+          "bytes": 6114,
+          "path": "research/Report/experiments/E3/e3_validation.json",
+          "sha256": "6f5d34f323c476d7ca45324ff384ad1916ed661d1ce391671a5b26a023c9524b"
+        },
+        "e3_validation_grid.json": {
+          "bytes": 488885,
+          "path": "research/Report/experiments/E3/e3_validation_grid.json",
+          "sha256": "856a0e18236d4d3352b5072699f33e5b013a5fd36f673a095514c84653c15310"
+        }
+      },
+      "root": "research/Report/experiments/E3",
+      "validator_requirement": "e3_validation=PASS and e3_lock_validation=PASS",
+      "validators": {
+        "e3_lock_validation.json": {
+          "bytes": 4434,
+          "check_count": 9,
+          "path": "research/Report/experiments/E3/e3_lock_validation.json",
+          "sha256": "ff7f6206be80a2cc7708ed1a41e812330fc5528949eb9f2849cc7163ab2e4420",
+          "status": "PASS"
+        },
+        "e3_validation.json": {
+          "bytes": 6114,
+          "check_count": 12,
+          "path": "research/Report/experiments/E3/e3_validation.json",
+          "sha256": "6f5d34f323c476d7ca45324ff384ad1916ed661d1ce391671a5b26a023c9524b",
+          "status": "PASS"
+        }
+      }
+    }
+  }
+}

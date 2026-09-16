@@ -1,0 +1,4666 @@
+{
+  "candidates": [
+    {
+      "candidate": {
+        "entropy_threshold": 7.0,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.95
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.8344444444444444,
+            "J": 0.09888888888888887,
+            "attack_alert_rate": 0.16555555555555554,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5494444444444444,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.06666666666666667,
+            "delta_J_new_vs_B2": 0.09888888888888887,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.0,
+            "J": 0.37222222222222223,
+            "attack_alert_rate": 1.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.6861111111111112,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.6277777777777778,
+            "delta_J_new_vs_B2": 0.37222222222222223,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.5566666666666666,
+            "J": 0.0911111111111111,
+            "attack_alert_rate": 0.44333333333333336,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5455555555555556,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.3522222222222222,
+            "delta_J_new_vs_B2": 0.0911111111111111,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.15777777777777777,
+            "J": 0.45,
+            "attack_alert_rate": 0.8422222222222223,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.725,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.39222222222222225,
+            "delta_J_new_vs_B2": 0.45,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.6936111111111111,
+          "J": 0.12652777777777777,
+          "attack_alert_rate": 0.3063888888888889,
+          "balanced_precision": 0.5632638888888889,
+          "benign_trigger_rate": 0.1798611111111111,
+          "delta_J_new_vs_B2": 0.12652777777777777
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.06666666666666667,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4666666666666666,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.06666666666666667,
+              "delta_J_new_vs_B2": -0.06666666666666667,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.6277777777777778,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.18611111111111112,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.6277777777777778,
+              "delta_J_new_vs_B2": -0.6277777777777778,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.06666666666666667,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4666666666666666,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.06666666666666667,
+              "delta_J_new_vs_B2": -0.06666666666666667,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.6277777777777778,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.18611111111111112,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.6277777777777778,
+              "delta_J_new_vs_B2": -0.6277777777777778,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9333333333333332,
+            "J": -1.734723475976807e-18,
+            "attack_alert_rate": 0.06666666666666667,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.06666666666666667,
+            "delta_J_new_vs_B2": -1.734723475976807e-18,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.3822222222222222,
+            "J": -0.009999999999999981,
+            "attack_alert_rate": 0.6177777777777778,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.49500000000000005,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.6277777777777778,
+            "delta_J_new_vs_B2": -0.009999999999999981,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 7.0,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.99
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.8522222222222222,
+            "J": 0.1388888888888889,
+            "attack_alert_rate": 0.14777777777777779,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5694444444444444,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.008888888888888889,
+            "delta_J_new_vs_B2": 0.1388888888888889,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.4288888888888889,
+            "J": 0.5677777777777777,
+            "attack_alert_rate": 0.5711111111111111,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.7838888888888889,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0033333333333333335,
+            "delta_J_new_vs_B2": 0.5677777777777777,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.7233333333333333,
+            "J": 0.25777777777777783,
+            "attack_alert_rate": 0.27666666666666667,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.6288888888888889,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.01888888888888889,
+            "delta_J_new_vs_B2": 0.25777777777777783,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.5322222222222223,
+            "J": 0.4577777777777778,
+            "attack_alert_rate": 0.4677777777777778,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.7288888888888888,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.01,
+            "delta_J_new_vs_B2": 0.4577777777777778,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.8170833333333334,
+          "J": 0.17777777777777778,
+          "attack_alert_rate": 0.18291666666666667,
+          "balanced_precision": 0.5888888888888889,
+          "benign_trigger_rate": 0.005138888888888889,
+          "delta_J_new_vs_B2": 0.17777777777777778
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.008888888888888889,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4955555555555555,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.008888888888888889,
+              "delta_J_new_vs_B2": -0.008888888888888889,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.0033333333333333335,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4983333333333333,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0033333333333333335,
+              "delta_J_new_vs_B2": -0.0033333333333333335,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.008888888888888889,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4955555555555555,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.008888888888888889,
+              "delta_J_new_vs_B2": -0.008888888888888889,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.0033333333333333335,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4983333333333333,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0033333333333333335,
+              "delta_J_new_vs_B2": -0.0033333333333333335,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9933333333333333,
+            "J": -0.002222222222222222,
+            "attack_alert_rate": 0.006666666666666667,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.4988888888888889,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.008888888888888889,
+            "delta_J_new_vs_B2": -0.002222222222222222,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9966666666666667,
+            "J": 0.0,
+            "attack_alert_rate": 0.0033333333333333335,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0033333333333333335,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 8.0,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.95
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.7999999999999999,
+            "J": 0.18666666666666668,
+            "attack_alert_rate": 0.19999999999999998,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5933333333333334,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.013333333333333334,
+            "delta_J_new_vs_B2": 0.18666666666666668,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.975,
+          "J": 0.023333333333333334,
+          "attack_alert_rate": 0.024999999999999998,
+          "balanced_precision": 0.5116666666666667,
+          "benign_trigger_rate": 0.0016666666666666668,
+          "delta_J_new_vs_B2": 0.023333333333333334
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 8.0,
+        "min_samples": 8,
+        "unique_ratio_threshold": 0.99
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9333333333333332,
+            "J": 0.06666666666666667,
+            "attack_alert_rate": 0.06666666666666667,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5333333333333333,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.06666666666666667,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.9916666666666667,
+          "J": 0.008333333333333333,
+          "attack_alert_rate": 0.008333333333333333,
+          "balanced_precision": 0.5041666666666667,
+          "benign_trigger_rate": 0.0,
+          "delta_J_new_vs_B2": 0.008333333333333333
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 7.0,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.95
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.8344444444444444,
+            "J": 0.09888888888888887,
+            "attack_alert_rate": 0.16555555555555554,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5494444444444444,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.06666666666666667,
+            "delta_J_new_vs_B2": 0.09888888888888887,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.0,
+            "J": 0.37222222222222223,
+            "attack_alert_rate": 1.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.6861111111111112,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.6277777777777778,
+            "delta_J_new_vs_B2": 0.37222222222222223,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.5566666666666666,
+            "J": 0.0911111111111111,
+            "attack_alert_rate": 0.44333333333333336,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5455555555555556,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.3522222222222222,
+            "delta_J_new_vs_B2": 0.0911111111111111,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.15777777777777777,
+            "J": 0.45,
+            "attack_alert_rate": 0.8422222222222223,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.725,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.39222222222222225,
+            "delta_J_new_vs_B2": 0.45,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.6936111111111111,
+          "J": 0.12652777777777777,
+          "attack_alert_rate": 0.3063888888888889,
+          "balanced_precision": 0.5632638888888889,
+          "benign_trigger_rate": 0.1798611111111111,
+          "delta_J_new_vs_B2": 0.12652777777777777
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.06666666666666667,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4666666666666666,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.06666666666666667,
+              "delta_J_new_vs_B2": -0.06666666666666667,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.6277777777777778,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.18611111111111112,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.6277777777777778,
+              "delta_J_new_vs_B2": -0.6277777777777778,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.06666666666666667,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4666666666666666,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.06666666666666667,
+              "delta_J_new_vs_B2": -0.06666666666666667,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.6277777777777778,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.18611111111111112,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.6277777777777778,
+              "delta_J_new_vs_B2": -0.6277777777777778,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9333333333333332,
+            "J": -1.734723475976807e-18,
+            "attack_alert_rate": 0.06666666666666667,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.06666666666666667,
+            "delta_J_new_vs_B2": -1.734723475976807e-18,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.3822222222222222,
+            "J": -0.009999999999999981,
+            "attack_alert_rate": 0.6177777777777778,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.49500000000000005,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.6277777777777778,
+            "delta_J_new_vs_B2": -0.009999999999999981,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 7.0,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.99
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.8522222222222222,
+            "J": 0.1388888888888889,
+            "attack_alert_rate": 0.14777777777777779,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5694444444444444,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.008888888888888889,
+            "delta_J_new_vs_B2": 0.1388888888888889,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.4288888888888889,
+            "J": 0.5677777777777777,
+            "attack_alert_rate": 0.5711111111111111,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.7838888888888889,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0033333333333333335,
+            "delta_J_new_vs_B2": 0.5677777777777777,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.7233333333333333,
+            "J": 0.25777777777777783,
+            "attack_alert_rate": 0.27666666666666667,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.6288888888888889,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.01888888888888889,
+            "delta_J_new_vs_B2": 0.25777777777777783,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.5322222222222223,
+            "J": 0.4577777777777778,
+            "attack_alert_rate": 0.4677777777777778,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.7288888888888888,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.01,
+            "delta_J_new_vs_B2": 0.4577777777777778,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.8170833333333334,
+          "J": 0.17777777777777778,
+          "attack_alert_rate": 0.18291666666666667,
+          "balanced_precision": 0.5888888888888889,
+          "benign_trigger_rate": 0.005138888888888889,
+          "delta_J_new_vs_B2": 0.17777777777777778
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.008888888888888889,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4955555555555555,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.008888888888888889,
+              "delta_J_new_vs_B2": -0.008888888888888889,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.0033333333333333335,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4983333333333333,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0033333333333333335,
+              "delta_J_new_vs_B2": -0.0033333333333333335,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.008888888888888889,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4955555555555555,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.008888888888888889,
+              "delta_J_new_vs_B2": -0.008888888888888889,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.0033333333333333335,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4983333333333333,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0033333333333333335,
+              "delta_J_new_vs_B2": -0.0033333333333333335,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9933333333333333,
+            "J": -0.002222222222222222,
+            "attack_alert_rate": 0.006666666666666667,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.4988888888888889,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.008888888888888889,
+            "delta_J_new_vs_B2": -0.002222222222222222,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9966666666666667,
+            "J": 0.0,
+            "attack_alert_rate": 0.0033333333333333335,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0033333333333333335,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 8.0,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.95
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.7999999999999999,
+            "J": 0.18666666666666668,
+            "attack_alert_rate": 0.19999999999999998,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5933333333333334,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.013333333333333334,
+            "delta_J_new_vs_B2": 0.18666666666666668,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.975,
+          "J": 0.023333333333333334,
+          "attack_alert_rate": 0.024999999999999998,
+          "balanced_precision": 0.5116666666666667,
+          "benign_trigger_rate": 0.0016666666666666668,
+          "delta_J_new_vs_B2": 0.023333333333333334
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 8.0,
+        "min_samples": 16,
+        "unique_ratio_threshold": 0.99
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9333333333333332,
+            "J": 0.06666666666666667,
+            "attack_alert_rate": 0.06666666666666667,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5333333333333333,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.06666666666666667,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.9916666666666667,
+          "J": 0.008333333333333333,
+          "attack_alert_rate": 0.008333333333333333,
+          "balanced_precision": 0.5041666666666667,
+          "benign_trigger_rate": 0.0,
+          "delta_J_new_vs_B2": 0.008333333333333333
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 7.0,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.95
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.8344444444444444,
+            "J": 0.09888888888888887,
+            "attack_alert_rate": 0.16555555555555554,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5494444444444444,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.06666666666666667,
+            "delta_J_new_vs_B2": 0.09888888888888887,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.0,
+            "J": 0.37222222222222223,
+            "attack_alert_rate": 1.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.6861111111111112,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.6277777777777778,
+            "delta_J_new_vs_B2": 0.37222222222222223,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.5566666666666666,
+            "J": 0.0911111111111111,
+            "attack_alert_rate": 0.44333333333333336,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5455555555555556,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.3522222222222222,
+            "delta_J_new_vs_B2": 0.0911111111111111,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.15777777777777777,
+            "J": 0.45,
+            "attack_alert_rate": 0.8422222222222223,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.725,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.39222222222222225,
+            "delta_J_new_vs_B2": 0.45,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.6936111111111111,
+          "J": 0.12652777777777777,
+          "attack_alert_rate": 0.3063888888888889,
+          "balanced_precision": 0.5632638888888889,
+          "benign_trigger_rate": 0.1798611111111111,
+          "delta_J_new_vs_B2": 0.12652777777777777
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.06666666666666667,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4666666666666666,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.06666666666666667,
+              "delta_J_new_vs_B2": -0.06666666666666667,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.6277777777777778,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.18611111111111112,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.6277777777777778,
+              "delta_J_new_vs_B2": -0.6277777777777778,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.06666666666666667,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4666666666666666,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.06666666666666667,
+              "delta_J_new_vs_B2": -0.06666666666666667,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.6277777777777778,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.18611111111111112,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.6277777777777778,
+              "delta_J_new_vs_B2": -0.6277777777777778,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9333333333333332,
+            "J": -1.734723475976807e-18,
+            "attack_alert_rate": 0.06666666666666667,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.06666666666666667,
+            "delta_J_new_vs_B2": -1.734723475976807e-18,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.3822222222222222,
+            "J": -0.009999999999999981,
+            "attack_alert_rate": 0.6177777777777778,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.49500000000000005,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.6277777777777778,
+            "delta_J_new_vs_B2": -0.009999999999999981,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 7.0,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.99
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.8522222222222222,
+            "J": 0.1388888888888889,
+            "attack_alert_rate": 0.14777777777777779,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5694444444444444,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.008888888888888889,
+            "delta_J_new_vs_B2": 0.1388888888888889,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.4288888888888889,
+            "J": 0.5677777777777777,
+            "attack_alert_rate": 0.5711111111111111,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.7838888888888889,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0033333333333333335,
+            "delta_J_new_vs_B2": 0.5677777777777777,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.7233333333333333,
+            "J": 0.25777777777777783,
+            "attack_alert_rate": 0.27666666666666667,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.6288888888888889,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.01888888888888889,
+            "delta_J_new_vs_B2": 0.25777777777777783,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.5322222222222223,
+            "J": 0.4577777777777778,
+            "attack_alert_rate": 0.4677777777777778,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.7288888888888888,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.01,
+            "delta_J_new_vs_B2": 0.4577777777777778,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.8170833333333334,
+          "J": 0.17777777777777778,
+          "attack_alert_rate": 0.18291666666666667,
+          "balanced_precision": 0.5888888888888889,
+          "benign_trigger_rate": 0.005138888888888889,
+          "delta_J_new_vs_B2": 0.17777777777777778
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.008888888888888889,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4955555555555555,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.008888888888888889,
+              "delta_J_new_vs_B2": -0.008888888888888889,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.0033333333333333335,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4983333333333333,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0033333333333333335,
+              "delta_J_new_vs_B2": -0.0033333333333333335,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.008888888888888889,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4955555555555555,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.008888888888888889,
+              "delta_J_new_vs_B2": -0.008888888888888889,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.0033333333333333335,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4983333333333333,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0033333333333333335,
+              "delta_J_new_vs_B2": -0.0033333333333333335,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9933333333333333,
+            "J": -0.002222222222222222,
+            "attack_alert_rate": 0.006666666666666667,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.4988888888888889,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.008888888888888889,
+            "delta_J_new_vs_B2": -0.002222222222222222,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9966666666666667,
+            "J": 0.0,
+            "attack_alert_rate": 0.0033333333333333335,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0033333333333333335,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 8.0,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.95
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.7999999999999999,
+            "J": 0.18666666666666668,
+            "attack_alert_rate": 0.19999999999999998,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5933333333333334,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.013333333333333334,
+            "delta_J_new_vs_B2": 0.18666666666666668,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.975,
+          "J": 0.023333333333333334,
+          "attack_alert_rate": 0.024999999999999998,
+          "balanced_precision": 0.5116666666666667,
+          "benign_trigger_rate": 0.0016666666666666668,
+          "delta_J_new_vs_B2": 0.023333333333333334
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 8.0,
+        "min_samples": 24,
+        "unique_ratio_threshold": 0.99
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9333333333333332,
+            "J": 0.06666666666666667,
+            "attack_alert_rate": 0.06666666666666667,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5333333333333333,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.06666666666666667,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.9916666666666667,
+          "J": 0.008333333333333333,
+          "attack_alert_rate": 0.008333333333333333,
+          "balanced_precision": 0.5041666666666667,
+          "benign_trigger_rate": 0.0,
+          "delta_J_new_vs_B2": 0.008333333333333333
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 7.0,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.95
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.8344444444444444,
+            "J": 0.09888888888888887,
+            "attack_alert_rate": 0.16555555555555554,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5494444444444444,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.06666666666666667,
+            "delta_J_new_vs_B2": 0.09888888888888887,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.0,
+            "J": 0.37222222222222223,
+            "attack_alert_rate": 1.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.6861111111111112,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.6277777777777778,
+            "delta_J_new_vs_B2": 0.37222222222222223,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.5566666666666666,
+            "J": 0.0911111111111111,
+            "attack_alert_rate": 0.44333333333333336,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5455555555555556,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.3522222222222222,
+            "delta_J_new_vs_B2": 0.0911111111111111,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.15777777777777777,
+            "J": 0.45,
+            "attack_alert_rate": 0.8422222222222223,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.725,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.39222222222222225,
+            "delta_J_new_vs_B2": 0.45,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.6936111111111111,
+          "J": 0.12652777777777777,
+          "attack_alert_rate": 0.3063888888888889,
+          "balanced_precision": 0.5632638888888889,
+          "benign_trigger_rate": 0.1798611111111111,
+          "delta_J_new_vs_B2": 0.12652777777777777
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.06666666666666667,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4666666666666666,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.06666666666666667,
+              "delta_J_new_vs_B2": -0.06666666666666667,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.6277777777777778,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.18611111111111112,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.6277777777777778,
+              "delta_J_new_vs_B2": -0.6277777777777778,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.06666666666666667,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4666666666666666,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.06666666666666667,
+              "delta_J_new_vs_B2": -0.06666666666666667,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.6277777777777778,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.18611111111111112,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.6277777777777778,
+              "delta_J_new_vs_B2": -0.6277777777777778,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9333333333333332,
+            "J": -1.734723475976807e-18,
+            "attack_alert_rate": 0.06666666666666667,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.06666666666666667,
+            "delta_J_new_vs_B2": -1.734723475976807e-18,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.3822222222222222,
+            "J": -0.009999999999999981,
+            "attack_alert_rate": 0.6177777777777778,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.49500000000000005,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.6277777777777778,
+            "delta_J_new_vs_B2": -0.009999999999999981,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 7.0,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.99
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.8522222222222222,
+            "J": 0.1388888888888889,
+            "attack_alert_rate": 0.14777777777777779,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5694444444444444,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.008888888888888889,
+            "delta_J_new_vs_B2": 0.1388888888888889,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.4288888888888889,
+            "J": 0.5677777777777777,
+            "attack_alert_rate": 0.5711111111111111,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.7838888888888889,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0033333333333333335,
+            "delta_J_new_vs_B2": 0.5677777777777777,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.7233333333333333,
+            "J": 0.25777777777777783,
+            "attack_alert_rate": 0.27666666666666667,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.6288888888888889,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.01888888888888889,
+            "delta_J_new_vs_B2": 0.25777777777777783,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.5322222222222223,
+            "J": 0.4577777777777778,
+            "attack_alert_rate": 0.4677777777777778,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.7288888888888888,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.01,
+            "delta_J_new_vs_B2": 0.4577777777777778,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.8170833333333334,
+          "J": 0.17777777777777778,
+          "attack_alert_rate": 0.18291666666666667,
+          "balanced_precision": 0.5888888888888889,
+          "benign_trigger_rate": 0.005138888888888889,
+          "delta_J_new_vs_B2": 0.17777777777777778
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.008888888888888889,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4955555555555555,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.008888888888888889,
+              "delta_J_new_vs_B2": -0.008888888888888889,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.0033333333333333335,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.4983333333333333,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0033333333333333335,
+              "delta_J_new_vs_B2": -0.0033333333333333335,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.008888888888888889,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4955555555555555,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.008888888888888889,
+              "delta_J_new_vs_B2": -0.008888888888888889,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": -0.0033333333333333335,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.4983333333333333,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0033333333333333335,
+              "delta_J_new_vs_B2": -0.0033333333333333335,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9933333333333333,
+            "J": -0.002222222222222222,
+            "attack_alert_rate": 0.006666666666666667,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.4988888888888889,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.008888888888888889,
+            "delta_J_new_vs_B2": -0.002222222222222222,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9966666666666667,
+            "J": 0.0,
+            "attack_alert_rate": 0.0033333333333333335,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0033333333333333335,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 8.0,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.95
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.7999999999999999,
+            "J": 0.18666666666666668,
+            "attack_alert_rate": 0.19999999999999998,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5933333333333334,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.013333333333333334,
+            "delta_J_new_vs_B2": 0.18666666666666668,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.975,
+          "J": 0.023333333333333334,
+          "attack_alert_rate": 0.024999999999999998,
+          "balanced_precision": 0.5116666666666667,
+          "benign_trigger_rate": 0.0016666666666666668,
+          "delta_J_new_vs_B2": 0.023333333333333334
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "entropy_threshold": 8.0,
+        "min_samples": 48,
+        "unique_ratio_threshold": 0.99
+      },
+      "primary": {
+        "cells": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 0.9333333333333332,
+            "J": 0.06666666666666667,
+            "attack_alert_rate": 0.06666666666666667,
+            "attack_condition": "attack_sweep_bursty",
+            "balanced_precision": 0.5333333333333333,
+            "benign_condition": "benign_bursty",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.06666666666666667,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ],
+        "macro": {
+          "B2_J": 0.0,
+          "FNR": 0.9916666666666667,
+          "J": 0.008333333333333333,
+          "attack_alert_rate": 0.008333333333333333,
+          "balanced_precision": 0.5041666666666667,
+          "benign_trigger_rate": 0.0,
+          "delta_J_new_vs_B2": 0.008333333333333333
+        }
+      },
+      "secondary_reports": {
+        "failure_probes": {
+          "attack_dup_sweep_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_dup_sweep_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ],
+          "attack_fixed_continuous": [
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 24,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 60,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 120,
+              "n_pairs": 6
+            },
+            {
+              "B2_J": 0.0,
+              "FNR": 1.0,
+              "J": 0.0,
+              "attack_alert_rate": 0.0,
+              "attack_condition": "attack_fixed_continuous",
+              "balanced_precision": 0.5,
+              "benign_condition": "benign_continuous",
+              "benign_trigger_rate": 0.0,
+              "delta_J_new_vs_B2": 0.0,
+              "level": 200,
+              "n_pairs": 6
+            }
+          ]
+        },
+        "negative_control": [
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 24,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 60,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 120,
+            "n_pairs": 6
+          },
+          {
+            "B2_J": 0.0,
+            "FNR": 1.0,
+            "J": 0.0,
+            "attack_alert_rate": 0.0,
+            "attack_condition": "attack_random_continuous",
+            "balanced_precision": 0.5,
+            "benign_condition": "benign_continuous",
+            "benign_trigger_rate": 0.0,
+            "delta_J_new_vs_B2": 0.0,
+            "level": 200,
+            "n_pairs": 6
+          }
+        ]
+      }
+    }
+  ],
+  "classification": "post_hoc_descriptive_sensitivity_analysis",
+  "data_access_policy": {
+    "held_out_test_csv_opened": false,
+    "opened_decision_dataset": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/splits_60_20_20/validation.csv.gz",
+    "selection_performed": false,
+    "threshold_locked": false
+  },
+  "experiment": "E3-Extend \u2014 post-hoc high-threshold sensitivity analysis",
+  "generated_utc": "2026-09-12T03:17:44.981864Z",
+  "interpretation": "Descriptive post-hoc validation sensitivity only. No candidate is ranked, selected, locked, or evaluated on held-out data.",
+  "paired_traces": 64,
+  "protocol": {
+    "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3-Extend/e3_extend_protocol.json",
+    "sha256": "a3350b945b6420b3769f3ae527a4a2bfeb66389381a7862400dea96215687eda"
+  },
+  "rows_read": 27600,
+  "schema_version": 1,
+  "status": "post_hoc_validation_sensitivity_complete_no_selection",
+  "validation_input": {
+    "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/splits_60_20_20/validation.csv.gz",
+    "sha256": "ea59a0424a6c2cadd17f8ce30eca7ae11e9f104f74cbee5ca1ab0b7607ffe1f8"
+  }
+}

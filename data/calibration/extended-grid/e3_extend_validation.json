@@ -1,0 +1,106 @@
+{
+  "artifact_hashes": {
+    "grid": "68b23e0a64fd344fd73fbc9000b8aeae510f3c8872806c4b11cb8ed4cd6f51e8",
+    "grid_csv": "715877dd9dbe916dac02f8b35b3892b55d0cfc1765ed8ee43e30507810809f5b",
+    "protocol": "a3350b945b6420b3769f3ae527a4a2bfeb66389381a7862400dea96215687eda",
+    "validation": "ea59a0424a6c2cadd17f8ce30eca7ae11e9f104f74cbee5ca1ab0b7607ffe1f8"
+  },
+  "audit_scope": "Validation-only replay of post-hoc descriptive sensitivity analysis; no selection, lock, or held-out access.",
+  "checks": [
+    {
+      "critical": true,
+      "details": {
+        "classification": "post_hoc_descriptive_sensitivity_analysis",
+        "policy": {
+          "allowed_decision_level_input": "validation.csv.gz only",
+          "forbidden_decision_level_inputs": [
+            "train_exploration.csv.gz",
+            "held_out_test.csv.gz",
+            "canonical E2 decision CSV"
+          ],
+          "held_out_rule": "Do not open, hash, parse, aggregate, compare, or re-evaluate held_out_test.csv.gz for this extension.",
+          "held_out_test_access_by_this_extension": false
+        }
+      },
+      "name": "post_hoc_protocol_and_access_guard",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "expected": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/splits_60_20_20/validation.csv.gz",
+        "sha256": "ea59a0424a6c2cadd17f8ce30eca7ae11e9f104f74cbee5ca1ab0b7607ffe1f8",
+        "validation": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/splits_60_20_20/validation.csv.gz"
+      },
+      "name": "only_protocol_pinned_validation_is_accepted",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "held_out_test_csv_opened": false,
+        "opened_decision_dataset": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/splits_60_20_20/validation.csv.gz",
+        "selection_performed": false,
+        "threshold_locked": false
+      },
+      "name": "output_provenance_and_no_selection",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "expected_count": 16,
+        "observed_count": 16,
+        "unique_count": 16
+      },
+      "name": "complete_16_candidate_post_hoc_grid",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "paired_traces": 64,
+        "rows_read": 27600
+      },
+      "name": "primary_cells_and_validation_shape",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "metrics": [
+          "attack_alert_rate",
+          "benign_trigger_rate",
+          "FNR",
+          "balanced_precision",
+          "J",
+          "B2_J",
+          "delta_J_new_vs_B2"
+        ],
+        "tolerance": 1e-12
+      },
+      "name": "all_primary_and_secondary_metrics_recompute_exactly_from_validation",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "csv_rows": 16,
+        "csv_unique_candidates": 16
+      },
+      "name": "csv_has_complete_grid_and_matches_json_delta_J",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": "Not measured and not supported by E2 decision-level data. Attack-alert is not ASR, poisoning prevention, resolver outcome, or deployment performance.",
+      "name": "asr_remains_not_measured",
+      "status": "PASS"
+    }
+  ],
+  "critical_failures": [],
+  "experiment": "E3-Extend independent artifact audit",
+  "generated_utc": "2026-09-12T03:18:37.731082Z",
+  "schema_version": 1,
+  "status": "PASS"
+}

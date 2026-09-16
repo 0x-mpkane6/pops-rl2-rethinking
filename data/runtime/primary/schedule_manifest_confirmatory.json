@@ -1,0 +1,2562 @@
+[
+  {
+    "policy": "B0_OFF",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "bc6c0653258717fa93b10f488f8406ea464ead5433a5af597e1dfa318c21dc68",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "57cda0a40f0ad172d7dab7ad6f18598982a55da6ce5dcf919c80af82c1aa31cb",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "244840139a1346914102edf5a8c97dd41d56bcdf17c0f28af5e3f124f473c3fa",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_LOW.json",
+    "schedule_sha256": "f8d42fb6ac5d30e73e81a4783e59367da789d7ad8f68dfc277094c0849d84b70",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "57cda0a40f0ad172d7dab7ad6f18598982a55da6ce5dcf919c80af82c1aa31cb",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "bc6c0653258717fa93b10f488f8406ea464ead5433a5af597e1dfa318c21dc68",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "bc6c0653258717fa93b10f488f8406ea464ead5433a5af597e1dfa318c21dc68",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "244840139a1346914102edf5a8c97dd41d56bcdf17c0f28af5e3f124f473c3fa",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "bc6c0653258717fa93b10f488f8406ea464ead5433a5af597e1dfa318c21dc68",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_LOW.json",
+    "schedule_sha256": "f8d42fb6ac5d30e73e81a4783e59367da789d7ad8f68dfc277094c0849d84b70",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "244840139a1346914102edf5a8c97dd41d56bcdf17c0f28af5e3f124f473c3fa",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_LOW.json",
+    "schedule_sha256": "f8d42fb6ac5d30e73e81a4783e59367da789d7ad8f68dfc277094c0849d84b70",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_LOW.json",
+    "schedule_sha256": "f8d42fb6ac5d30e73e81a4783e59367da789d7ad8f68dfc277094c0849d84b70",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "57cda0a40f0ad172d7dab7ad6f18598982a55da6ce5dcf919c80af82c1aa31cb",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "244840139a1346914102edf5a8c97dd41d56bcdf17c0f28af5e3f124f473c3fa",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "57cda0a40f0ad172d7dab7ad6f18598982a55da6ce5dcf919c80af82c1aa31cb",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "f1e12d986d8a4ec6c831215f80fdfc6108530ccce86f1c56e9181f391e1c0a62",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "fd5bc816dd832b546870246ddb6b8866ea47af85738fde155d145fb751513db0",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_LOW.json",
+    "schedule_sha256": "839a6c8ddd3491adb20c3a2d860a3c1d5a63acf14fe806de44794e3bbd07ff78",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "544f30ae0265e6d3d43f5610be4e9d9f8951b747028e22cd669a0d1f093c9d91",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_LOW.json",
+    "schedule_sha256": "839a6c8ddd3491adb20c3a2d860a3c1d5a63acf14fe806de44794e3bbd07ff78",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_LOW.json",
+    "schedule_sha256": "839a6c8ddd3491adb20c3a2d860a3c1d5a63acf14fe806de44794e3bbd07ff78",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_LOW.json",
+    "schedule_sha256": "839a6c8ddd3491adb20c3a2d860a3c1d5a63acf14fe806de44794e3bbd07ff78",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "fd5bc816dd832b546870246ddb6b8866ea47af85738fde155d145fb751513db0",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "544f30ae0265e6d3d43f5610be4e9d9f8951b747028e22cd669a0d1f093c9d91",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "f1e12d986d8a4ec6c831215f80fdfc6108530ccce86f1c56e9181f391e1c0a62",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "544f30ae0265e6d3d43f5610be4e9d9f8951b747028e22cd669a0d1f093c9d91",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "fd5bc816dd832b546870246ddb6b8866ea47af85738fde155d145fb751513db0",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "f1e12d986d8a4ec6c831215f80fdfc6108530ccce86f1c56e9181f391e1c0a62",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "f1e12d986d8a4ec6c831215f80fdfc6108530ccce86f1c56e9181f391e1c0a62",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "544f30ae0265e6d3d43f5610be4e9d9f8951b747028e22cd669a0d1f093c9d91",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "fd5bc816dd832b546870246ddb6b8866ea47af85738fde155d145fb751513db0",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "71e06650f16a8ccd7075c7d216bd5abfe3b2171d4830b9d3b9a6a7d028ac2197",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "7001122df4535c3974299eeb06da056353bcafec9dd52978624fa1b94d9193e0",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "71e06650f16a8ccd7075c7d216bd5abfe3b2171d4830b9d3b9a6a7d028ac2197",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "71e06650f16a8ccd7075c7d216bd5abfe3b2171d4830b9d3b9a6a7d028ac2197",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_LOW.json",
+    "schedule_sha256": "c37e3860926bab82a148b77a95e78e8bb5289de0c19e97aa33241fd12d3eedbb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "445c26adc93ccd1b4d0285b29ca6bf6a0d1d9e60fe4f6af6408fb3b54d98c77d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "7001122df4535c3974299eeb06da056353bcafec9dd52978624fa1b94d9193e0",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "7001122df4535c3974299eeb06da056353bcafec9dd52978624fa1b94d9193e0",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_LOW.json",
+    "schedule_sha256": "c37e3860926bab82a148b77a95e78e8bb5289de0c19e97aa33241fd12d3eedbb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_LOW.json",
+    "schedule_sha256": "c37e3860926bab82a148b77a95e78e8bb5289de0c19e97aa33241fd12d3eedbb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "445c26adc93ccd1b4d0285b29ca6bf6a0d1d9e60fe4f6af6408fb3b54d98c77d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "445c26adc93ccd1b4d0285b29ca6bf6a0d1d9e60fe4f6af6408fb3b54d98c77d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "7001122df4535c3974299eeb06da056353bcafec9dd52978624fa1b94d9193e0",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "445c26adc93ccd1b4d0285b29ca6bf6a0d1d9e60fe4f6af6408fb3b54d98c77d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_LOW.json",
+    "schedule_sha256": "c37e3860926bab82a148b77a95e78e8bb5289de0c19e97aa33241fd12d3eedbb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "71e06650f16a8ccd7075c7d216bd5abfe3b2171d4830b9d3b9a6a7d028ac2197",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "dec1b78149479633848f5a8a98a92bba0603742c1ecabd873a778de79052dcd1",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "f7c3c2b1e42b3e99e0b4fa6b4e3b976787a54a7433cbb962269b4683fe088aa6",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "4b8f6e7b5cea70648c736ea7169ce03f75e4571e637073eee345a242d6a35f65",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_LOW.json",
+    "schedule_sha256": "ddb0de876cbf898bc491a31418fbf7c5b8bc0f820c907994bd2559d7731b3889",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "f7c3c2b1e42b3e99e0b4fa6b4e3b976787a54a7433cbb962269b4683fe088aa6",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "4b8f6e7b5cea70648c736ea7169ce03f75e4571e637073eee345a242d6a35f65",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_LOW.json",
+    "schedule_sha256": "ddb0de876cbf898bc491a31418fbf7c5b8bc0f820c907994bd2559d7731b3889",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "dec1b78149479633848f5a8a98a92bba0603742c1ecabd873a778de79052dcd1",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "4b8f6e7b5cea70648c736ea7169ce03f75e4571e637073eee345a242d6a35f65",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "f7c3c2b1e42b3e99e0b4fa6b4e3b976787a54a7433cbb962269b4683fe088aa6",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "dec1b78149479633848f5a8a98a92bba0603742c1ecabd873a778de79052dcd1",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_LOW.json",
+    "schedule_sha256": "ddb0de876cbf898bc491a31418fbf7c5b8bc0f820c907994bd2559d7731b3889",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "f7c3c2b1e42b3e99e0b4fa6b4e3b976787a54a7433cbb962269b4683fe088aa6",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "4b8f6e7b5cea70648c736ea7169ce03f75e4571e637073eee345a242d6a35f65",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "dec1b78149479633848f5a8a98a92bba0603742c1ecabd873a778de79052dcd1",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/BENIGN_LOW.json",
+    "schedule_sha256": "ddb0de876cbf898bc491a31418fbf7c5b8bc0f820c907994bd2559d7731b3889",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_LOW.json",
+    "schedule_sha256": "b805e40bfaea2adc061285ceb588b189c89c06cce3ccf48b11a69b519c21e8e9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "cc2baaf8e2de1d4f58aef382f7b9aea8960c3d85178f45283ee9c57ae6b2d493",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_LOW.json",
+    "schedule_sha256": "b805e40bfaea2adc061285ceb588b189c89c06cce3ccf48b11a69b519c21e8e9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "f33e77ae29339d27c75dbef7d0edef13bd911a6ab0eeaa7ff5692913cac879d3",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "f33e77ae29339d27c75dbef7d0edef13bd911a6ab0eeaa7ff5692913cac879d3",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "cc2baaf8e2de1d4f58aef382f7b9aea8960c3d85178f45283ee9c57ae6b2d493",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "cc2baaf8e2de1d4f58aef382f7b9aea8960c3d85178f45283ee9c57ae6b2d493",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "f33e77ae29339d27c75dbef7d0edef13bd911a6ab0eeaa7ff5692913cac879d3",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "a4a75d6ec765df742b4e623358b774e1ff7c25b94ad47626beb522c94b70d247",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "cc2baaf8e2de1d4f58aef382f7b9aea8960c3d85178f45283ee9c57ae6b2d493",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_LOW.json",
+    "schedule_sha256": "b805e40bfaea2adc061285ceb588b189c89c06cce3ccf48b11a69b519c21e8e9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "a4a75d6ec765df742b4e623358b774e1ff7c25b94ad47626beb522c94b70d247",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "a4a75d6ec765df742b4e623358b774e1ff7c25b94ad47626beb522c94b70d247",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "f33e77ae29339d27c75dbef7d0edef13bd911a6ab0eeaa7ff5692913cac879d3",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/BENIGN_LOW.json",
+    "schedule_sha256": "b805e40bfaea2adc061285ceb588b189c89c06cce3ccf48b11a69b519c21e8e9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "a4a75d6ec765df742b4e623358b774e1ff7c25b94ad47626beb522c94b70d247",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_LOW.json",
+    "schedule_sha256": "53c11ae8f4c658886bc2335fce20450bb59df427fe8b60937ca7e245ecff47e0",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "1244f0dace09e51fc99787dd4f84bb1e3855cf04917b2778cc4687ce43a4aa2a",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_LOW.json",
+    "schedule_sha256": "53c11ae8f4c658886bc2335fce20450bb59df427fe8b60937ca7e245ecff47e0",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "85a601c59f3207421fa669e4b4abd1606c94f74a8db44330ed687aa4545bff9f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "85a601c59f3207421fa669e4b4abd1606c94f74a8db44330ed687aa4545bff9f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "1244f0dace09e51fc99787dd4f84bb1e3855cf04917b2778cc4687ce43a4aa2a",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_LOW.json",
+    "schedule_sha256": "53c11ae8f4c658886bc2335fce20450bb59df427fe8b60937ca7e245ecff47e0",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "c475f78703bca5a045fb77f8af24635d4ccbd252866b410bedfe26b8b22d0d4c",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "1244f0dace09e51fc99787dd4f84bb1e3855cf04917b2778cc4687ce43a4aa2a",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "c475f78703bca5a045fb77f8af24635d4ccbd252866b410bedfe26b8b22d0d4c",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_LOW.json",
+    "schedule_sha256": "53c11ae8f4c658886bc2335fce20450bb59df427fe8b60937ca7e245ecff47e0",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "c475f78703bca5a045fb77f8af24635d4ccbd252866b410bedfe26b8b22d0d4c",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "85a601c59f3207421fa669e4b4abd1606c94f74a8db44330ed687aa4545bff9f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "c475f78703bca5a045fb77f8af24635d4ccbd252866b410bedfe26b8b22d0d4c",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "85a601c59f3207421fa669e4b4abd1606c94f74a8db44330ed687aa4545bff9f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "1244f0dace09e51fc99787dd4f84bb1e3855cf04917b2778cc4687ce43a4aa2a",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "160f1c09bb17b55d64043c79c62de536bb7ff2d4fc5e8bc817ed8fcbdcac444e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "b7312da9b0aacf89d0d7fd23adaeb2e47b4830a86ef41b1c7cd6abedaccd3591",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "160f1c09bb17b55d64043c79c62de536bb7ff2d4fc5e8bc817ed8fcbdcac444e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "b7312da9b0aacf89d0d7fd23adaeb2e47b4830a86ef41b1c7cd6abedaccd3591",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "160f1c09bb17b55d64043c79c62de536bb7ff2d4fc5e8bc817ed8fcbdcac444e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "b7312da9b0aacf89d0d7fd23adaeb2e47b4830a86ef41b1c7cd6abedaccd3591",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "160f1c09bb17b55d64043c79c62de536bb7ff2d4fc5e8bc817ed8fcbdcac444e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "bd98476a80816a5d8143f14fc33d72b3e5de32054c42c7d301d67a9515942f85",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "bd98476a80816a5d8143f14fc33d72b3e5de32054c42c7d301d67a9515942f85",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_LOW.json",
+    "schedule_sha256": "f5f591fd34c8b212044931b408529788a0be1571230be652d308ed49d9d09e19",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_LOW.json",
+    "schedule_sha256": "f5f591fd34c8b212044931b408529788a0be1571230be652d308ed49d9d09e19",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "b7312da9b0aacf89d0d7fd23adaeb2e47b4830a86ef41b1c7cd6abedaccd3591",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_LOW.json",
+    "schedule_sha256": "f5f591fd34c8b212044931b408529788a0be1571230be652d308ed49d9d09e19",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/BENIGN_LOW.json",
+    "schedule_sha256": "f5f591fd34c8b212044931b408529788a0be1571230be652d308ed49d9d09e19",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "bd98476a80816a5d8143f14fc33d72b3e5de32054c42c7d301d67a9515942f85",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "bd98476a80816a5d8143f14fc33d72b3e5de32054c42c7d301d67a9515942f85",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "c080544be1cfa84f6e541ee177d54bdc180a5924d3f9e6269f4401e8aeaeaa83",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "c080544be1cfa84f6e541ee177d54bdc180a5924d3f9e6269f4401e8aeaeaa83",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "c8e38ed383122bc6c6f49996b3fc5a94dd2ebd5f8d4b105216d64e66929d7934",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "c080544be1cfa84f6e541ee177d54bdc180a5924d3f9e6269f4401e8aeaeaa83",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_LOW.json",
+    "schedule_sha256": "e7e3bf44d8455edb6dc035dcd925290e2de8c57ab164dbd98543e6d58cac5770",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "c8e38ed383122bc6c6f49996b3fc5a94dd2ebd5f8d4b105216d64e66929d7934",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "c080544be1cfa84f6e541ee177d54bdc180a5924d3f9e6269f4401e8aeaeaa83",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "78bd076fb203d240c48a17f3f1c6922c5920619f079a006915cdca590c7a245d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "c8e38ed383122bc6c6f49996b3fc5a94dd2ebd5f8d4b105216d64e66929d7934",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_LOW.json",
+    "schedule_sha256": "e7e3bf44d8455edb6dc035dcd925290e2de8c57ab164dbd98543e6d58cac5770",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_LOW.json",
+    "schedule_sha256": "e7e3bf44d8455edb6dc035dcd925290e2de8c57ab164dbd98543e6d58cac5770",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_LOW.json",
+    "schedule_sha256": "e7e3bf44d8455edb6dc035dcd925290e2de8c57ab164dbd98543e6d58cac5770",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "78bd076fb203d240c48a17f3f1c6922c5920619f079a006915cdca590c7a245d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "c8e38ed383122bc6c6f49996b3fc5a94dd2ebd5f8d4b105216d64e66929d7934",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "78bd076fb203d240c48a17f3f1c6922c5920619f079a006915cdca590c7a245d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "78bd076fb203d240c48a17f3f1c6922c5920619f079a006915cdca590c7a245d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "1b6ec842e27949795f3cea044f63465affb8992023f48169975528758101ac34",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "1b6ec842e27949795f3cea044f63465affb8992023f48169975528758101ac34",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "67a60598212fe9f4e98dd5576d6ddfe8e8ddb3ad8ac1c6df1ecf9c0f610f8a71",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "89eeb43dd65491011450717d0f934cd56a838813533ffdd98fb045541063f5d3",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "89eeb43dd65491011450717d0f934cd56a838813533ffdd98fb045541063f5d3",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_LOW.json",
+    "schedule_sha256": "c1704c4df79c78c167acdf03b3164bad6b72fa8913af5a28e6cbcaf37fce5cbc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "67a60598212fe9f4e98dd5576d6ddfe8e8ddb3ad8ac1c6df1ecf9c0f610f8a71",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "67a60598212fe9f4e98dd5576d6ddfe8e8ddb3ad8ac1c6df1ecf9c0f610f8a71",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_LOW.json",
+    "schedule_sha256": "c1704c4df79c78c167acdf03b3164bad6b72fa8913af5a28e6cbcaf37fce5cbc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "1b6ec842e27949795f3cea044f63465affb8992023f48169975528758101ac34",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_LOW.json",
+    "schedule_sha256": "c1704c4df79c78c167acdf03b3164bad6b72fa8913af5a28e6cbcaf37fce5cbc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "89eeb43dd65491011450717d0f934cd56a838813533ffdd98fb045541063f5d3",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "67a60598212fe9f4e98dd5576d6ddfe8e8ddb3ad8ac1c6df1ecf9c0f610f8a71",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "1b6ec842e27949795f3cea044f63465affb8992023f48169975528758101ac34",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "89eeb43dd65491011450717d0f934cd56a838813533ffdd98fb045541063f5d3",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/BENIGN_LOW.json",
+    "schedule_sha256": "c1704c4df79c78c167acdf03b3164bad6b72fa8913af5a28e6cbcaf37fce5cbc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_LOW.json",
+    "schedule_sha256": "fd109846e52f5114241435130df4621596a66c2113a5eaa4b89a6986f6dd57dc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "cdfe7fc86fe590f9e62683f41b752454eff9add2b39a7198f24494808e93b55e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "cdfe7fc86fe590f9e62683f41b752454eff9add2b39a7198f24494808e93b55e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "cdfe7fc86fe590f9e62683f41b752454eff9add2b39a7198f24494808e93b55e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "22a1b89ff2523d2af1627bb279e64bc555fed6718d171d1291c9e3022a4cb2c1",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_LOW.json",
+    "schedule_sha256": "fd109846e52f5114241435130df4621596a66c2113a5eaa4b89a6986f6dd57dc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "54872e3dd9be29c2bbe7174ef0e15dd3fb766586d7486e3c06c9e8267208eb84",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "54872e3dd9be29c2bbe7174ef0e15dd3fb766586d7486e3c06c9e8267208eb84",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "22a1b89ff2523d2af1627bb279e64bc555fed6718d171d1291c9e3022a4cb2c1",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "22a1b89ff2523d2af1627bb279e64bc555fed6718d171d1291c9e3022a4cb2c1",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "22a1b89ff2523d2af1627bb279e64bc555fed6718d171d1291c9e3022a4cb2c1",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "cdfe7fc86fe590f9e62683f41b752454eff9add2b39a7198f24494808e93b55e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "54872e3dd9be29c2bbe7174ef0e15dd3fb766586d7486e3c06c9e8267208eb84",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_LOW.json",
+    "schedule_sha256": "fd109846e52f5114241435130df4621596a66c2113a5eaa4b89a6986f6dd57dc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "54872e3dd9be29c2bbe7174ef0e15dd3fb766586d7486e3c06c9e8267208eb84",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/BENIGN_LOW.json",
+    "schedule_sha256": "fd109846e52f5114241435130df4621596a66c2113a5eaa4b89a6986f6dd57dc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "1f468099c943deb52ff41f3641b755f11abcc4c7d91dc08abaaae345b8124f9d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "6f9badb374efc59198cc7293f348e6636a0c2a224090bbae1c4d24f4eb3d2f6e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "6fb63f440b54d4e8524bd80d761a4bfc1a8858df2a6a05af46d262f85e846b71",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_LOW.json",
+    "schedule_sha256": "ae4130dcd1c36c38e0071d06d82eb0dc888da71005dbcc6a2f9883dd1c6975cb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_LOW.json",
+    "schedule_sha256": "ae4130dcd1c36c38e0071d06d82eb0dc888da71005dbcc6a2f9883dd1c6975cb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "6f9badb374efc59198cc7293f348e6636a0c2a224090bbae1c4d24f4eb3d2f6e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "6fb63f440b54d4e8524bd80d761a4bfc1a8858df2a6a05af46d262f85e846b71",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_LOW.json",
+    "schedule_sha256": "ae4130dcd1c36c38e0071d06d82eb0dc888da71005dbcc6a2f9883dd1c6975cb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "6fb63f440b54d4e8524bd80d761a4bfc1a8858df2a6a05af46d262f85e846b71",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "6f9badb374efc59198cc7293f348e6636a0c2a224090bbae1c4d24f4eb3d2f6e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "1f468099c943deb52ff41f3641b755f11abcc4c7d91dc08abaaae345b8124f9d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "6f9badb374efc59198cc7293f348e6636a0c2a224090bbae1c4d24f4eb3d2f6e",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "1f468099c943deb52ff41f3641b755f11abcc4c7d91dc08abaaae345b8124f9d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_LOW.json",
+    "schedule_sha256": "ae4130dcd1c36c38e0071d06d82eb0dc888da71005dbcc6a2f9883dd1c6975cb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "6fb63f440b54d4e8524bd80d761a4bfc1a8858df2a6a05af46d262f85e846b71",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "1f468099c943deb52ff41f3641b755f11abcc4c7d91dc08abaaae345b8124f9d",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "73e1b0efd0fbb3e36052caf7b84f34a098fec7a1a6df64c6a74803b409e5ed0a",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "3e59df15e59221486d6f4f30250105976c9e69d2d440c83558bd79c44f3b62af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_LOW.json",
+    "schedule_sha256": "58a9fea86502420a7940e87ead1b22be25bc0173506edcda537a0961e316a4b9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "73e1b0efd0fbb3e36052caf7b84f34a098fec7a1a6df64c6a74803b409e5ed0a",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "6337872b959da60041da8bece2b707bb75141f7ccabced0c4b1159ff7f757521",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_LOW.json",
+    "schedule_sha256": "58a9fea86502420a7940e87ead1b22be25bc0173506edcda537a0961e316a4b9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "73e1b0efd0fbb3e36052caf7b84f34a098fec7a1a6df64c6a74803b409e5ed0a",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_LOW.json",
+    "schedule_sha256": "58a9fea86502420a7940e87ead1b22be25bc0173506edcda537a0961e316a4b9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "6337872b959da60041da8bece2b707bb75141f7ccabced0c4b1159ff7f757521",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "6337872b959da60041da8bece2b707bb75141f7ccabced0c4b1159ff7f757521",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "6337872b959da60041da8bece2b707bb75141f7ccabced0c4b1159ff7f757521",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_LOW.json",
+    "schedule_sha256": "58a9fea86502420a7940e87ead1b22be25bc0173506edcda537a0961e316a4b9",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "3e59df15e59221486d6f4f30250105976c9e69d2d440c83558bd79c44f3b62af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "73e1b0efd0fbb3e36052caf7b84f34a098fec7a1a6df64c6a74803b409e5ed0a",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "3e59df15e59221486d6f4f30250105976c9e69d2d440c83558bd79c44f3b62af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "3e59df15e59221486d6f4f30250105976c9e69d2d440c83558bd79c44f3b62af",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "e9e650617835a39ff9a52d6b5566e3bd72f1d94b6aa843fcfe6f1e2711c6a582",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "3e80adcc0e6d8fddd48489a856ee1af7d60e8de0a6807d90f156e3b741695969",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "3e80adcc0e6d8fddd48489a856ee1af7d60e8de0a6807d90f156e3b741695969",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "e9e650617835a39ff9a52d6b5566e3bd72f1d94b6aa843fcfe6f1e2711c6a582",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "dcb2a6ef0ca3f7ad31ca15601190f33467b103e250e03f91f20b98ac6a84c50b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_LOW.json",
+    "schedule_sha256": "215c1453aeaa79b1071fde67f47fe1d212ee56a8e74a94b1e7b31c713b23ad11",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_LOW.json",
+    "schedule_sha256": "215c1453aeaa79b1071fde67f47fe1d212ee56a8e74a94b1e7b31c713b23ad11",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "e9e650617835a39ff9a52d6b5566e3bd72f1d94b6aa843fcfe6f1e2711c6a582",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "3e80adcc0e6d8fddd48489a856ee1af7d60e8de0a6807d90f156e3b741695969",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "3e80adcc0e6d8fddd48489a856ee1af7d60e8de0a6807d90f156e3b741695969",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "e9e650617835a39ff9a52d6b5566e3bd72f1d94b6aa843fcfe6f1e2711c6a582",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "dcb2a6ef0ca3f7ad31ca15601190f33467b103e250e03f91f20b98ac6a84c50b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_LOW.json",
+    "schedule_sha256": "215c1453aeaa79b1071fde67f47fe1d212ee56a8e74a94b1e7b31c713b23ad11",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "dcb2a6ef0ca3f7ad31ca15601190f33467b103e250e03f91f20b98ac6a84c50b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/BENIGN_LOW.json",
+    "schedule_sha256": "215c1453aeaa79b1071fde67f47fe1d212ee56a8e74a94b1e7b31c713b23ad11",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "dcb2a6ef0ca3f7ad31ca15601190f33467b103e250e03f91f20b98ac6a84c50b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "fbb50f35e4571a6b991ef1d9ba485464d553b5c120e08512a3a8709aa2b00b7b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "e86a5130a1fd820f81755399025702003f0657b1dc793d13410d430e7c702919",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_LOW.json",
+    "schedule_sha256": "6fff01c56470b4c282f500d16a34631dad6b965141acb09e6a25a72f5ffe2728",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "fbb50f35e4571a6b991ef1d9ba485464d553b5c120e08512a3a8709aa2b00b7b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "e86a5130a1fd820f81755399025702003f0657b1dc793d13410d430e7c702919",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "6c7162d4f6fa48042c4646c013fd4090c93cb4e77f2dc04f84480c040c911c13",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_LOW.json",
+    "schedule_sha256": "6fff01c56470b4c282f500d16a34631dad6b965141acb09e6a25a72f5ffe2728",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "e86a5130a1fd820f81755399025702003f0657b1dc793d13410d430e7c702919",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_LOW.json",
+    "schedule_sha256": "6fff01c56470b4c282f500d16a34631dad6b965141acb09e6a25a72f5ffe2728",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "6c7162d4f6fa48042c4646c013fd4090c93cb4e77f2dc04f84480c040c911c13",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "e86a5130a1fd820f81755399025702003f0657b1dc793d13410d430e7c702919",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_LOW.json",
+    "schedule_sha256": "6fff01c56470b4c282f500d16a34631dad6b965141acb09e6a25a72f5ffe2728",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "6c7162d4f6fa48042c4646c013fd4090c93cb4e77f2dc04f84480c040c911c13",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "fbb50f35e4571a6b991ef1d9ba485464d553b5c120e08512a3a8709aa2b00b7b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "fbb50f35e4571a6b991ef1d9ba485464d553b5c120e08512a3a8709aa2b00b7b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "6c7162d4f6fa48042c4646c013fd4090c93cb4e77f2dc04f84480c040c911c13",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_LOW.json",
+    "schedule_sha256": "fc8487b47a1456147d18238b976dcc5f6bb197cf045bbe780e53f4552dadfd27",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "1bb873569d24c37d7fbd133ba3af07116de62e8d4afd385e200283e1afe989de",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "9b17b67c5d4d7d064e102fc66d304e70bf612e424322d499d7d3546b6a6600ff",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "1bb873569d24c37d7fbd133ba3af07116de62e8d4afd385e200283e1afe989de",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "385275df71c2dc10e64a8116c462c2c67d3788acdce8c357a6ae0aefcdbb4d40",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "9b17b67c5d4d7d064e102fc66d304e70bf612e424322d499d7d3546b6a6600ff",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "9b17b67c5d4d7d064e102fc66d304e70bf612e424322d499d7d3546b6a6600ff",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "1bb873569d24c37d7fbd133ba3af07116de62e8d4afd385e200283e1afe989de",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_LOW.json",
+    "schedule_sha256": "fc8487b47a1456147d18238b976dcc5f6bb197cf045bbe780e53f4552dadfd27",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "9b17b67c5d4d7d064e102fc66d304e70bf612e424322d499d7d3546b6a6600ff",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "385275df71c2dc10e64a8116c462c2c67d3788acdce8c357a6ae0aefcdbb4d40",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_LOW.json",
+    "schedule_sha256": "fc8487b47a1456147d18238b976dcc5f6bb197cf045bbe780e53f4552dadfd27",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "385275df71c2dc10e64a8116c462c2c67d3788acdce8c357a6ae0aefcdbb4d40",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "385275df71c2dc10e64a8116c462c2c67d3788acdce8c357a6ae0aefcdbb4d40",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "1bb873569d24c37d7fbd133ba3af07116de62e8d4afd385e200283e1afe989de",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/BENIGN_LOW.json",
+    "schedule_sha256": "fc8487b47a1456147d18238b976dcc5f6bb197cf045bbe780e53f4552dadfd27",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_LOW.json",
+    "schedule_sha256": "1267747b39630b13294d881419a9cf5c2bc3ab9d50d524ae0b8e04443dead4cf",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "01fb830d67428ebe5c31dd0099404e59f7ecb63d98974a69fa3d4da71844fdbb",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "eb4f5a2b1a93975e01a77a6f2d5645cde04d290564f5c108ecbb2bce3a473cca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "01fb830d67428ebe5c31dd0099404e59f7ecb63d98974a69fa3d4da71844fdbb",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "eb4f5a2b1a93975e01a77a6f2d5645cde04d290564f5c108ecbb2bce3a473cca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "58b5ddf43a0788478892b4bfab6b8011556de594cf0ea739ad28df0a6d750ddc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "58b5ddf43a0788478892b4bfab6b8011556de594cf0ea739ad28df0a6d750ddc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "01fb830d67428ebe5c31dd0099404e59f7ecb63d98974a69fa3d4da71844fdbb",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_LOW.json",
+    "schedule_sha256": "1267747b39630b13294d881419a9cf5c2bc3ab9d50d524ae0b8e04443dead4cf",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_LOW.json",
+    "schedule_sha256": "1267747b39630b13294d881419a9cf5c2bc3ab9d50d524ae0b8e04443dead4cf",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "eb4f5a2b1a93975e01a77a6f2d5645cde04d290564f5c108ecbb2bce3a473cca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "58b5ddf43a0788478892b4bfab6b8011556de594cf0ea739ad28df0a6d750ddc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "01fb830d67428ebe5c31dd0099404e59f7ecb63d98974a69fa3d4da71844fdbb",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_LOW.json",
+    "schedule_sha256": "1267747b39630b13294d881419a9cf5c2bc3ab9d50d524ae0b8e04443dead4cf",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "eb4f5a2b1a93975e01a77a6f2d5645cde04d290564f5c108ecbb2bce3a473cca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "58b5ddf43a0788478892b4bfab6b8011556de594cf0ea739ad28df0a6d750ddc",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_LOW.json",
+    "schedule_sha256": "9ae15f2f36046d860fa51087047a096fb8ed705134dbe7b0173539c6de7911fb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "e286af62aa274d292b77efe016d9362c473e25a1b5b2060c654b742934ce6d64",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "efa6fd95e6eaa30cd1fc0860c172c801be7bf4ccb53acf33ee81d778129085db",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "efa6fd95e6eaa30cd1fc0860c172c801be7bf4ccb53acf33ee81d778129085db",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "2a720d649e6b4e9a19d6d9bc248ec7dbcefc038e35c0c3e5fc9cb6f96e70a07f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "2a720d649e6b4e9a19d6d9bc248ec7dbcefc038e35c0c3e5fc9cb6f96e70a07f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "efa6fd95e6eaa30cd1fc0860c172c801be7bf4ccb53acf33ee81d778129085db",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "2a720d649e6b4e9a19d6d9bc248ec7dbcefc038e35c0c3e5fc9cb6f96e70a07f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_LOW.json",
+    "schedule_sha256": "9ae15f2f36046d860fa51087047a096fb8ed705134dbe7b0173539c6de7911fb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "e286af62aa274d292b77efe016d9362c473e25a1b5b2060c654b742934ce6d64",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "efa6fd95e6eaa30cd1fc0860c172c801be7bf4ccb53acf33ee81d778129085db",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "2a720d649e6b4e9a19d6d9bc248ec7dbcefc038e35c0c3e5fc9cb6f96e70a07f",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_LOW.json",
+    "schedule_sha256": "9ae15f2f36046d860fa51087047a096fb8ed705134dbe7b0173539c6de7911fb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "e286af62aa274d292b77efe016d9362c473e25a1b5b2060c654b742934ce6d64",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "e286af62aa274d292b77efe016d9362c473e25a1b5b2060c654b742934ce6d64",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/BENIGN_LOW.json",
+    "schedule_sha256": "9ae15f2f36046d860fa51087047a096fb8ed705134dbe7b0173539c6de7911fb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "240d771b0d199c5cfca1f4d2e6f6e78459c78cf1695ca9f0a6583124dd8d0cbf",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_LOW.json",
+    "schedule_sha256": "67ec616cf69cd4ea419d2bb6e21b9d5ba481f3944e0947f428cd13dda40d585e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "240d771b0d199c5cfca1f4d2e6f6e78459c78cf1695ca9f0a6583124dd8d0cbf",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "beaed5a5b0b7ca02c3eec4ffdb4e607a3c27fbbeda82c3370f0b68e34842719b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "44a874ff764bf499ebbd998f10def7e0254f2643796a32811cc1c714aabde90b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "44a874ff764bf499ebbd998f10def7e0254f2643796a32811cc1c714aabde90b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "240d771b0d199c5cfca1f4d2e6f6e78459c78cf1695ca9f0a6583124dd8d0cbf",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "beaed5a5b0b7ca02c3eec4ffdb4e607a3c27fbbeda82c3370f0b68e34842719b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "44a874ff764bf499ebbd998f10def7e0254f2643796a32811cc1c714aabde90b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "44a874ff764bf499ebbd998f10def7e0254f2643796a32811cc1c714aabde90b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "beaed5a5b0b7ca02c3eec4ffdb4e607a3c27fbbeda82c3370f0b68e34842719b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_LOW.json",
+    "schedule_sha256": "67ec616cf69cd4ea419d2bb6e21b9d5ba481f3944e0947f428cd13dda40d585e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_LOW.json",
+    "schedule_sha256": "67ec616cf69cd4ea419d2bb6e21b9d5ba481f3944e0947f428cd13dda40d585e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "beaed5a5b0b7ca02c3eec4ffdb4e607a3c27fbbeda82c3370f0b68e34842719b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "240d771b0d199c5cfca1f4d2e6f6e78459c78cf1695ca9f0a6583124dd8d0cbf",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/BENIGN_LOW.json",
+    "schedule_sha256": "67ec616cf69cd4ea419d2bb6e21b9d5ba481f3944e0947f428cd13dda40d585e",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "aadf20d4b4cf8935a5955750a8f6a86e26a12b871168d5359c5819b2bcf2e018",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "f135b7e491d7bf8c8a3d211223a7fea36f94cf4bb8ee59bb901b78d2c29a54bf",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_LOW.json",
+    "schedule_sha256": "22dff6b3e69d44a6b921e01a34d5b201bc3f05e6732e0419dc9e0a1a6e9d0d13",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "aadf20d4b4cf8935a5955750a8f6a86e26a12b871168d5359c5819b2bcf2e018",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "aadf20d4b4cf8935a5955750a8f6a86e26a12b871168d5359c5819b2bcf2e018",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "3e4821e29d6d6a8f0fedb25f8b9732493d08f6c938e155b194630c27a28b8563",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "aadf20d4b4cf8935a5955750a8f6a86e26a12b871168d5359c5819b2bcf2e018",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "f135b7e491d7bf8c8a3d211223a7fea36f94cf4bb8ee59bb901b78d2c29a54bf",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "f135b7e491d7bf8c8a3d211223a7fea36f94cf4bb8ee59bb901b78d2c29a54bf",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "3e4821e29d6d6a8f0fedb25f8b9732493d08f6c938e155b194630c27a28b8563",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "f135b7e491d7bf8c8a3d211223a7fea36f94cf4bb8ee59bb901b78d2c29a54bf",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_LOW.json",
+    "schedule_sha256": "22dff6b3e69d44a6b921e01a34d5b201bc3f05e6732e0419dc9e0a1a6e9d0d13",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "3e4821e29d6d6a8f0fedb25f8b9732493d08f6c938e155b194630c27a28b8563",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_LOW.json",
+    "schedule_sha256": "22dff6b3e69d44a6b921e01a34d5b201bc3f05e6732e0419dc9e0a1a6e9d0d13",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_LOW.json",
+    "schedule_sha256": "22dff6b3e69d44a6b921e01a34d5b201bc3f05e6732e0419dc9e0a1a6e9d0d13",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "3e4821e29d6d6a8f0fedb25f8b9732493d08f6c938e155b194630c27a28b8563",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "f26f1a8c6dc63737df1c99d2585180600f89a62b2694b68a835c52ccbccad209",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "f26f1a8c6dc63737df1c99d2585180600f89a62b2694b68a835c52ccbccad209",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_LOW.json",
+    "schedule_sha256": "8035daf77ca20d036931bf027fda54b1d96d9549d022edcc4c849ac0021e40df",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "0e15c73c0615e839abab1dbda3d627d9da5f1c9ab86ba36513a149b8bdf6d2eb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "f26f1a8c6dc63737df1c99d2585180600f89a62b2694b68a835c52ccbccad209",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "5dc47788e56e9c723a8a2d0c28da6c34e110da756a5df7766ce55b46ce05d8ec",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "5dc47788e56e9c723a8a2d0c28da6c34e110da756a5df7766ce55b46ce05d8ec",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_LOW.json",
+    "schedule_sha256": "8035daf77ca20d036931bf027fda54b1d96d9549d022edcc4c849ac0021e40df",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "0e15c73c0615e839abab1dbda3d627d9da5f1c9ab86ba36513a149b8bdf6d2eb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "5dc47788e56e9c723a8a2d0c28da6c34e110da756a5df7766ce55b46ce05d8ec",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "f26f1a8c6dc63737df1c99d2585180600f89a62b2694b68a835c52ccbccad209",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_LOW.json",
+    "schedule_sha256": "8035daf77ca20d036931bf027fda54b1d96d9549d022edcc4c849ac0021e40df",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_LOW.json",
+    "schedule_sha256": "8035daf77ca20d036931bf027fda54b1d96d9549d022edcc4c849ac0021e40df",
+    "stage": "confirmatory",
+    "workload": "BENIGN_LOW"
+  },
+  {
+    "policy": "B1_RL2_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "0e15c73c0615e839abab1dbda3d627d9da5f1c9ab86ba36513a149b8bdf6d2eb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  },
+  {
+    "policy": "RFC_DROP_NATIVE",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "5dc47788e56e9c723a8a2d0c28da6c34e110da756a5df7766ce55b46ce05d8ec",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/BENIGN_BOUNDARY.json",
+    "schedule_sha256": "0e15c73c0615e839abab1dbda3d627d9da5f1c9ab86ba36513a149b8bdf6d2eb",
+    "stage": "confirmatory",
+    "workload": "BENIGN_BOUNDARY"
+  }
+]

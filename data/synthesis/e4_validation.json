@@ -1,0 +1,127 @@
+{
+  "audit_scope": "Frozen E4 inputs/outputs only; no raw decision data, threshold selection, or upstream modification.",
+  "checks": [
+    {
+      "details": {
+        "preflight": "PASS",
+        "summary": "aggregation_complete_read_only"
+      },
+      "name": "protocol_manifest_preflight_summary_provenance",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "raw_data_access": "none"
+      },
+      "name": "E4_read_only_and_no_pooling_status",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "E1": 4,
+        "E2": 4,
+        "E3": 9
+      },
+      "name": "manifest_registered_inputs_still_match_hashes",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "e4_metric_coverage.csv": {
+          "actual": "23e604620edc0737e01cf7aabb2ee3fc331fb709e3960ea12ecc079db7539241",
+          "expected": "23e604620edc0737e01cf7aabb2ee3fc331fb709e3960ea12ecc079db7539241",
+          "rows": 8
+        },
+        "e4_paired_effects.csv": {
+          "actual": "26359478f056425d8f4b67b2b21b24ead17167bf14d4f467e735ba4d1577e602",
+          "expected": "26359478f056425d8f4b67b2b21b24ead17167bf14d4f467e735ba4d1577e602",
+          "rows": 70
+        },
+        "e4_summary.csv": {
+          "actual": "da5936d565683fea8b82887a2eddbab8023b94f6406fc8fb7c64e67bf2425faa",
+          "expected": "da5936d565683fea8b82887a2eddbab8023b94f6406fc8fb7c64e67bf2425faa",
+          "rows": 703
+        }
+      },
+      "name": "synthesis_output_hashes_match_summary_metadata",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "held_out_test": "pass_byte_exact",
+        "lock": "pass_byte_exact",
+        "lock_validation": "pass_byte_exact",
+        "protocol": "pass_byte_exact",
+        "split_manifest": "pass_byte_exact",
+        "summary_csv": "pass_git_lf_checkout_equivalent",
+        "test_csv": "pass_git_lf_checkout_equivalent",
+        "test_results": "pass_byte_exact",
+        "validation_grid": "pass_byte_exact"
+      },
+      "name": "E3_final_validator_integrity_is_exact_or_registered_EOL_equivalent",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "coverage_rows": 8,
+        "effect_rows": 70,
+        "measured_rows_missing_CI": 0,
+        "summary_rows": 703
+      },
+      "name": "summary_effect_and_coverage_schema_counts_and_CI_fields",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "E2_macro_rows": 8,
+        "E3_Delta_J_new_minus_B2": "0.010833333333333337",
+        "E3_macro_rows": 2
+      },
+      "name": "E2_and_E3_primary_paired_effects_replay_exactly_without_pooling",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "ASR": {
+          "E1_status": "not_measured",
+          "E2_status": "not_supported",
+          "E3_status": "not_supported",
+          "metric": "ASR / poisoning success",
+          "scope_note": "No end-to-end poisoning outcome exists."
+        },
+        "runtime": {
+          "E1_status": "not_supported_for_virtual_time",
+          "E2_status": "not_measured",
+          "E3_status": "not_measured",
+          "metric": "latency / throughput / CPU / memory",
+          "scope_note": "Requires runtime/E5 evidence."
+        }
+      },
+      "name": "ASR_and_runtime_metric_gaps_are_explicit",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "figures": [
+          "e4_effect_sizes.png",
+          "e4_failure_boundaries.png",
+          "e4_metric_coverage.png"
+        ],
+        "missing_report_figure_links": []
+      },
+      "name": "figures_are_valid_PNG_and_report_references_scope_limitations",
+      "status": "PASS"
+    }
+  ],
+  "critical_failures": [],
+  "experiment": "E4 independent final validation",
+  "generated_utc": "2026-08-29T08:16:35.187274Z",
+  "schema_version": 1,
+  "status": "PASS",
+  "summary": {
+    "checks_passed": 9,
+    "checks_total": 9,
+    "raw_decision_data_opened": false,
+    "selection_or_threshold_modification": false
+  }
+}

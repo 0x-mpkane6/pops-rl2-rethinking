@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source_runs_reconstructed": 480,
+  "source_decisions_checked": 144000,
+  "new_decisions": 144000,
+  "source_raw_hashes_verified": true,
+  "paired_times_and_occupancy_identical": true,
+  "initial_predictions_match_source": true,
+  "max_entropy_reconstruction_error": 4.600764214046649e-13,
+  "all_cells_reported": 96,
+  "held_out_accessed": false
+}

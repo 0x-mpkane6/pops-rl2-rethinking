@@ -1,0 +1,38 @@
+{
+  "asr": "not_measured_not_supported_by_upstream_decision_level_data",
+  "cross_experiment_dependency": "E3 is a 60/20/20 repartition of the canonical E2 decision dataset. E2 and E3 may be compared descriptively but must not be pooled or treated as independent replications.",
+  "data_access": "Frozen E1/E2/E3 result artifacts registered in e4_input_manifest.json; no raw decision data opened.",
+  "experiment": "E4 read-only statistical synthesis",
+  "generated_utc": "2026-08-29T08:06:52.749228Z",
+  "input_manifest": {
+    "path": "research/Report/experiments/E4/e4_input_manifest.json",
+    "sha256": "a6e5770b25bebc665360c2e96e35cc26c7dab5240f3549f692bec0c40b8e976a"
+  },
+  "outputs": {
+    "e4_metric_coverage.csv": {
+      "rows": 8,
+      "sha256": "23e604620edc0737e01cf7aabb2ee3fc331fb709e3960ea12ecc079db7539241"
+    },
+    "e4_paired_effects.csv": {
+      "rows": 70,
+      "sha256": "26359478f056425d8f4b67b2b21b24ead17167bf14d4f467e735ba4d1577e602"
+    },
+    "e4_summary.csv": {
+      "rows": 703,
+      "sha256": "da5936d565683fea8b82887a2eddbab8023b94f6406fc8fb7c64e67bf2425faa"
+    }
+  },
+  "preflight": {
+    "path": "research/Report/experiments/E4/e4_preflight.json",
+    "sha256": "9224a4643603f8e35aaf98a6559c61e473b1eb7abb6f31486c6aa1b16dddd122",
+    "status": "PASS"
+  },
+  "protocol": {
+    "path": "research/Report/experiments/E4/e4_protocol.json",
+    "sha256": "4f0855a8ca1d76ead2a4b756768eaa07aee5696463e0a6d97d7a6f691f440ede"
+  },
+  "schema_version": 1,
+  "selection_or_threshold_modification": false,
+  "statistical_pooling_of_E2_and_E3": false,
+  "status": "aggregation_complete_read_only"
+}

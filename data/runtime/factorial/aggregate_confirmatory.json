@@ -1,0 +1,662 @@
+{
+  "factorial_effects": {
+    "bootstrap_replicates": 5000,
+    "effects": {
+      "attack_minus_benign_at_12_per_s": {
+        "blocks": 20,
+        "ci_high": 1.0,
+        "ci_low": 0.9949999999999999,
+        "estimate": 0.998,
+        "replicates": 5000
+      },
+      "attack_minus_benign_at_200_per_s": {
+        "blocks": 20,
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "estimate": 0.0,
+        "replicates": 5000
+      },
+      "difference_of_attack_minus_benign_effects_high_minus_moderate": {
+        "blocks": 20,
+        "ci_high": -0.9949999999999999,
+        "ci_low": -1.0,
+        "estimate": -0.998,
+        "replicates": 5000
+      },
+      "high_minus_moderate_attack": {
+        "blocks": 20,
+        "ci_high": -0.9949999999999999,
+        "ci_low": -1.0,
+        "estimate": -0.998,
+        "replicates": 5000
+      },
+      "high_minus_moderate_benign": {
+        "blocks": 20,
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "estimate": 0.0,
+        "replicates": 5000
+      }
+    },
+    "metric": "malicious_answer_rate",
+    "policy": "B5_LOCKED_TC"
+  },
+  "groups": {
+    "B0_OFF__ATTACK_DIVERSE_HIGH": {
+      "any_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "any_poison_rate": 1.0,
+      "any_poison_runs": 20,
+      "first_trial_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "first_trial_poison_runs": 20,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.998,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 1.0,
+      "mean_detector_active_at_query_rate": 1.0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.002,
+      "mean_malicious_answer_rate": 0.9960000000000001,
+      "mean_noanswer_rate": 0.002,
+      "mean_run_asr": 0.9960000000000001,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "B0_OFF",
+      "runs": 20,
+      "workload": "ATTACK_DIVERSE_HIGH"
+    },
+    "B0_OFF__ATTACK_DIVERSE_MODERATE": {
+      "any_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "any_poison_rate": 1.0,
+      "any_poison_runs": 20,
+      "first_trial_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "first_trial_poison_runs": 20,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 1.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 0.0,
+      "mean_detector_active_at_query_rate": 0.0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.0,
+      "mean_malicious_answer_rate": 1.0,
+      "mean_noanswer_rate": 0.0,
+      "mean_run_asr": 1.0,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B0_OFF",
+      "runs": 20,
+      "workload": "ATTACK_DIVERSE_MODERATE"
+    },
+    "B0_OFF__BENIGN_DIVERSE_HIGH": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 1.0,
+      "mean_detector_active_at_query_rate": 1.0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.999,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 0.001,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "B0_OFF",
+      "runs": 20,
+      "workload": "BENIGN_DIVERSE_HIGH"
+    },
+    "B0_OFF__BENIGN_DIVERSE_MODERATE": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 0.0,
+      "mean_detector_active_at_query_rate": 0.0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.998,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 0.002,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B0_OFF",
+      "runs": 20,
+      "workload": "BENIGN_DIVERSE_MODERATE"
+    },
+    "B1_RL2_TC__ATTACK_DIVERSE_HIGH": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 1.0,
+      "mean_detector_active_at_query_rate": 1.0,
+      "mean_forged_tail_drop_rate": 0.999,
+      "mean_legitimate_answer_rate": 0.9949999999999999,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 0.005,
+      "mean_run_asr": 0.0,
+      "mean_tc_injection_rate": 1.0,
+      "mean_tcp_retry_rate": 1.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "B1_RL2_TC",
+      "runs": 20,
+      "workload": "ATTACK_DIVERSE_HIGH"
+    },
+    "B1_RL2_TC__ATTACK_DIVERSE_MODERATE": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 0.0,
+      "mean_detector_active_at_query_rate": 0.0,
+      "mean_forged_tail_drop_rate": 1.0,
+      "mean_legitimate_answer_rate": 0.998,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 0.002,
+      "mean_run_asr": 0.0,
+      "mean_tc_injection_rate": 1.0,
+      "mean_tcp_retry_rate": 1.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B1_RL2_TC",
+      "runs": 20,
+      "workload": "ATTACK_DIVERSE_MODERATE"
+    },
+    "B1_RL2_TC__BENIGN_DIVERSE_HIGH": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 1.0,
+      "mean_detector_active_at_query_rate": 1.0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.9949999999999999,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 0.005,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 1.0,
+      "mean_tcp_retry_rate": 1.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "B1_RL2_TC",
+      "runs": 20,
+      "workload": "BENIGN_DIVERSE_HIGH"
+    },
+    "B1_RL2_TC__BENIGN_DIVERSE_MODERATE": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 0.0,
+      "mean_detector_active_at_query_rate": 0.0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.9960000000000001,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 0.004,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 1.0,
+      "mean_tcp_retry_rate": 1.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B1_RL2_TC",
+      "runs": 20,
+      "workload": "BENIGN_DIVERSE_MODERATE"
+    },
+    "B5_LOCKED_TC__ATTACK_DIVERSE_HIGH": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 1.0,
+      "mean_detector_active_at_query_rate": 1.0,
+      "mean_forged_tail_drop_rate": 0.999,
+      "mean_legitimate_answer_rate": 0.998,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 0.002,
+      "mean_run_asr": 0.0,
+      "mean_tc_injection_rate": 1.0,
+      "mean_tcp_retry_rate": 1.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "B5_LOCKED_TC",
+      "runs": 20,
+      "workload": "ATTACK_DIVERSE_HIGH"
+    },
+    "B5_LOCKED_TC__ATTACK_DIVERSE_MODERATE": {
+      "any_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "any_poison_rate": 1.0,
+      "any_poison_runs": 20,
+      "first_trial_poison_ci95": [
+        0.8315665290169146,
+        1.0
+      ],
+      "first_trial_poison_runs": 20,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 1.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 0.0,
+      "mean_detector_active_at_query_rate": 0.0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.0,
+      "mean_malicious_answer_rate": 0.998,
+      "mean_noanswer_rate": 0.002,
+      "mean_run_asr": 0.998,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B5_LOCKED_TC",
+      "runs": 20,
+      "workload": "ATTACK_DIVERSE_MODERATE"
+    },
+    "B5_LOCKED_TC__BENIGN_DIVERSE_HIGH": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 1.0,
+      "mean_detector_active_at_query_rate": 1.0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.993,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 0.007000000000000001,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 1.0,
+      "mean_tcp_retry_rate": 1.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "B5_LOCKED_TC",
+      "runs": 20,
+      "workload": "BENIGN_DIVERSE_HIGH"
+    },
+    "B5_LOCKED_TC__BENIGN_DIVERSE_MODERATE": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 0.0,
+      "mean_detector_active_at_query_rate": 0.0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.9970000000000001,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 0.003,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "B5_LOCKED_TC",
+      "runs": 20,
+      "workload": "BENIGN_DIVERSE_MODERATE"
+    },
+    "RFC_DROP_NATIVE__ATTACK_DIVERSE_HIGH": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 1.0,
+      "mean_detector_active_at_query_rate": 1.0,
+      "mean_forged_tail_drop_rate": 0.999,
+      "mean_legitimate_answer_rate": 0.0,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 1.0,
+      "mean_run_asr": 0.0,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "RFC_DROP_NATIVE",
+      "runs": 20,
+      "workload": "ATTACK_DIVERSE_HIGH"
+    },
+    "RFC_DROP_NATIVE__ATTACK_DIVERSE_MODERATE": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 0.0,
+      "mean_detector_active_at_query_rate": 0.0,
+      "mean_forged_tail_drop_rate": 1.0,
+      "mean_legitimate_answer_rate": 0.0,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 1.0,
+      "mean_run_asr": 0.0,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "RFC_DROP_NATIVE",
+      "runs": 20,
+      "workload": "ATTACK_DIVERSE_MODERATE"
+    },
+    "RFC_DROP_NATIVE__BENIGN_DIVERSE_HIGH": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 1.0,
+      "mean_detector_active_at_query_rate": 1.0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.0,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 1.0,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 1.0,
+      "policy": "RFC_DROP_NATIVE",
+      "runs": 20,
+      "workload": "BENIGN_DIVERSE_HIGH"
+    },
+    "RFC_DROP_NATIVE__BENIGN_DIVERSE_MODERATE": {
+      "any_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "any_poison_rate": 0.0,
+      "any_poison_runs": 0,
+      "first_trial_poison_ci95": [
+        0.0,
+        0.1684334709830853
+      ],
+      "first_trial_poison_runs": 0,
+      "mean_cache_after_probe_error_rate": 0.0,
+      "mean_cache_after_probe_valid_rate": 1.0,
+      "mean_cache_before_probe_error_rate": 0.0,
+      "mean_cache_before_probe_valid_rate": 1.0,
+      "mean_cache_insertion_rate": 0.0,
+      "mean_cache_probe_error_rate": 0.0,
+      "mean_cache_probe_valid_rate": 1.0,
+      "mean_detector_active_at_enforcement_rate": 0.0,
+      "mean_detector_active_at_query_rate": 0.0,
+      "mean_forged_tail_drop_rate": 0.0,
+      "mean_legitimate_answer_rate": 0.0,
+      "mean_malicious_answer_rate": 0.0,
+      "mean_noanswer_rate": 1.0,
+      "mean_run_asr": null,
+      "mean_tc_injection_rate": 0.0,
+      "mean_tcp_retry_rate": 0.0,
+      "mean_trigger_rate": 0.0,
+      "policy": "RFC_DROP_NATIVE",
+      "runs": 20,
+      "workload": "BENIGN_DIVERSE_MODERATE"
+    }
+  },
+  "n_runs": 320,
+  "paired": {
+    "B1_RL2_TC_vs_B0_OFF__ATTACK_DIVERSE_HIGH__run_asr": {
+      "blocks": 20,
+      "ci_high": -0.992,
+      "ci_low": -0.999,
+      "estimate": -0.9960000000000001,
+      "replicates": 5000
+    },
+    "B1_RL2_TC_vs_B0_OFF__ATTACK_DIVERSE_MODERATE__run_asr": {
+      "blocks": 20,
+      "ci_high": -1.0,
+      "ci_low": -1.0,
+      "estimate": -1.0,
+      "replicates": 5000
+    },
+    "B1_RL2_TC_vs_B0_OFF__BENIGN_DIVERSE_HIGH__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": -0.0010000000000000009,
+      "ci_low": -0.008000000000000007,
+      "estimate": -0.0040000000000000036,
+      "replicates": 5000
+    },
+    "B1_RL2_TC_vs_B0_OFF__BENIGN_DIVERSE_MODERATE__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": 0.0030000000000000027,
+      "ci_low": -0.007000000000000006,
+      "estimate": -0.0020000000000000018,
+      "replicates": 5000
+    },
+    "B5_LOCKED_TC_vs_B0_OFF__ATTACK_DIVERSE_HIGH__run_asr": {
+      "blocks": 20,
+      "ci_high": -0.992,
+      "ci_low": -0.999,
+      "estimate": -0.9960000000000001,
+      "replicates": 5000
+    },
+    "B5_LOCKED_TC_vs_B0_OFF__ATTACK_DIVERSE_MODERATE__run_asr": {
+      "blocks": 20,
+      "ci_high": 0.0,
+      "ci_low": -0.0050000000000000044,
+      "estimate": -0.0020000000000000018,
+      "replicates": 5000
+    },
+    "B5_LOCKED_TC_vs_B0_OFF__BENIGN_DIVERSE_HIGH__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": -0.0010000000000000009,
+      "ci_low": -0.01100000000000001,
+      "estimate": -0.006000000000000005,
+      "replicates": 5000
+    },
+    "B5_LOCKED_TC_vs_B0_OFF__BENIGN_DIVERSE_MODERATE__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": 0.0020000000000000018,
+      "ci_low": -0.0040000000000000036,
+      "estimate": -0.0010000000000000009,
+      "replicates": 5000
+    },
+    "RFC_DROP_NATIVE_vs_B0_OFF__ATTACK_DIVERSE_HIGH__run_asr": {
+      "blocks": 20,
+      "ci_high": -0.992,
+      "ci_low": -0.999,
+      "estimate": -0.9960000000000001,
+      "replicates": 5000
+    },
+    "RFC_DROP_NATIVE_vs_B0_OFF__ATTACK_DIVERSE_MODERATE__run_asr": {
+      "blocks": 20,
+      "ci_high": -1.0,
+      "ci_low": -1.0,
+      "estimate": -1.0,
+      "replicates": 5000
+    },
+    "RFC_DROP_NATIVE_vs_B0_OFF__BENIGN_DIVERSE_HIGH__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": -0.9970000000000001,
+      "ci_low": -1.0,
+      "estimate": -0.999,
+      "replicates": 5000
+    },
+    "RFC_DROP_NATIVE_vs_B0_OFF__BENIGN_DIVERSE_MODERATE__legitimate_answer_rate": {
+      "blocks": 20,
+      "ci_high": -0.9949999999999999,
+      "ci_low": -1.0,
+      "estimate": -0.998,
+      "replicates": 5000
+    }
+  },
+  "schema_version": 1
+}

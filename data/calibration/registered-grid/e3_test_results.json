@@ -1,0 +1,3477 @@
+{
+  "asr": {
+    "note": "Synthetic attack-alert is not ASR or poisoning-prevention evidence.",
+    "status": "not_measured_not_supported_by_E2_decision_level_data"
+  },
+  "bootstrap": {
+    "confidence_interval": "95% percentile bootstrap CI",
+    "macro_method": "stratified resampling of paired traces within each equally weighted primary cell",
+    "replicates": 5000,
+    "unit": "paired_trace"
+  },
+  "generated_utc": "2026-08-21T06:31:41.454788Z",
+  "held_out_evaluation": {
+    "candidate": {
+      "entropy_threshold": 6,
+      "min_samples": 8,
+      "unique_ratio_threshold": 0.9
+    },
+    "evaluation_count": 1,
+    "lock_validation": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_lock_validation.json",
+      "sha256": "ff7f6206be80a2cc7708ed1a41e812330fc5528949eb9f2849cc7163ab2e4420",
+      "status": "PASS"
+    },
+    "note": "The locked threshold was evaluated once. No sweep or threshold selection was performed during held-out evaluation.",
+    "test_input": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/splits_60_20_20/held_out_test.csv.gz",
+      "rows_read": 27600,
+      "sha256": "3b4d54efe6e6dab447b26a9ebf7f4659f52a438cb700fec989c982dd5b063307"
+    },
+    "threshold_lock_sha256": "eb267e38d219a13b0d77d8465cfae58edb3f71c6f618951e43673690e519871e",
+    "threshold_source": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_locked_threshold.json"
+  },
+  "primary": {
+    "cells": [
+      {
+        "attack_condition": "attack_sweep_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          }
+        },
+        "level": 24,
+        "n_pairs": 6,
+        "scope": "primary",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.4533333333333333,
+                0.5533333333333333
+              ],
+              "mean": 0.5066666666666667,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.44111111111111106,
+                0.5466666666666667
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.44111111111111106,
+                0.5466666666666667
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.4533333333333333,
+                0.5533333333333333
+              ],
+              "mean": 0.5066666666666667,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.44,
+                0.5466666666666667
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.44111111111111106,
+                0.5433333333333333
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_sweep_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.026666666666666696,
+              0.06777777777777778
+            ],
+            "mean": 0.04777777777777779,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0277777777777778,
+              0.06777777777777778
+            ],
+            "mean": 0.04777777777777779,
+            "n_pairs": 6
+          }
+        },
+        "level": 60,
+        "n_pairs": 6,
+        "scope": "primary",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                0.63,
+                0.7355555555555555
+              ],
+              "mean": 0.6833333333333332,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.026666666666666696,
+                0.06777777777777778
+              ],
+              "mean": 0.04777777777777779,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.26333333333333336,
+                0.3711111111111111
+              ],
+              "mean": 0.3166666666666667,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5133333333333333,
+                0.533888888888889
+              ],
+              "mean": 0.523888888888889,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.22,
+                0.31555555555555553
+              ],
+              "mean": 0.2688888888888889,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_sweep_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          }
+        },
+        "level": 120,
+        "n_pairs": 6,
+        "scope": "primary",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_sweep_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.0,
+              0.003333333333333355
+            ],
+            "mean": 0.0011111111111111183,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.003333333333333355
+            ],
+            "mean": 0.0011111111111111183,
+            "n_pairs": 6
+          }
+        },
+        "level": 200,
+        "n_pairs": 6,
+        "scope": "primary",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.003333333333333355
+              ],
+              "mean": 0.0011111111111111183,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5016666666666667
+              ],
+              "mean": 0.5005555555555555,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.9966666666666666,
+                1.0
+              ],
+              "mean": 0.9988888888888888,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_sweep_bursty",
+        "benign_condition": "benign_bursty",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          }
+        },
+        "level": 24,
+        "n_pairs": 6,
+        "scope": "primary",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.4988888888888889,
+                0.5433333333333333
+              ],
+              "mean": 0.5222222222222223,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.4566666666666666,
+                0.5022222222222222
+              ],
+              "mean": 0.4777777777777778,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.4566666666666666,
+                0.5011111111111111
+              ],
+              "mean": 0.4777777777777778,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.4977777777777778,
+                0.5433333333333333
+              ],
+              "mean": 0.5222222222222223,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.4577777777777778,
+                0.5022222222222222
+              ],
+              "mean": 0.4777777777777778,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.4566666666666667,
+                0.5011111111111111
+              ],
+              "mean": 0.4777777777777778,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_sweep_bursty",
+        "benign_condition": "benign_bursty",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.020000000000000018,
+              0.031111111111111107
+            ],
+            "mean": 0.025555555555555564,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.020000000000000018,
+              0.031111111111111107
+            ],
+            "mean": 0.025555555555555564,
+            "n_pairs": 6
+          }
+        },
+        "level": 60,
+        "n_pairs": 6,
+        "scope": "primary",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.003333333333333355
+              ],
+              "mean": 0.0011111111111111183,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.9966666666666666,
+                1.0
+              ],
+              "mean": 0.9988888888888888,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.9966666666666666,
+                1.0
+              ],
+              "mean": 0.9988888888888888,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                0.5388888888888889,
+                0.6
+              ],
+              "mean": 0.5677777777777778,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.020000000000000018,
+                0.031111111111111107
+              ],
+              "mean": 0.025555555555555564,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.3977777777777778,
+                0.46222222222222226
+              ],
+              "mean": 0.43222222222222223,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5099999999999999,
+                0.5155555555555557
+              ],
+              "mean": 0.5127777777777778,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.36999999999999994,
+                0.4388888888888889
+              ],
+              "mean": 0.4066666666666667,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.003333333333333355
+              ],
+              "mean": 0.0011111111111111183,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.9966666666666666,
+                1.0
+              ],
+              "mean": 0.9988888888888888,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.9966666666666666,
+                1.0
+              ],
+              "mean": 0.9988888888888888,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_sweep_bursty",
+        "benign_condition": "benign_bursty",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.002222222222222218,
+              0.011111111111111127
+            ],
+            "mean": 0.006666666666666672,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.002222222222222218,
+              0.011111111111111127
+            ],
+            "mean": 0.006666666666666672,
+            "n_pairs": 6
+          }
+        },
+        "level": 120,
+        "n_pairs": 6,
+        "scope": "primary",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                0.011111111111111108,
+                0.02888888888888889
+              ],
+              "mean": 0.018888888888888882,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.002222222222222218,
+                0.011111111111111127
+              ],
+              "mean": 0.006666666666666672,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.971111111111111,
+                0.9888888888888889
+              ],
+              "mean": 0.9811111111111112,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5011111111111112,
+                0.5055555555555555
+              ],
+              "mean": 0.5033333333333333,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.9644444444444445,
+                0.9833333333333334
+              ],
+              "mean": 0.9744444444444444,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_sweep_bursty",
+        "benign_condition": "benign_bursty",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.0,
+              0.016666666666666663
+            ],
+            "mean": 0.005555555555555554,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.016666666666666663
+            ],
+            "mean": 0.005555555555555554,
+            "n_pairs": 6
+          }
+        },
+        "level": 200,
+        "n_pairs": 6,
+        "scope": "primary",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.016666666666666663
+              ],
+              "mean": 0.005555555555555554,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5083333333333333
+              ],
+              "mean": 0.5027777777777778,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.9833333333333334,
+                1.0
+              ],
+              "mean": 0.9944444444444445,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      }
+    ],
+    "macro": {
+      "aggregation": "equal-weight macro-average across 2 primary attack conditions x 4 levels",
+      "comparisons": {
+        "Delta_J_new_B5_minus_B2": {
+          "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+          "ci95": [
+            0.00791666666666667,
+            0.013750000000000004
+          ],
+          "mean": 0.010833333333333337,
+          "n_cells": 8,
+          "n_pairs_by_cell": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "Delta_J_new_B5_minus_old_B5": {
+          "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+          "ci95": [
+            0.007777777777777781,
+            0.013749999999999998
+          ],
+          "mean": 0.010833333333333337,
+          "n_cells": 8,
+          "n_pairs_by_cell": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        }
+      },
+      "scope": "primary_macro",
+      "source_cells": [
+        {
+          "attack_condition": "attack_sweep_continuous",
+          "level": 24
+        },
+        {
+          "attack_condition": "attack_sweep_continuous",
+          "level": 60
+        },
+        {
+          "attack_condition": "attack_sweep_continuous",
+          "level": 120
+        },
+        {
+          "attack_condition": "attack_sweep_continuous",
+          "level": 200
+        },
+        {
+          "attack_condition": "attack_sweep_bursty",
+          "level": 24
+        },
+        {
+          "attack_condition": "attack_sweep_bursty",
+          "level": 60
+        },
+        {
+          "attack_condition": "attack_sweep_bursty",
+          "level": 120
+        },
+        {
+          "attack_condition": "attack_sweep_bursty",
+          "level": 200
+        }
+      ],
+      "variants": {
+        "B2": {
+          "FNR": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.12166666666666667,
+              0.13569444444444445
+            ],
+            "mean": 0.12875,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "J": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "attack_alert_rate": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.8644444444444445,
+              0.8784722222222222
+            ],
+            "mean": 0.87125,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "balanced_precision": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "benign_trigger_rate": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.8644444444444445,
+              0.8783333333333333
+            ],
+            "mean": 0.87125,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          }
+        },
+        "new_B5": {
+          "FNR": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.4008298611111111,
+              0.41638888888888886
+            ],
+            "mean": 0.40875,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "J": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.007777777777777782,
+              0.013750000000000004
+            ],
+            "mean": 0.010833333333333337,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "attack_alert_rate": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.5833333333333334,
+              0.5990277777777777
+            ],
+            "mean": 0.59125,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "balanced_precision": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.5039583333333333,
+              0.506875
+            ],
+            "mean": 0.5054166666666666,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "benign_trigger_rate": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.5729166666666666,
+              0.5876388888888888
+            ],
+            "mean": 0.5804166666666667,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          }
+        },
+        "old_B5": {
+          "FNR": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.12166666666666667,
+              0.13569444444444445
+            ],
+            "mean": 0.12875,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "J": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "attack_alert_rate": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.8644444444444445,
+              0.8783368055555555
+            ],
+            "mean": 0.87125,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "balanced_precision": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.5,
+              0.5
+            ],
+            "mean": 0.5,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          "benign_trigger_rate": {
+            "bootstrap": "stratified paired-trace bootstrap; resample paired traces within each equally weighted cell",
+            "ci95": [
+              0.8644444444444445,
+              0.8783333333333333
+            ],
+            "mean": 0.87125,
+            "n_cells": 8,
+            "n_pairs_by_cell": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          }
+        }
+      }
+    }
+  },
+  "schema_version": 1,
+  "secondary_reports": {
+    "failure_probes": [
+      {
+        "attack_condition": "attack_fixed_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.4466666666666667,
+              0.5466666666666667
+            ],
+            "mean": 0.49333333333333335,
+            "n_pairs": 6
+          }
+        },
+        "level": 24,
+        "n_pairs": 6,
+        "scope": "failure_probe",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.4533333333333333,
+                0.5533333333333333
+              ],
+              "mean": 0.5066666666666667,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.44111111111111106,
+                0.5466666666666667
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.44,
+                0.5434166666666654
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -0.5466666666666667,
+                -0.44
+              ],
+              "mean": -0.49333333333333335,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.22666666666666666,
+                0.28
+              ],
+              "mean": 0.25333333333333335,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.44,
+                0.5466666666666667
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_fixed_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              -0.31444444444444447,
+              -0.22
+            ],
+            "mean": -0.2688888888888889,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.6855555555555556,
+              0.7799999999999999
+            ],
+            "mean": 0.7311111111111112,
+            "n_pairs": 6
+          }
+        },
+        "level": 60,
+        "n_pairs": 6,
+        "scope": "failure_probe",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -0.31555555555555553,
+                -0.22111111111111112
+              ],
+              "mean": -0.2688888888888889,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.3427777777777778,
+                0.3894444444444445
+              ],
+              "mean": 0.3655555555555556,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.22,
+                0.31444444444444447
+              ],
+              "mean": 0.2688888888888889,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -1.0,
+                -1.0
+              ],
+              "mean": -1.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_fixed_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              -1.0,
+              -1.0
+            ],
+            "mean": -1.0,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          }
+        },
+        "level": 120,
+        "n_pairs": 6,
+        "scope": "failure_probe",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -1.0,
+                -1.0
+              ],
+              "mean": -1.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -1.0,
+                -1.0
+              ],
+              "mean": -1.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_fixed_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              -1.0,
+              -0.9966666666666666
+            ],
+            "mean": -0.9988888888888888,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.003333333333333355
+            ],
+            "mean": 0.0011111111111111183,
+            "n_pairs": 6
+          }
+        },
+        "level": 200,
+        "n_pairs": 6,
+        "scope": "failure_probe",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -1.0,
+                -0.9966666666666666
+              ],
+              "mean": -0.9988888888888888,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.0,
+                0.0016666666666666774
+              ],
+              "mean": 0.0005555555555555591,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.9966666666666666,
+                1.0
+              ],
+              "mean": 0.9988888888888888,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -1.0,
+                -1.0
+              ],
+              "mean": -1.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_dup_sweep_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.43999999999999995,
+              0.5466666666666667
+            ],
+            "mean": 0.49333333333333335,
+            "n_pairs": 6
+          }
+        },
+        "level": 24,
+        "n_pairs": 6,
+        "scope": "failure_probe",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.4533333333333333,
+                0.56
+              ],
+              "mean": 0.5066666666666667,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.44111111111111106,
+                0.5466666666666667
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.44,
+                0.5466666666666667
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -0.5466666666666667,
+                -0.4466666666666667
+              ],
+              "mean": -0.49333333333333335,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.22944444444444445,
+                0.27666666666666667
+              ],
+              "mean": 0.25333333333333335,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.44111111111111106,
+                0.5433333333333333
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_dup_sweep_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              -0.31444444444444447,
+              -0.22
+            ],
+            "mean": -0.2688888888888889,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.6844444444444444,
+              0.7799999999999999
+            ],
+            "mean": 0.7311111111111112,
+            "n_pairs": 6
+          }
+        },
+        "level": 60,
+        "n_pairs": 6,
+        "scope": "failure_probe",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -0.31447222222222226,
+                -0.22111111111111112
+              ],
+              "mean": -0.2688888888888889,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.3427638888888889,
+                0.3894444444444445
+              ],
+              "mean": 0.3655555555555556,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.22,
+                0.31444444444444447
+              ],
+              "mean": 0.2688888888888889,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -1.0,
+                -1.0
+              ],
+              "mean": -1.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_dup_sweep_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              -1.0,
+              -1.0
+            ],
+            "mean": -1.0,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          }
+        },
+        "level": 120,
+        "n_pairs": 6,
+        "scope": "failure_probe",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -1.0,
+                -1.0
+              ],
+              "mean": -1.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -1.0,
+                -1.0
+              ],
+              "mean": -1.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_dup_sweep_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              -1.0,
+              -0.9966666666666666
+            ],
+            "mean": -0.9988888888888888,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.003333333333333355
+            ],
+            "mean": 0.0011111111111111183,
+            "n_pairs": 6
+          }
+        },
+        "level": 200,
+        "n_pairs": 6,
+        "scope": "failure_probe",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -1.0,
+                -0.9966666666666666
+              ],
+              "mean": -0.9988888888888888,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.0,
+                0.0016666666666666774
+              ],
+              "mean": 0.0005555555555555591,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.9966666666666666,
+                1.0
+              ],
+              "mean": 0.9988888888888888,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -1.0,
+                -1.0
+              ],
+              "mean": -1.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      }
+    ],
+    "negative_control": [
+      {
+        "attack_condition": "attack_random_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          }
+        },
+        "level": 24,
+        "n_pairs": 6,
+        "scope": "negative_control",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.4533333333333333,
+                0.5534444444444429
+              ],
+              "mean": 0.5066666666666667,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.4466666666666667,
+                0.5466666666666667
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.4388888888888889,
+                0.5422222222222223
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.4577777777777778,
+                0.5577777777777778
+              ],
+              "mean": 0.5066666666666667,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.44111111111111106,
+                0.5466666666666667
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.44,
+                0.5466666666666667
+              ],
+              "mean": 0.49333333333333335,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_random_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              -0.021111111111111105,
+              0.01
+            ],
+            "mean": -0.005555555555555554,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              -0.019999999999999993,
+              0.01
+            ],
+            "mean": -0.005555555555555554,
+            "n_pairs": 6
+          }
+        },
+        "level": 60,
+        "n_pairs": 6,
+        "scope": "negative_control",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                0.6766666666666667,
+                0.7955555555555556
+              ],
+              "mean": 0.7366666666666667,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                -0.021111111111111105,
+                0.009999999999999995
+              ],
+              "mean": -0.005555555555555554,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                0.20555555555555557,
+                0.32222222222222224
+              ],
+              "mean": 0.26333333333333336,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.4894444444444444,
+                0.505
+              ],
+              "mean": 0.49722222222222223,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.2222222222222222,
+                0.31444444444444447
+              ],
+              "mean": 0.2688888888888889,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_random_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 6
+          }
+        },
+        "level": 120,
+        "n_pairs": 6,
+        "scope": "negative_control",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      },
+      {
+        "attack_condition": "attack_random_continuous",
+        "benign_condition": "benign_continuous",
+        "comparisons": {
+          "Delta_J_new_B5_minus_B2": {
+            "ci95": [
+              0.0,
+              0.003333333333333355
+            ],
+            "mean": 0.0011111111111111183,
+            "n_pairs": 6
+          },
+          "Delta_J_new_B5_minus_old_B5": {
+            "ci95": [
+              0.0,
+              0.003333333333333355
+            ],
+            "mean": 0.0011111111111111183,
+            "n_pairs": 6
+          }
+        },
+        "level": 200,
+        "n_pairs": 6,
+        "scope": "negative_control",
+        "variants": {
+          "B2": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          },
+          "new_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.003333333333333355
+              ],
+              "mean": 0.0011111111111111183,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5016666666666667
+              ],
+              "mean": 0.5005555555555555,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                0.9966666666666666,
+                1.0
+              ],
+              "mean": 0.9988888888888888,
+              "n_pairs": 6
+            }
+          },
+          "old_B5": {
+            "FNR": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "J": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 6
+            },
+            "attack_alert_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            },
+            "balanced_precision": {
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5,
+              "n_pairs": 6
+            },
+            "benign_trigger_rate": {
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0,
+              "n_pairs": 6
+            }
+          }
+        }
+      }
+    ]
+  },
+  "status": "held_out_evaluation_complete_once"
+}

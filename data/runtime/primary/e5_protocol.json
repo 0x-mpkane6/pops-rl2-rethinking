@@ -1,0 +1,260 @@
+{
+  "analysis": {
+    "binary_ci": "exact_clopper_pearson_any_event_per_run",
+    "bootstrap_replicates": 5000,
+    "bootstrap_unit": "complete_block",
+    "independent_unit": "recreated_stack_run",
+    "negative_outcome_policy": "retain_if_event_chain_integrity_passes",
+    "p_value_gate": false,
+    "pairing_key": [
+      "workload",
+      "rep"
+    ]
+  },
+  "e3_operating_point": {
+    "entropy_threshold_bits": 6.0,
+    "locked_before_e5_v2": true,
+    "min_samples": 8,
+    "unique_ipid_ratio_threshold": 0.9,
+    "window_seconds": 2.0
+  },
+  "estimands": {
+    "attack": [
+      "run_level_asr",
+      "any_poison_per_run",
+      "first_trial_poison",
+      "paired_asr_difference_vs_b0"
+    ],
+    "benign": [
+      "legitimate_answer_rate",
+      "no_answer_rate",
+      "paired_availability_difference_vs_b0"
+    ],
+    "mechanism": [
+      "trigger_before_trial",
+      "forged_tail_ingress",
+      "forged_tail_drop",
+      "tc_injection",
+      "tcp_retry",
+      "cache_insertion"
+    ],
+    "runtime": [
+      "run_median_latency_ms",
+      "run_p95_latency_ms",
+      "run_p99_latency_ms",
+      "throughput",
+      "fragment_rate",
+      "cpu",
+      "memory"
+    ]
+  },
+  "evidence": {
+    "cache_before_requirement": "miss_for_every_unique_qname",
+    "event_identity_fields": [
+      "run_id",
+      "rep",
+      "policy",
+      "workload",
+      "trial_id",
+      "qname"
+    ],
+    "event_time_fields": [
+      "mono_ns",
+      "wall_ns"
+    ],
+    "external_forged_tail_sender_processes": 1,
+    "required_files": [
+      "trials.jsonl",
+      "client_events.jsonl",
+      "auth_events.jsonl",
+      "attacker_events.jsonl",
+      "ips_events.jsonl",
+      "detector_state.json",
+      "unbound_events.jsonl",
+      "cache_events.jsonl",
+      "firewall_before.rules",
+      "firewall_after.rules",
+      "ips_inside.pcapng",
+      "ips_outside.pcapng",
+      "resource_samples.jsonl",
+      "metrics.json",
+      "validation.json"
+    ],
+    "resolver_local_poisoner": false
+  },
+  "legacy_e5": "preserved_and_not_pooled",
+  "network": {
+    "attacker_ip": "10.82.0.200",
+    "auth_ip": "10.82.0.100",
+    "client_ip": "10.81.0.10",
+    "frontnet": "10.81.0.0/24",
+    "frontnet_docker_gateway": "10.81.0.254",
+    "ips_inside_ip": "10.81.0.1",
+    "ips_outside_ip": "10.82.0.1",
+    "legitimate_tail_delay_seconds": 0.25,
+    "nfqueue_fallback": false,
+    "nfqueue_hook": "FORWARD",
+    "nfqueue_num": 5,
+    "pre_defragmentation_visibility_hook": "AF_PACKET capture on IPS interfaces",
+    "raw_observer_duplicate_window_seconds": 0.5,
+    "resolver_ip": "10.81.0.53",
+    "upnet": "10.82.0.0/24",
+    "upnet_docker_gateway": "10.82.0.254"
+  },
+  "policies": [
+    {
+      "confirmatory": true,
+      "id": "B0_OFF",
+      "semantics": "forward_all_fragments"
+    },
+    {
+      "confirmatory": true,
+      "id": "B1_RL2_TC",
+      "semantics": "drop_first_fragment_inject_matching_tc_drop_tails_tcp_retry"
+    },
+    {
+      "confirmatory": true,
+      "id": "B5_LOCKED_TC",
+      "semantics": "forward_until_locked_b5_active_then_b1_rl2_tc"
+    },
+    {
+      "confirmatory": true,
+      "id": "RFC_DROP_NATIVE",
+      "semantics": "drop_all_fragmented_dns_udp_without_tc_native_fallback"
+    },
+    {
+      "confirmatory": false,
+      "id": "PREARM_TAIL_DROP",
+      "semantics": "pilot_only_forward_first_drop_noninitial_tail"
+    }
+  ],
+  "precision_note": {
+    "formal_power_claim": false,
+    "rationale": "consistency with E1-E5 and run-level precision",
+    "runs_per_cell": 20,
+    "zero_of_twenty_two_sided_exact_cp_upper_95": 0.168433
+  },
+  "protocol_id": "E5-routed-s20260902-r001",
+  "purpose": "Routed-IPS root-cause and confirmatory resolver-level validation",
+  "resolver": {
+    "software": "Unbound",
+    "version": "1.26.1",
+    "version_source": "tools/unbound/configure.ac"
+  },
+  "root_cause_labels": [
+    "detector_miss",
+    "enforcement_miss",
+    "transport_failure",
+    "mitigated",
+    "availability_failure"
+  ],
+  "run_id": "E5-routed-s20260902-r001",
+  "schedule": {
+    "block_unit": "rep",
+    "experiment_seed": 20260902,
+    "policy_workload_cells_per_block": 16,
+    "qname_template": "r<rep>-t<trial>-<nonce>.bank.com.",
+    "query_launch": {
+      "mode": "deterministic_staggered_concurrent_for_rfc_native_drop; sequential_tc_rounds_otherwise",
+      "rfc_reason": "sequential_native_drops cause Unbound stub-server circuit breaking before all registered qnames are sent",
+      "same_qname_schedule_across_policies": true,
+      "spacing_seconds": 0.01
+    },
+    "randomized_complete_blocks": true,
+    "same_schedule_across_policies": true,
+    "schedule_duration_seconds": 120.0,
+    "trials_per_run": 50
+  },
+  "scope": "diagnostic_negative",
+  "source_paths": [
+    "run_e5_v2.py",
+    "e5_v2_lib.py",
+    "e5_v2_schedule.py",
+    "tools/routed_lab/compose.yaml",
+    "tools/routed_lab/ips",
+    "tools/routed_lab/auth",
+    "tools/routed_lab/attacker",
+    "tools/routed_lab/client",
+    "tools/routed_lab/resolver"
+  ],
+  "stages": {
+    "confirmatory": {
+      "client_deadline_seconds": 2.0,
+      "execution": "sequential_no_parallelism",
+      "included_in_inference": true,
+      "post_client_evidence_drain": "bounded wait for udp_receive for every registered qname before stack teardown",
+      "runs_per_cell": 20,
+      "total_stack_runs": 320,
+      "total_trials": 16000
+    },
+    "pilot": {
+      "cells": [
+        [
+          "B0_OFF",
+          "ATTACK_FIXED_MATCHED"
+        ],
+        [
+          "PREARM_TAIL_DROP",
+          "ATTACK_FIXED_MATCHED"
+        ],
+        [
+          "B1_RL2_TC",
+          "BENIGN_BOUNDARY"
+        ],
+        [
+          "B1_RL2_TC",
+          "ATTACK_FIXED_MATCHED"
+        ],
+        [
+          "B5_LOCKED_TC",
+          "ATTACK_SWEEP_FLOOD"
+        ],
+        [
+          "RFC_DROP_NATIVE",
+          "BENIGN_BOUNDARY"
+        ],
+        [
+          "RFC_DROP_NATIVE",
+          "ATTACK_FIXED_MATCHED"
+        ]
+      ],
+      "included_in_inference": false,
+      "rerun_policy": "new_pilot_id_after_any_code_or_config_change",
+      "trials_per_run": 5
+    },
+    "sanity": {
+      "cells": "all_4_policies_x_all_4_workloads",
+      "gate": "all_16_integrity_pass",
+      "included_in_inference": false,
+      "runs_per_cell": 1
+    }
+  },
+  "status": "registered_protocol_no_results",
+  "workloads": [
+    {
+      "id": "BENIGN_LOW",
+      "ipid_mode": "random",
+      "kind": "benign",
+      "occupancy_fragments_per_second": 2.5
+    },
+    {
+      "id": "BENIGN_BOUNDARY",
+      "ipid_mode": "random",
+      "kind": "benign",
+      "occupancy_fragments_per_second": 12.0
+    },
+    {
+      "fixed_ipid": 777,
+      "id": "ATTACK_FIXED_MATCHED",
+      "ipid_mode": "fixed",
+      "kind": "attack",
+      "occupancy_fragments_per_second": 12.0
+    },
+    {
+      "id": "ATTACK_SWEEP_FLOOD",
+      "ipid_mode": "deterministic_sweep",
+      "kind": "attack",
+      "occupancy_fragments_per_second": 200.0
+    }
+  ]
+}

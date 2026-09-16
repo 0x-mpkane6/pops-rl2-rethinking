@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "experiment": "E3-Extend — post-hoc high-threshold sensitivity analysis",
+  "run_id": "E3-EXT-R001",
+  "registered_utc": "2026-09-12T03:15:11Z",
+  "status": "registered_before_post_hoc_validation_analysis",
+  "classification": "post_hoc_descriptive_sensitivity_analysis",
+  "post_hoc_reason": "The original registered E3 grid ended at entropy=6 and unique_ratio=0.90. This extension was requested after E3 threshold lock and single held-out evaluation, so it cannot alter the original E3 selection, lock, test result, or scientific claim.",
+  "immutable_parent_e3": {
+    "root": "../E3",
+    "protocol_path": "../E3/e3_protocol.json",
+    "protocol_sha256": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12",
+    "validation_grid_path": "../E3/e3_validation_grid.json",
+    "validation_grid_sha256": "856a0e18236d4d3352b5072699f33e5b013a5fd36f673a095514c84653c15310",
+    "locked_candidate": {"min_samples": 8, "entropy_threshold": 6.0, "unique_ratio_threshold": 0.90},
+    "integrity_statement": "Parent E3 artifacts are read-only references. This extension does not modify, supersede, or re-evaluate them."
+  },
+  "decision_level_input": {
+    "permitted_file": "../E3/datasets/splits_60_20_20/validation.csv.gz",
+    "sha256": "ea59a0424a6c2cadd17f8ce30eca7ae11e9f104f74cbee5ca1ab0b7607ffe1f8",
+    "expected_rows": 27600,
+    "expected_paired_traces": 64,
+    "decisions_per_condition_trace": 150,
+    "permitted_use": "Descriptive scoring of the 16 post-hoc candidates only."
+  },
+  "data_access_policy": {
+    "allowed_decision_level_input": "validation.csv.gz only",
+    "forbidden_decision_level_inputs": ["train_exploration.csv.gz", "held_out_test.csv.gz", "canonical E2 decision CSV"],
+    "held_out_test_access_by_this_extension": false,
+    "held_out_rule": "Do not open, hash, parse, aggregate, compare, or re-evaluate held_out_test.csv.gz for this extension."
+  },
+  "candidate_grid": {
+    "min_samples": [8, 16, 24, 48],
+    "entropy_threshold": [7.0, 8.0],
+    "unique_ratio_threshold": [0.95, 0.99],
+    "total_candidates": 16,
+    "rule": "samples >= min_samples AND entropy >= entropy_threshold AND unique_ratio >= unique_ratio_threshold"
+  },
+  "analysis": {
+    "primary_attack_conditions": ["attack_sweep_continuous", "attack_sweep_bursty"],
+    "matching_benign_conditions": {"attack_sweep_continuous": "benign_continuous", "attack_sweep_bursty": "benign_bursty"},
+    "levels": [24, 60, 120, 200],
+    "unit": "paired trace",
+    "primary_metrics": ["attack_alert_rate", "benign_trigger_rate", "FNR", "balanced_precision_at_50_50_class_mix", "J", "delta_J_new_vs_B2"],
+    "J": "attack_alert_rate - benign_trigger_rate",
+    "delta_J_new_vs_B2": "J(new_B5) - J(B2)",
+    "aggregation": "equal-weight macro-average over 2 primary attack conditions x 4 levels",
+    "secondary_reporting": {
+      "failure_probes": ["attack_fixed_continuous", "attack_dup_sweep_continuous"],
+      "negative_control": "attack_random_continuous",
+      "role": "descriptive only; never a selection constraint"
+    },
+    "ranking_or_selection": "forbidden",
+    "threshold_lock": "forbidden",
+    "held_out_evaluation": "forbidden",
+    "inference": "No new confirmatory CI, p-value, or deployment claim is produced. Values are descriptive validation sensitivity results."
+  },
+  "interpretation_guardrails": {
+    "no_replacement_claim": "The candidate with the largest post-hoc delta_J is not a replacement for E3's locked candidate.",
+    "high_threshold_warning": "A high delta_J can coexist with low attack-alert and high FNR; all primary metrics must be reported together.",
+    "asr": "Not measured and not supported by E2 decision-level data. Attack-alert is not ASR, poisoning prevention, resolver outcome, or deployment performance."
+  },
+  "required_outputs": ["e3_extend_sensitivity_grid.csv", "e3_extend_sensitivity_grid.json", "e3_extend_validation.json"],
+  "provenance": {"git_commit": "7bd344977a1c4732b26aa1ab35816165d35678e3", "git_dirty": true}
+}

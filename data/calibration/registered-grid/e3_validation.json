@@ -1,0 +1,179 @@
+{
+  "artifact_hashes": {
+    "held_out_test": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/splits_60_20_20/held_out_test.csv.gz",
+      "sha256": "3b4d54efe6e6dab447b26a9ebf7f4659f52a438cb700fec989c982dd5b063307"
+    },
+    "lock": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_locked_threshold.json",
+      "sha256": "eb267e38d219a13b0d77d8465cfae58edb3f71c6f618951e43673690e519871e"
+    },
+    "lock_validation": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_lock_validation.json",
+      "sha256": "ff7f6206be80a2cc7708ed1a41e812330fc5528949eb9f2849cc7163ab2e4420"
+    },
+    "protocol": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_protocol.json",
+      "sha256": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12"
+    },
+    "split_manifest": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/datasets/splits_60_20_20/split_manifest.json",
+      "sha256": "b37b723cf3f12413d4c098e6769a6d13d639c481d419b92c90b90181d75f6550"
+    },
+    "summary_csv": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_summary.csv",
+      "sha256": "2de210121ede109c3c0a69f752d2d5af9ed8d4ea0db4f56d4adf1d487441b7ed"
+    },
+    "test_csv": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_test_results.csv",
+      "sha256": "507f6626d5945a7eba30ccbee18811e3847ce59842252c36ef74851f07837161"
+    },
+    "test_results": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_test_results.json",
+      "sha256": "7bf6071371b849620514db3f0d3ea4ee766c8e17299da04fbdb293c2df48ed64"
+    },
+    "validation_grid": {
+      "path": "/home/x0x-mpkane6/Desktop/dns-poisoning-lab/research/Report/experiments/E3/e3_validation_grid.json",
+      "sha256": "856a0e18236d4d3352b5072699f33e5b013a5fd36f673a095514c84653c15310"
+    }
+  },
+  "audit_scope": "Post-test integrity replay only; no selection or threshold modification.",
+  "checks": [
+    {
+      "critical": true,
+      "details": {
+        "manifest_input": "c98c4a8a745751ba5390aae39eaec5165a25c4bf3130a4ee57a5222c47687cea",
+        "protocol_input": "c98c4a8a745751ba5390aae39eaec5165a25c4bf3130a4ee57a5222c47687cea"
+      },
+      "name": "input_and_split_provenance_hashes",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "criterion": "maximize macro delta_J_new_vs_B2",
+        "tie_break": [
+          "higher macro delta_J_new_vs_B2",
+          "lower macro benign_trigger_rate on primary cells",
+          "higher macro attack_alert_rate on primary cells",
+          "ascending tuple (min_samples, entropy_threshold, unique_ratio_threshold)"
+        ]
+      },
+      "name": "registered_selection_rule_is_unchanged",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "grid_protocol": "a44b7497ac44d1304ba79385b8ab62fc629165935b4b79fea1867db8a8387b12",
+        "lock_grid": "856a0e18236d4d3352b5072699f33e5b013a5fd36f673a095514c84653c15310"
+      },
+      "name": "grid_and_lock_provenance_hashes",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "lock_validation_status": "PASS",
+        "test_lock_hash": "eb267e38d219a13b0d77d8465cfae58edb3f71c6f618951e43673690e519871e"
+      },
+      "name": "lock_validation_and_test_provenance",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "candidate_count": 60,
+        "locked": {
+          "entropy_threshold": 6,
+          "min_samples": 8,
+          "unique_ratio_threshold": 0.9
+        },
+        "recomputed_winner": {
+          "entropy_threshold": 6,
+          "min_samples": 8,
+          "unique_ratio_threshold": 0.9
+        }
+      },
+      "name": "validation_grid_has_60_candidates_and_reproducible_winner",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "count": 1,
+        "test_status": "held_out_evaluation_complete_once"
+      },
+      "name": "held_out_test_was_evaluated_once_with_locked_candidate",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "note": "Synthetic attack-alert is not ASR or poisoning-prevention evidence.",
+        "status": "not_measured_not_supported_by_E2_decision_level_data"
+      },
+      "name": "asr_is_explicitly_not_measured",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "expected_rows": 27600,
+        "paired_traces": 64,
+        "rows": 27600
+      },
+      "name": "held_out_replay_input_schema_and_split",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "B2_mismatches": 0,
+        "old_B5_mismatches": 0
+      },
+      "name": "recomputed_B2_and_old_B5_match_E2_flags",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "expected_cell_count": 8,
+        "observed_cell_count": 8
+      },
+      "name": "held_out_primary_cells_recompute_exactly",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "cells": 8,
+        "replicates": 5000,
+        "unit": "paired_trace"
+      },
+      "name": "held_out_primary_macro_J_delta_J_and_5000_bootstrap_CI_recompute_exactly",
+      "status": "PASS"
+    },
+    {
+      "critical": true,
+      "details": {
+        "expected_summary_rows": 17,
+        "summary_csv_rows": 17,
+        "test_csv_rows": 357
+      },
+      "name": "test_csv_and_summary_csv_are_present_and_consistent_with_json",
+      "status": "PASS"
+    }
+  ],
+  "critical_failures": [],
+  "experiment": "E3 independent artifact audit",
+  "generated_utc": "2026-08-21T06:47:45.770757Z",
+  "schema_version": 1,
+  "status": "PASS",
+  "summary": {
+    "bootstrap_recomputed": 5000,
+    "selection_or_sweep_performed": false,
+    "test_rows_replayed": 27600,
+    "threshold_modified": false
+  }
+}

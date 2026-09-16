@@ -1,0 +1,121 @@
+{
+  "analysis": {
+    "binary_ci": "exact_clopper_pearson_any_event_per_run",
+    "bootstrap_replicates": 5000,
+    "bootstrap_unit": "complete_block",
+    "include_old_campaign": false,
+    "independent_unit": "recreated_stack_run",
+    "pairing_key": [
+      "workload_pair",
+      "rep"
+    ]
+  },
+  "cache_probe": {
+    "command": "unbound-control -c /etc/unbound/unbound.conf cache_lookup <QNAME>",
+    "error_is_unknown": true,
+    "exact_qname_a_record": true,
+    "probe_after_immediately": true,
+    "raw_output_required": true,
+    "statuses": [
+      "hit",
+      "miss",
+      "error"
+    ]
+  },
+  "e3_operating_point": {
+    "entropy_threshold_bits": 6.0,
+    "locked_before_e5": true,
+    "min_samples": 8,
+    "unique_ipid_ratio_threshold": 0.9,
+    "window_seconds": 2.0
+  },
+  "experiment_seed": 20260911,
+  "k_runs_per_cell": 20,
+  "policies": [
+    "B0_OFF",
+    "B1_RL2_TC",
+    "B5_LOCKED_TC",
+    "RFC_DROP_NATIVE"
+  ],
+  "post_hoc": true,
+  "protocol_id": "E5-factorial-s20260911-r003",
+  "protocol_path": "D:\\ATM\\Project\\Code\\research\\Report\\experiments\\E5\\e5_factorial_protocol.json",
+  "purpose": "Post-hoc runtime factorial evaluation of traffic kind and occupancy rate",
+  "run_id": "E5-factorial-s20260911-r003",
+  "schedule": {
+    "block_unit": "rep",
+    "experiment_seed": 20260911,
+    "occupancy_coverage": {
+      "minimum_observed_fraction": 0.99,
+      "replay_duration_must_cover_measurement": true,
+      "target_rate_tolerance_fraction": 0.1
+    },
+    "policy_workload_cells_per_block": 16,
+    "qname_template": "r<rep>-t<trial>-<nonce>.bank.com.",
+    "query_launch": {
+      "minimum_query_after_replay_start_seconds": 3.0,
+      "mode": "deterministic_staggered_concurrent_for_rfc_native_drop; sequential_tc_rounds_otherwise",
+      "spacing_seconds": 0.01
+    },
+    "randomized_complete_blocks": true,
+    "replay_warmup_seconds": 3.0,
+    "same_schedule_across_kind_pair": true,
+    "same_schedule_across_policies": true,
+    "schedule_duration_seconds": 360.0,
+    "trials_per_run": 50
+  },
+  "stages": {
+    "confirmatory": {
+      "execution": "sequential_no_parallelism",
+      "included_in_inference": true,
+      "runs_per_cell": 20,
+      "total_stack_runs": 320,
+      "total_trials": 16000
+    },
+    "pilot": {
+      "cells": "all_4_policies_x_all_4_workloads",
+      "included_in_inference": false,
+      "schedule_duration_seconds": 20.0,
+      "trials_per_run": 5
+    },
+    "sanity": {
+      "cells": "all_4_policies_x_all_4_workloads",
+      "gate": "all_16_integrity_pass",
+      "included_in_inference": false,
+      "runs_per_cell": 1,
+      "schedule_duration_seconds": 60.0
+    }
+  },
+  "status": "registered_protocol_no_results",
+  "trials_per_run": 50,
+  "workloads": [
+    {
+      "attack_tail": false,
+      "id": "BENIGN_DIVERSE_MODERATE",
+      "ipid_mode": "deterministic_sweep",
+      "kind": "benign",
+      "occupancy_fragments_per_second": 12.0
+    },
+    {
+      "attack_tail": false,
+      "id": "BENIGN_DIVERSE_HIGH",
+      "ipid_mode": "deterministic_sweep",
+      "kind": "benign",
+      "occupancy_fragments_per_second": 200.0
+    },
+    {
+      "attack_tail": true,
+      "id": "ATTACK_DIVERSE_MODERATE",
+      "ipid_mode": "deterministic_sweep",
+      "kind": "attack",
+      "occupancy_fragments_per_second": 12.0
+    },
+    {
+      "attack_tail": true,
+      "id": "ATTACK_DIVERSE_HIGH",
+      "ipid_mode": "deterministic_sweep",
+      "kind": "attack",
+      "occupancy_fragments_per_second": 200.0
+    }
+  ]
+}
