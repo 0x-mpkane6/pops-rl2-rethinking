@@ -1,0 +1,16 @@
+# Python dependencies for controlled analyses, calibration, follow-ups, and figures.
+# Validated by the frozen controlled artifacts on Python 3.10.11.
+numpy==1.26.4
+scipy==1.15.3
+scikit-learn==1.7.2
+matplotlib==3.10.9
+psutil==7.2.2
+pytest>=8,<9
+
+# Used by the offline orphan-fragment analysis and runtime tooling.
+scapy>=2.5,<2.7
+dnslib>=0.9.24,<0.10
+
+# The routed IPS requires Linux libnetfilter_queue headers. Docker images
+# install it separately; this marker supports native Linux development only.
+NetfilterQueue==1.1.0; platform_system == "Linux"
