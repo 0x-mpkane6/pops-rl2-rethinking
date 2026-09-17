@@ -1,6 +1,6 @@
 # Rethinking POPS Rl2
 
-Research artifact for evaluating and refining POPS Rule \(R_{\ell_2}\) for
+Research artifact for evaluating and refining POPS Rule 2 for
 IPv4-fragmentation-based DNS cache poisoning. The work evaluates an
 IPID-aware refinement that combines short-term non-initial-fragment volume,
 IPID entropy, and unique-IPID ratio. It distinguishes controlled detector
