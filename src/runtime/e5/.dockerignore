@@ -1,0 +1,8 @@
+output/
+routed_lab/output/
+routed_lab/runtime/
+**/__pycache__/
+**/*.pyc
+**/*.jsonl
+**/*.pcap
+**/*.pcapng

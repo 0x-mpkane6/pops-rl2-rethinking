@@ -55,8 +55,8 @@ for _stream in (sys.stdout, sys.stderr):
 # 0. Exact detector import and registered configuration.                       #
 # --------------------------------------------------------------------------- #
 HERE = Path(__file__).resolve().parent
-CODE_ROOT = HERE.parents[3]
-LAB_DIR = CODE_ROOT / "labs" / "r2entropy"
+CODE_ROOT = HERE.parents[2]
+LAB_DIR = CODE_ROOT / "src" / "detector" / "r2entropy"
 RESOLVER_DIR = LAB_DIR / "resolver"
 SHIM_DIR = LAB_DIR / "localtest" / "shim"
 

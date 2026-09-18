@@ -1,0 +1,642 @@
+[
+  {
+    "policy": "B0_OFF",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "77b8a1bfbbfc172baf71c36ae909658fdc58d3ade8cad83b3614889829b55b21",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "f014c22ba23b3c657d572d67a402345546028709767c72756334e27773023ca8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "77b8a1bfbbfc172baf71c36ae909658fdc58d3ade8cad83b3614889829b55b21",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 1,
+    "schedule_path": "schedules/confirmatory/rep_01/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "f014c22ba23b3c657d572d67a402345546028709767c72756334e27773023ca8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "1741e83fe3b3d9b14fc80bd2438e83c4caeb902b7be4fca6e5257211dc939261",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "1741e83fe3b3d9b14fc80bd2438e83c4caeb902b7be4fca6e5257211dc939261",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "9b12c223f3498adf9c1f67632cca09c584ec1c704c5b8453cf6d51d03bab0042",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 2,
+    "schedule_path": "schedules/confirmatory/rep_02/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "9b12c223f3498adf9c1f67632cca09c584ec1c704c5b8453cf6d51d03bab0042",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "52100dfc9b892629f09fe823be26a5f10ee328302283821ea815caca2938a667",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "e5321e75012cbf65dccb678093046d50ab77e30db5899c55a972908628fd375c",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "e5321e75012cbf65dccb678093046d50ab77e30db5899c55a972908628fd375c",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 3,
+    "schedule_path": "schedules/confirmatory/rep_03/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "52100dfc9b892629f09fe823be26a5f10ee328302283821ea815caca2938a667",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "52e1d9496ad4c70696d1c25476e50784b133d7ea6fc56d939c82209c4382a12b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "52e1d9496ad4c70696d1c25476e50784b133d7ea6fc56d939c82209c4382a12b",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "3d58d5a8c48ebeff926710bc4cda5d918213a78ab61d6e8a9b532d2d327d1b68",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 4,
+    "schedule_path": "schedules/confirmatory/rep_04/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "3d58d5a8c48ebeff926710bc4cda5d918213a78ab61d6e8a9b532d2d327d1b68",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "c8a021a891e208c264a8f4fedfa3bc5422aa7e561f77c70524580d1a4d020ce3",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "b5b9dfb7626774cdacfba786aef076428159a6a382cbf15e6a0d7f17686a5962",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "b5b9dfb7626774cdacfba786aef076428159a6a382cbf15e6a0d7f17686a5962",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 5,
+    "schedule_path": "schedules/confirmatory/rep_05/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "c8a021a891e208c264a8f4fedfa3bc5422aa7e561f77c70524580d1a4d020ce3",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "cca5e4f867c85a8de8ee5c6cad7f832cbcc943df723fd2160d4e86c9553017e0",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "9fed74ce148e5b16a467622f366c939db68c497ab4fd4fc5880d43c0421e1a5c",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "cca5e4f867c85a8de8ee5c6cad7f832cbcc943df723fd2160d4e86c9553017e0",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 6,
+    "schedule_path": "schedules/confirmatory/rep_06/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "9fed74ce148e5b16a467622f366c939db68c497ab4fd4fc5880d43c0421e1a5c",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "3494e45712fc9b466505c710ea0e96ec7d4ca0b6bdd5fb478ec17fe9bfa08105",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "7278f7024479aa276d77f9d50111f0185c2e2a0651616d633d4729835825f243",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "7278f7024479aa276d77f9d50111f0185c2e2a0651616d633d4729835825f243",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 7,
+    "schedule_path": "schedules/confirmatory/rep_07/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "3494e45712fc9b466505c710ea0e96ec7d4ca0b6bdd5fb478ec17fe9bfa08105",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "fc289874b8766213c84de42219e666ada662e4951837e700e24077093b20db85",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "fc289874b8766213c84de42219e666ada662e4951837e700e24077093b20db85",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "efd0dd451f0e9a146de9dccb68bcde57e4680885290a096ac21880edaf26dad1",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 8,
+    "schedule_path": "schedules/confirmatory/rep_08/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "efd0dd451f0e9a146de9dccb68bcde57e4680885290a096ac21880edaf26dad1",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "0071f327026b4e8e683ccb0ea16a6d6f5cddbaeca671390fa35ca94a687fb3d8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "0071f327026b4e8e683ccb0ea16a6d6f5cddbaeca671390fa35ca94a687fb3d8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "50bfe1d79aae2e86640f9c07679e5ec8e30accaccbe303c3bde9346cf3b5bda8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 9,
+    "schedule_path": "schedules/confirmatory/rep_09/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "50bfe1d79aae2e86640f9c07679e5ec8e30accaccbe303c3bde9346cf3b5bda8",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "3f35b864237b02013a09724f8960c2aa4703280e6730d5af0e577f7fa6d4fb1f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "3f35b864237b02013a09724f8960c2aa4703280e6730d5af0e577f7fa6d4fb1f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "ad69cabd5d063c3951c8b79eaca521067729e4c4c253b432a01ae161457a4cba",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 10,
+    "schedule_path": "schedules/confirmatory/rep_10/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "ad69cabd5d063c3951c8b79eaca521067729e4c4c253b432a01ae161457a4cba",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "08158239900801e6899a6f453e336211b7d62d6151e560af6386005b60836d10",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "08158239900801e6899a6f453e336211b7d62d6151e560af6386005b60836d10",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "516ba2a38434a250f850de77cf1a00304c30cd0d99d67867e8644e204649ef1c",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 11,
+    "schedule_path": "schedules/confirmatory/rep_11/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "516ba2a38434a250f850de77cf1a00304c30cd0d99d67867e8644e204649ef1c",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "3753e5d0321c20725c6273cd3dafce0df188cf066548f8a152b57a7ef67f32a3",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "95524286d7bff2b2b93cbe8359cd5a7dfff2d13c3d50225dde2d7c2e751b8200",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "3753e5d0321c20725c6273cd3dafce0df188cf066548f8a152b57a7ef67f32a3",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 12,
+    "schedule_path": "schedules/confirmatory/rep_12/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "95524286d7bff2b2b93cbe8359cd5a7dfff2d13c3d50225dde2d7c2e751b8200",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "6e3613f028879b38d44f100488134bdee109025612d7e2e8243eb5307b0c2423",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "d2f284621201f490404bd1800a85a7cfeea90c68f5ff7bac98af47b3beab6dc9",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "6e3613f028879b38d44f100488134bdee109025612d7e2e8243eb5307b0c2423",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 13,
+    "schedule_path": "schedules/confirmatory/rep_13/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "d2f284621201f490404bd1800a85a7cfeea90c68f5ff7bac98af47b3beab6dc9",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "4741d5f645b0f51fbc3ed16d91677115d00f42d3afd3e5e816c38c3baace74e3",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "7fdd857099c8b249734ce45b57c14849c1e0d3b97df46476e68954b7c14cfc66",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "4741d5f645b0f51fbc3ed16d91677115d00f42d3afd3e5e816c38c3baace74e3",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 14,
+    "schedule_path": "schedules/confirmatory/rep_14/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "7fdd857099c8b249734ce45b57c14849c1e0d3b97df46476e68954b7c14cfc66",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "e3cb0ebacbc4d1be39b0a08407a8ebb9eafb6598f63300e5692ff648b4b7edd5",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "80203fd7cbdee86358913f3f9ddb30d98a0004e4b1864cef68fd8bbf5e8e9436",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "e3cb0ebacbc4d1be39b0a08407a8ebb9eafb6598f63300e5692ff648b4b7edd5",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 15,
+    "schedule_path": "schedules/confirmatory/rep_15/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "80203fd7cbdee86358913f3f9ddb30d98a0004e4b1864cef68fd8bbf5e8e9436",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "ef93d39bad462ee003c8a63ad163dba25751502b2a27dfb2a9d4b678a82b1e51",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "2def0774a0d499163bd1004e30a3bb9322ae7607ef0d97cbeee9b19ee957ba4f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "2def0774a0d499163bd1004e30a3bb9322ae7607ef0d97cbeee9b19ee957ba4f",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 16,
+    "schedule_path": "schedules/confirmatory/rep_16/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "ef93d39bad462ee003c8a63ad163dba25751502b2a27dfb2a9d4b678a82b1e51",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "8622bf6649f8b2405ac90719499a5a2864918973595f56847c72d143335e30fb",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "766ad57cec6bd78ca34d60faa515aec446ee25338f84fb88aad237d4cdc2666d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "766ad57cec6bd78ca34d60faa515aec446ee25338f84fb88aad237d4cdc2666d",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 17,
+    "schedule_path": "schedules/confirmatory/rep_17/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "8622bf6649f8b2405ac90719499a5a2864918973595f56847c72d143335e30fb",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "17be6ff29071780c14318971ab30a820af313ab3ce7111d38edb747329244656",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "b6afc85596d7665fdc6e7e919841dcb52720f45e4c98916dd199cd7382e3fbff",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "17be6ff29071780c14318971ab30a820af313ab3ce7111d38edb747329244656",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 18,
+    "schedule_path": "schedules/confirmatory/rep_18/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "b6afc85596d7665fdc6e7e919841dcb52720f45e4c98916dd199cd7382e3fbff",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "9b6ba5c501095799613f30debbfccb31161bcf6008677711f1ddd5cd6a279ad6",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "9b6ba5c501095799613f30debbfccb31161bcf6008677711f1ddd5cd6a279ad6",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "6dd758b1cc85dd87409ed1704c59e4e2982e96166dea0395762ee48d7a910708",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 19,
+    "schedule_path": "schedules/confirmatory/rep_19/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "6dd758b1cc85dd87409ed1704c59e4e2982e96166dea0395762ee48d7a910708",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "286b6fdff994f1b8e9540fd0db82c3280dde8c145eb2c99966b3ff98409b72ca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  },
+  {
+    "policy": "B0_OFF",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "d90afb40b0853243bb869849743395bfaf29b09f23c80bee114faeba0dbd33de",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_SWEEP_FLOOD.json",
+    "schedule_sha256": "d90afb40b0853243bb869849743395bfaf29b09f23c80bee114faeba0dbd33de",
+    "stage": "confirmatory",
+    "workload": "ATTACK_SWEEP_FLOOD"
+  },
+  {
+    "policy": "B5_LOCKED_TC",
+    "rep": 20,
+    "schedule_path": "schedules/confirmatory/rep_20/ATTACK_FIXED_MATCHED.json",
+    "schedule_sha256": "286b6fdff994f1b8e9540fd0db82c3280dde8c145eb2c99966b3ff98409b72ca",
+    "stage": "confirmatory",
+    "workload": "ATTACK_FIXED_MATCHED"
+  }
+]

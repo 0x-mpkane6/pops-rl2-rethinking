@@ -45,19 +45,14 @@ src/
   followups/        IPID-space and orphan-fragment analyses
   figures/          Paper figure and table renderers
 
-data/
-  controlled/       Frozen benign-boundary and volume-matched evidence
-  calibration/      Frozen partitions, threshold grid, lock, and held-out results
-  synthesis/        Statistical summaries and validation records
-  runtime/          Confirmatory primary, factorial, and volume-only campaigns
-  followups/        IPID-space and orphan-ratio frozen analyses
-  paper/            Paper-facing provenance and verification manifests
+data/smoke/         Minimal controlled and E5 inputs for smoke testing
+
+scripts/            Repository-level smoke check
 ```
 
-`data/SHA256SUMS.txt` records hashes for all frozen data files. The data bundle
-contains the compressed controlled decisions and confirmatory runtime metrics
-needed to audit reported claims, but excludes raw PCAPs, duplicate source
-snapshots, exploratory runs, and pilot/sanity outputs.
+The `data/smoke` directory contains only the small inputs needed to exercise
+the packaged code. Full experiment outputs and paper tables are intentionally
+kept outside this clean submission repository.
 
 ## Requirements
 
@@ -76,9 +71,12 @@ on shared or production networks.
 
 ## Reproducibility Scope
 
-This repository is organized as a frozen public artifact. The source and data
-bundles preserve the inputs, protocols, validators, metrics, and figure
-renderers supporting the paper. Public entry points and path normalization are
-documented as the artifact is finalized; until then, use the frozen data and
-checksum manifest for independent inspection rather than assuming every
-historical script runs unchanged from the repository root.
+From the repository root, run the smoke check:
+
+```bash
+python scripts/smoke_test.py
+python scripts/smoke_test.py
+```
+
+The smoke test replays two compressed E5 logs, checks the bundled Unbound source,
+and verifies the detector/runtime package without sending network traffic.

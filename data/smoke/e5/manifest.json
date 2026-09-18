@@ -1,0 +1,62 @@
+[
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/trials.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/trials.jsonl",
+    "uncompressed_sha256": "ac91804cfb99221cfaea87ec8185b10bf1eda6c491af5c201b5d65bd041148b0"
+  },
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/ips_events.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/ips_events.jsonl",
+    "uncompressed_sha256": "b5a87959061d5a0ae34d6d8d51d2405fef3d1b499ac51e559de8c7b613ad8918"
+  },
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/auth_events.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/auth_events.jsonl",
+    "uncompressed_sha256": "f41c054ede2e4185825528a5fe59e2ed387368a8c12ad407db7b97dd60abf9a7"
+  },
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/attacker_events.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/attacker_events.jsonl",
+    "uncompressed_sha256": "f1cce0114fe2523d81b985459e3c62d8b864e1dbdf4f7ced71d3ceec9df8ab72"
+  },
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/cache_events.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/cache_events.jsonl",
+    "uncompressed_sha256": "b3907d2b6884f21e356b2f857eee7426a696c172471ad2ec1790dce819adeb24"
+  },
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/resource_samples.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_FIXED_MATCHED/resource_samples.jsonl",
+    "uncompressed_sha256": "40f89b60ace25a992a2acd3e99d22db3853c9f7e9b2b1a829d2149102530a590"
+  },
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/trials.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/trials.jsonl",
+    "uncompressed_sha256": "02b3e4ade820d2456fde0a9557dde8b37729a79c63c647e50b780117756531bb"
+  },
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/ips_events.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/ips_events.jsonl",
+    "uncompressed_sha256": "0b43e3a0261cb696534b8f8deee83c7f7e6d5365c8ce3c371871e9f207ebb941"
+  },
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/auth_events.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/auth_events.jsonl",
+    "uncompressed_sha256": "4168c4182ec8cdbe5beebe65ae93433faaceae7b6f39dc700016fd4740232ccf"
+  },
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/attacker_events.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/attacker_events.jsonl",
+    "uncompressed_sha256": "6cb17042a0cfc04b39a94f4b7f2a88454af6f7909bc649522e50868fee23f47a"
+  },
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/cache_events.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/cache_events.jsonl",
+    "uncompressed_sha256": "a8aa03f17804d830c70935413107976d9ae70c2f56705881d8c52ffe71e7d8c4"
+  },
+  {
+    "path": "smoke/e5/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/resource_samples.jsonl.gz",
+    "source": "research/Report/experiments/E5/output/E5-routed-s20260902-r001/raw/confirmatory/rep_01/B5_LOCKED_TC__ATTACK_SWEEP_FLOOD/resource_samples.jsonl",
+    "uncompressed_sha256": "51094bda79ee9680675148246ebb6a826712ae77817fd3a2f901b3a9f0c85877"
+  }
+]

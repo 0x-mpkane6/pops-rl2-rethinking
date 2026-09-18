@@ -1,0 +1,18 @@
+{
+  "B5_LOCKED_TC__ATTACK_FIXED_MATCHED": {
+    "n_trials": 50,
+    "poison_trials": 49,
+    "noanswer_trials": 0,
+    "run_asr": 0.98,
+    "tc_injection_rate": 0.0,
+    "tcp_retry_rate": 0.0
+  },
+  "B5_LOCKED_TC__ATTACK_SWEEP_FLOOD": {
+    "n_trials": 50,
+    "poison_trials": 0,
+    "noanswer_trials": 1,
+    "run_asr": 0.0,
+    "tc_injection_rate": 1.0,
+    "tcp_retry_rate": 1.0
+  }
+}

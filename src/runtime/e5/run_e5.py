@@ -27,7 +27,7 @@ from e5_validate import pilot_gate, pmtud_kernel_fragment_gate, validate_replay_
 
 
 E5_ROOT = Path(__file__).resolve().parent
-LAB_ROOT = E5_ROOT / "tools" / "routed_lab"
+LAB_ROOT = E5_ROOT / "routed_lab"
 PROTOCOL_PATH = E5_ROOT / "e5_protocol.json"
 OUTPUT_ROOT = E5_ROOT / "output"
 DEFAULT_RUN_ID = "E5-routed-s20260902-r001"
@@ -86,18 +86,6 @@ def source_guard(root: Path = LAB_ROOT) -> dict[str, Any]:
     return {"status": "PASS" if not errors else "FAIL", "errors": errors}
 
 
-def _tree_digest(root: Path) -> str:
-    digest = hashlib.sha256()
-    if not root.exists():
-        return "missing"
-    for path in sorted(path for path in root.rglob("*") if path.is_file() and "__pycache__" not in path.parts):
-        digest.update(path.relative_to(root).as_posix().encode("utf-8"))
-        digest.update(b"\0")
-        digest.update(path.read_bytes())
-        digest.update(b"\0")
-    return digest.hexdigest()
-
-
 def source_files(protocol_path: Path = PROTOCOL_PATH) -> dict[str, Path]:
     files: dict[str, Path] = {}
     for path in (
@@ -107,6 +95,8 @@ def source_files(protocol_path: Path = PROTOCOL_PATH) -> dict[str, Path]:
         E5_ROOT / "e5_analysis.py",
         E5_ROOT / "e5_aggregate.py",
         E5_ROOT / "e5_validate.py",
+        E5_ROOT / "vendor" / "unbound-1.26.1.tar.gz",
+        E5_ROOT / "vendor" / "UNBOUND-LICENSE",
         protocol_path,
     ):
         try:
@@ -116,14 +106,13 @@ def source_files(protocol_path: Path = PROTOCOL_PATH) -> dict[str, Path]:
         files[name] = path
     for path in sorted(LAB_ROOT.rglob("*")):
         if path.is_file() and "__pycache__" not in path.parts and path.suffix.lower() not in {".pyc", ".pcap", ".pcapng"}:
-            files[f"tools/routed_lab/{path.relative_to(LAB_ROOT).as_posix()}"] = path
+            files[f"routed_lab/{path.relative_to(LAB_ROOT).as_posix()}"] = path
     return files
 
 
 def source_manifest(protocol_path: Path = PROTOCOL_PATH) -> dict[str, Any]:
     return {
         "file_sha256": {name: hashlib.sha256(path.read_bytes()).hexdigest() for name, path in source_files(protocol_path).items()},
-        "unbound_source_tree_sha256": _tree_digest(LAB_ROOT.parent / "unbound"),
     }
 
 
@@ -1123,12 +1112,13 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--run-id", default=DEFAULT_RUN_ID)
     parser.add_argument("--protocol", type=Path, default=PROTOCOL_PATH, help="registered protocol JSON")
     parser.add_argument("--resume", action="store_true", help="resume PASSed cells and a partial stage safely")
+    parser.add_argument("--output-root", type=Path, default=OUTPUT_ROOT, help="directory for new campaign outputs")
     parser.add_argument("--dry-run", action="store_true", help="print the registered job matrix without Docker")
     args = parser.parse_args(argv)
     run_id = safe_run_id(args.run_id)
     protocol_path = args.protocol.resolve()
     protocol = load_protocol(run_id, protocol_path)
-    root = OUTPUT_ROOT / run_id
+    root = args.output_root.resolve() / run_id
     if args.dry_run:
         if args.stage == "preflight":
             print(json.dumps({"stage": "preflight", "run_id": run_id}, indent=2))

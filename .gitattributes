@@ -1,0 +1,9 @@
+* text=auto
+*.py text eol=lf
+*.sh text eol=lf
+Dockerfile text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+# Frozen evidence must have identical bytes on Windows and Linux.
+data/** -text
+src/runtime/e5/vendor/** -text

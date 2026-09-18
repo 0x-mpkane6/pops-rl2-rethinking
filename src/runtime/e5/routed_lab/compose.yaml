@@ -3,8 +3,8 @@ name: e5-routed
 services:
   ips:
     build:
-      context: ../..
-      dockerfile: tools/routed_lab/ips/Dockerfile
+      context: ..
+      dockerfile: routed_lab/ips/Dockerfile
     cap_add:
       - NET_ADMIN
       - NET_RAW
@@ -28,10 +28,8 @@ services:
 
   resolver:
     build:
-      context: ../..
-      dockerfile: tools/routed_lab/resolver/Dockerfile
-      additional_contexts:
-        unbound_src: ../unbound
+      context: ..
+      dockerfile: routed_lab/resolver/Dockerfile
     cap_add:
       - NET_ADMIN
       - NET_RAW
@@ -52,8 +50,8 @@ services:
 
   auth:
     build:
-      context: ../..
-      dockerfile: tools/routed_lab/auth/Dockerfile
+      context: ..
+      dockerfile: routed_lab/auth/Dockerfile
     cap_add:
       - NET_ADMIN
       - NET_RAW
@@ -81,8 +79,8 @@ services:
 
   attacker:
     build:
-      context: ../..
-      dockerfile: tools/routed_lab/attacker/Dockerfile
+      context: ..
+      dockerfile: routed_lab/attacker/Dockerfile
     cap_add:
       - NET_ADMIN
       - NET_RAW
@@ -111,8 +109,8 @@ services:
 
   client:
     build:
-      context: ../..
-      dockerfile: tools/routed_lab/client/Dockerfile
+      context: ..
+      dockerfile: routed_lab/client/Dockerfile
     environment:
       PYTHONUNBUFFERED: "1"
       RUN_ID: ${RUN_ID:-unregistered}

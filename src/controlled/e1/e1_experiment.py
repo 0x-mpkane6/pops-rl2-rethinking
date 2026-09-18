@@ -71,8 +71,8 @@ for _stream in (sys.stdout, sys.stderr):
 # 0. Import the REAL detector primitives from resolver.py (via dnslib shim).   #
 # --------------------------------------------------------------------------- #
 HERE = Path(__file__).resolve().parent
-# HERE = Code/research/Report/experiments/E1 -> parents[3] = Code
-LAB_DIR = HERE.parents[3] / "labs" / "r2entropy"          # Code/labs/r2entropy
+# Packaged detector dependency under src/detector.
+LAB_DIR = HERE.parents[1] / "detector" / "r2entropy"
 RESOLVER_DIR = LAB_DIR / "resolver"
 SHIM_DIR = LAB_DIR / "localtest" / "shim"
 
@@ -501,7 +501,7 @@ def main() -> None:
     run_id = args.run_id or time.strftime("%Y%m%d_%H%M%S")
     started_utc = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     source_manifest = snapshot_sources(out_dir)
-    repo = HERE.parents[3]
+    repo = HERE.parents[2]
     provenance = git_provenance(repo)
     protocol = {
         "schema_version": 3,

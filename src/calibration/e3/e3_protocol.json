@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "experiment": "E3 — B5 threshold selection and held-out evaluation",
+  "run_id": "E3-R001",
+  "status": "registered-before-validation",
+  "registered_utc": "2026-08-20T13:01:44Z",
+  "selection_execution_status": "not_started",
+  "held_out_test_read_status": "not_read",
+  "objective": "Select exactly one B5 operating point from the registered 60-point grid using validation only, then evaluate it once on held-out data. The primary question is whether new B5 improves separation relative to B2 volume-only.",
+  "scope": "Offline analysis of controlled synthetic E2 detector-decision records. No claim is made about real IP fragmentation, DNS cache-poisoning prevention, attack success rate (ASR), latency, throughput, CPU, memory, or deployment performance.",
+  "input_dataset": {
+    "path": "datasets/e2_decisions.csv.gz",
+    "sha256": "c98c4a8a745751ba5390aae39eaec5165a25c4bf3130a4ee57a5222c47687cea",
+    "canonical_e2_source": "research/Report/experiments/E2/runs/E2_confirmatory_20260814_complete_b0_ablation/e2_decisions.csv.gz",
+    "canonical_e2_validation_status": "PASS (18 checks)"
+  },
+  "partition": {
+    "strategy": "new E3 60/20/20 repartition by paired trace",
+    "manifest_path": "datasets/splits_60_20_20/split_manifest.json",
+    "manifest_sha256": "b37b723cf3f12413d4c098e6769a6d13d639c481d419b92c90b90181d75f6550",
+    "independent_unit": "paired_trace",
+    "group_key": ["source_e2_split", "profile", "level", "pair_id", "arrival_schedule_sha256", "query_schedule_sha256"],
+    "partitions": {
+      "train_exploration": {"file": "datasets/splits_60_20_20/train_exploration.csv.gz", "sha256": "864f10fb238a28240ee5f708122d7ee96f73fb3ec2d5f3009494147d38225ee7", "decisions": 82800, "paired_traces": 192, "permitted_use": "schema, pairing, and implementation QA only; it must not select an operating point"},
+      "validation": {"file": "datasets/splits_60_20_20/validation.csv.gz", "sha256": "ea59a0424a6c2cadd17f8ce30eca7ae11e9f104f74cbee5ca1ab0b7607ffe1f8", "decisions": 27600, "paired_traces": 64, "permitted_use": "score all 60 candidates and select exactly one operating point"},
+      "held_out_test": {"file": "datasets/splits_60_20_20/held_out_test.csv.gz", "sha256": "3b4d54efe6e6dab447b26a9ebf7f4659f52a438cb700fec989c982dd5b063307", "decisions": 27600, "paired_traces": 64, "permitted_use": "evaluate the locked operating point exactly once after the lock gate passes"}
+    },
+    "provenance_note": "These are new E3 partitions derived from the canonical E2 decision dataset; they are not the original E2 calibration/validation/test partitions. All decision windows from a paired trace remain in one E3 partition."
+  },
+  "candidate_grid": {
+    "entropy_threshold": [2, 3, 4, 5, 6],
+    "min_samples": [8, 16, 24, 48],
+    "unique_ratio_threshold": [0.5, 0.7, 0.9],
+    "total_candidates": 60,
+    "grid_expansion_permitted": false
+  },
+  "decision_rule": {
+    "new_B5_block": "samples >= min_samples AND entropy >= entropy_threshold AND unique_ratio >= unique_ratio_threshold",
+    "comparators": {"B2": "block_volume", "old_B5": "block_combined"},
+    "old_B5_operating_point": {"entropy_threshold": 4.0, "min_samples": 24, "unique_ratio_threshold": 0.7},
+    "old_B5_grid_role": "The old B5 point is included in the registered grid and is also reported as a comparator."
+  },
+  "selection": {
+    "selection_split": "validation",
+    "number_of_candidates_scored": 60,
+    "number_of_candidates_selected": 1,
+    "primary_attack_conditions": ["attack_sweep_continuous", "attack_sweep_bursty"],
+    "matching_benign_conditions": {"attack_sweep_continuous": "benign_continuous", "attack_sweep_bursty": "benign_bursty"},
+    "levels": [24, 60, 120, 200],
+    "pair_metric": {"attack_alert_rate": "mean(new_B5_block) in an attack paired trace", "benign_trigger_rate": "mean(new_B5_block) in its matching benign paired trace", "J": "attack_alert_rate - benign_trigger_rate", "delta_J_new_vs_B2": "J(new_B5) - J(B2)"},
+    "aggregation": "equal-weight macro-average over the 2 primary attack conditions x 4 levels; pair-level values are the independent observations",
+    "primary_criterion": "maximize macro delta_J_new_vs_B2",
+    "hard_constraints": "none",
+    "failure_probe_treatment": {"conditions": ["attack_fixed_continuous", "attack_dup_sweep_continuous"], "selection_role": "report separately; do not use as a selection constraint"},
+    "negative_control_treatment": {"condition": "attack_random_continuous", "selection_role": "report separately; do not use as a selection constraint"},
+    "tie_breaking_in_order": ["higher macro delta_J_new_vs_B2", "lower macro benign_trigger_rate on primary cells", "higher macro attack_alert_rate on primary cells", "ascending tuple (min_samples, entropy_threshold, unique_ratio_threshold)"],
+    "test_data_permitted_in_selection": false
+  },
+  "inference_and_reporting": {
+    "bootstrap_resamples": 5000,
+    "bootstrap_unit": "paired_trace",
+    "confidence_interval": "95% paired bootstrap CI",
+    "held_out_metrics": ["synthetic_attack_alert_rate", "synthetic_benign_trigger_rate", "synthetic_FNR", "balanced_precision_at_50_50_class_mix", "J", "Delta_J(new_B5 - B2)", "Delta_J(new_B5 - old_B5)", "AUPRC for individual continuous features where applicable"],
+    "asr": {"status": "not_measured_not_supported_by_E2_decision_level_data", "reason": "E2 records feature values, synthetic event composition, and detector block decisions, but no poisoning attempt/success outcome, DNS answer, cache state, or end-to-end resolver outcome. Attack-alert must not be interpreted as ASR or poisoning prevention."},
+    "interpretation": "Synthetic attack-alert/TPR and benign-trigger/FPR describe detector behavior in controlled synthetic conditions only."
+  },
+  "test_gate": {
+    "require_validation_grid_complete": true,
+    "require_locked_threshold": true,
+    "lock_file": "e3_locked_threshold.json",
+    "lock_status": "locked-before-test",
+    "lock_file_must_record": ["selected_candidate", "selection criterion", "tie-breaking rule", "validation ranking", "protocol hash", "validation input hash", "partition manifest hash", "locked timestamp"],
+    "threshold_changes_after_test": false,
+    "test_evaluation_count": 1
+  },
+  "required_outputs": ["e3_preflight.json", "e3_validation_grid.csv", "e3_validation_grid.json", "e3_locked_threshold.json", "e3_test_results.csv", "e3_test_results.json", "e3_summary.csv", "validation.json", "validation heatmap", "Pareto/operating-point plot"],
+  "provenance": {
+    "git_commit": "5bcfd03ca395e6ba49c95f8b4c15e51ea5af2eeb",
+    "git_dirty": true,
+    "git_status_porcelain_v1": "?? research/Report/experiments/E3/e3_protocol.json",
+    "split_seed": 20260820,
+    "source_code_status": "No E3 validation-selection or held-out-test scoring code has been run at registration time."
+  }
+}

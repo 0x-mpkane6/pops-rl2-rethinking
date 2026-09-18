@@ -12,6 +12,6 @@ Frozen inputs and confirmatory outputs are added separately under `data/`.
 - `followups/`: IPID-space and orphan-fragment analyses.
 - `figures/`: scripts that render paper figures and addenda from frozen data.
 
-The staged scripts retain their original artifact-oriented paths. The public
-entry points and relative data paths will be normalized after the frozen data
-are added.
+E5 runtime paths and E1/E2 detector imports use this repository layout.
+Other historical analysis and figure scripts still retain research-layout
+paths. Use `../docs/reproducibility.md` for verified reviewer entry points.

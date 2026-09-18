@@ -1,8 +1,8 @@
 # Frozen Data
 
-All files in this directory are frozen experiment inputs or outputs. They are
-copied without transformation from the research workspace; `SHA256SUMS.txt`
-records the public-artifact bytes.
+Experiment inputs and outputs are frozen copies from the research workspace.
+The smoke fixtures use lossless gzip compression; their manifest records the
+uncompressed source hashes. `SHA256SUMS.txt` records all bundled data-file bytes.
 
 - `controlled/benign-boundary/`: run-level benign fragmentation outcomes and
   validation for the initial operating point.
@@ -19,7 +19,11 @@ records the public-artifact bytes.
   summaries.
 - `followups/orphan-ratio/`: offline pre-enforcement orphan-fragment analysis.
 - `paper/`: provenance manifests for paper-facing figures and tables.
+- `runtime/pmtud-excluded/`: the excluded ICMP PTB branch discussed in the
+  paper's validity section; not pooled with primary results.
+- `smoke/e5/`: two selected primary-run raw-log fixtures and provenance.
 
 Raw packet captures, duplicate source snapshots, exploratory runs, and
-pilot/sanity outputs are intentionally excluded. The runtime campaign metrics
-are retained so reported resolver-level outcomes can be independently audited.
+pilot/sanity outputs are intentionally excluded. Apart from the two smoke
+fixtures, full runtime raw logs are excluded. Runtime campaign metrics are
+retained so reported resolver-level outcomes can be independently audited.

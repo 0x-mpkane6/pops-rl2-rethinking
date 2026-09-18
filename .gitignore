@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+artifacts/
+src/runtime/e5/output/
+src/detector/r2entropy/localtest/runs/
+/*.zip
+/*.zip.sha256
+*.log
+.env
+.env.local
